@@ -1,0 +1,80 @@
+.header {
+	font-family: Montserrat;
+	font-weight: 600;
+
+	&__navbar {
+		padding: 20px 0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__navigation {
+		display: flex;
+		align-items: center;
+	}
+
+	&__logo {
+		display: flex;
+		max-width: 206px;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__list {
+		display: flex;
+		padding-left: 5px;
+		font-size: 14px;
+		line-height: 17px;
+	}
+
+	&__item {
+		margin-left: 35px;
+	}
+
+	&__item-link {
+		color: $white-color;
+		text-transform: uppercase;
+	}
+
+	&__buttons {
+		font-family: Roboto;
+		font-weight: 700;
+		line-height: 16px;
+		display: flex;
+		align-items: center;
+	}
+
+	&__buttons-lang {
+		display: flex;
+		align-items: center;
+		border: 1px solid rgba(155, 153, 173, 0.2);
+		padding: 9px 28px;
+		background: transparent;
+		border-radius: 5px;
+		color: $white-color;
+		font-weight: 700;
+		font-size: 14px;
+		span {
+			margin-left: 7px;
+		}
+	}
+
+	&__buttons-login {
+		color: $white-color;
+		background: linear-gradient(90deg, #2095D9 0%, #5C35EE 100%);
+		border-radius: 5px;
+		font-size: 14px;
+		cursor: pointer;
+		display: block;
+		padding: 11px 28px;
+		margin-left: 20px;
+	}
+}
+
+.burger {
+	display: none;
+}

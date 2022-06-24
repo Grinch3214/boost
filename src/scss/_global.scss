@@ -1,0 +1,91 @@
+body {
+	background: $backgroundPrimary;
+	font-family: Roboto;
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 18px;
+	height: 4000px;
+	&.locked {
+		overflow: hidden;
+	}
+	@media (min-width: 767.98px) {
+		font-size: 18px;
+		line-height: 24px;
+	}
+	@media (min-width: 1919.98px) {
+		font-size: 24px;
+		line-height: 30px;
+	}
+}
+
+.container {
+  padding: 0 15px;
+	width: 100%;
+	@media (min-width: $breakpoint576) {
+		max-width: 540px;
+    margin: 0 auto;
+		padding: 0;
+	}
+	@media (min-width: $breakpoint768) {
+		max-width: 720px;	
+	}
+	@media (min-width: $breakpoint1366) {
+		max-width: 1125px;
+	}
+	@media (min-width: $breakpoint1920) {
+		max-width: 1610px;
+	}
+}
+
+.container-fluid {
+	padding: 0 15px;
+	@media (min-width: $breakpoint576) {
+		padding: 0 30px;
+	}
+}
+
+.circle {
+	position: fixed;
+	z-index: -1;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: transparent;
+	&::before {
+		content: '';
+		position: absolute;
+		bottom: -160vw;
+		right: -125vw;
+		background: radial-gradient(50% 50% at 50% 50%, #9F1288 0%, #21019C 62.81%, #120B32 100%);
+		width: 1272px;
+		height: 1000px;
+		border-radius: 50%;
+		animation: pulsation 4s ease-out infinite;
+		@media (min-width: $breakpoint768) {
+			bottom: -85vw;
+			right: -35vw;
+		}
+		@media (min-width: $breakpoint1366) {
+			width: 1755px;
+			height: 1380px;
+			bottom: -70vw;
+			right: -15vw;
+		}
+		@media (min-width: $breakpoint1920) {
+			width: 2321px;
+			height: 1824px;
+		}
+	}
+}
+@keyframes pulsation {
+	0% {
+		transform: scale(1);
+	}
+	50% {
+		transform: scale(1.098);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
