@@ -1,12 +1,18 @@
 .header {
 	font-family: Montserrat;
 	font-weight: 600;
+	padding-top: 80px;
 
 	&__navbar {
 		padding: 20px 0;
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		transform: translateY(-150%);
+		transition: .6s;
+		&.active {
+			transform: none;
+		}
 	}
 
 	&__navigation {
@@ -73,6 +79,15 @@
 		padding: 11px 28px;
 		margin-left: 20px;
 	}
+}
+
+nav {
+	position: fixed;
+	z-index: 50;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0 30px;
 }
 
 .burger {
