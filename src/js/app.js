@@ -5,4 +5,3 @@ flsFunctions.isWebp();
 import { animationNavbar,  animationWindow  } from './modules/globalAnimation.js';
 animationNavbar();
 animationWindow();
-
