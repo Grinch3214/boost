@@ -1,0 +1,95 @@
+.platform {
+	display: grid;
+	align-items: center;
+	min-height: 100vh;
+	color: $white-color;
+	&__container {
+		display: flex;
+		align-items: center;
+	}
+
+	&__description {
+	}
+
+	&__title {
+		margin-bottom: 40px;
+	}
+
+	&__cards {
+		display: flex;
+		font-weight: 500;
+		margin-bottom: 40px;
+	}
+
+	&__cards-item {
+		padding: 20px 38px 21px 25px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1.52%, rgba(255, 255, 255, 0) 93.94%);
+		position: relative;
+		&:first-child {
+			margin-right: 50px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			height: 100%;
+			width: 4px;
+			top: 0;
+			left: 0;
+			background: linear-gradient(#2095D9 0%, #5C35EE 100%);
+		}
+	}
+
+	&__price {
+		margin-bottom: 40px;
+	}
+
+	&__price-title {
+		font-family: Montserrat;
+		font-weight: 900;
+		text-transform: uppercase;
+		margin-bottom: 6px;
+	}
+
+	&__price-price {
+		font-family: Montserrat;
+		font-weight: 600;
+		font-size: 18px;
+		text-transform: uppercase;
+		span {
+			font-size: 50px;
+			font-weight: 700;
+		}
+		sup {
+			font-size: 20px;
+			margin-right: 5px;
+		}
+		span + span {
+			color: #FF3E3E;
+			text-decoration: line-through;
+			font-size: 24px;
+		}
+	}
+
+	&__price-subscription {
+		font-family: Roboto;
+		font-weight: 400;
+		font-size: 16px;
+		color: #9b99ad;
+	}
+
+	&__button {
+	}
+
+	&__button-btn {
+	}
+
+	&__image {
+		max-width: 924px;
+		width: 100%;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
