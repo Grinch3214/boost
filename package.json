@@ -7,7 +7,7 @@
   "scripts": {
     "dev": "gulp",
     "build": "gulp build --build",
-		"zip": "gulp deployZip --build",
+    "zip": "gulp deployZip --build",
     "svgSprive": "gulp svgSprive"
   },
   "author": "FLS",
@@ -40,5 +40,8 @@
     "webp-converter": "2.2.3",
     "webpack": "^5.72.0",
     "webpack-stream": "^7.0.0"
+  },
+  "dependencies": {
+    "swiper": "^8.2.6"
   }
 }
