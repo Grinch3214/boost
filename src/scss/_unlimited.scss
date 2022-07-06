@@ -26,7 +26,6 @@
 		right: -145px;
 		z-index: 2;
 		max-width: 277px;
-		// clip-path: polygon(45% 0, 100% 0, 100% 100%, 0 100%, 0 33%);
 		pointer-events: none;
 		img {
 			width: 100%;
@@ -35,8 +34,6 @@
 	}
 
 	&__swiper {
-		// margin-left: auto;
-		// margin-right: auto;
 		position: relative;
 		overflow: hidden;
 		list-style: none;
@@ -54,6 +51,8 @@
 	}
 }
 
+
+// tabs content for swiper
 .swiper-wrapper {
 }
 
@@ -119,6 +118,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	margin: 0;
+	padding: 0 50px;
 	position: absolute;
   text-align: center;
   transition: 300ms opacity;
@@ -160,4 +160,68 @@
 // 	right: 0;
 // }
 
+
+//tabs 2,3,4
+
+.devices {
+
+		&__wrap {
+			max-width: 550px;
+			margin: 0 auto;
+		}
+
+		&__inner {
+			display: flex;
+			margin-bottom: 20px;
+		}
+
+		&__image {
+			margin-right: 33px;
+			max-width: 211px;
+			flex-shrink: 0;
+			img {
+				width: 100%;
+				height: auto;
+			}
+		}
+
+		&__text {
+			font-size: 12px;
+			line-height: 20px;
+			display: flex;
+			align-items: center;
+		}
+
+		&__links {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__center {
+			justify-content: center;
+		}
+
+		&__item {
+		}
+
+		&__center-item {
+			width: 100%;
+			a {
+				display: block;
+				text-align: center;
+				font-size: 12px;
+				font-weight: 700;
+				color: $white-color;
+			}
+		}
+
+		&__item-link {
+			.icon-apple svg {
+				width: 23px;
+			}
+			.icon-android svg {
+				width: 22px;
+			}
+		}
+}
 
