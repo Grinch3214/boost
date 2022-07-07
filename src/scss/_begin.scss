@@ -1,18 +1,36 @@
 .begin {
-
+	padding-top: 150px;
+	padding-bottom: 70px;
 	&__inner {
+		display: flex;
+		align-items: center;
 	}
 
 	&__content {
+		flex: 0 0 37%;
 	}
 
 	&__title {
+		margin-right: -85px;
+		margin-bottom: 63px;
 	}
 
 	&__list {
+		color: $white-color;
+		font-weight: 700;
+		margin-bottom: 60px;
 	}
 
 	&__item {
+		display: flex;
+		align-items: center;
+		margin-bottom: 40px;
+		&:last-child {
+			margin-bottom: 0;
+		}
+		p {
+			margin-left: 20px;
+		}
 	}
 
 	&__btn {
@@ -22,8 +40,14 @@
 	}
 
 	&__box {
+		flex: 0 0 63%;
 	}
 
 	&__image {
+		max-width: 1005px;
+		img {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
