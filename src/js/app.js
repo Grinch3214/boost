@@ -6,3 +6,4 @@ animationNavbar();
 animationWindow();
 import { tabsOnSwiper } from './modules/tabs.js';
 tabsOnSwiper();
+
