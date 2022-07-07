@@ -20,22 +20,21 @@
 		display: flex;
 		padding-bottom: 57px;
 		padding-top: 37px;
+		position: relative;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 50%;
+			transform: translateX(-50%);
+			width: 2px;
+			height: 100%;
+			background: url('@img/line.svg') 0 0/cover no-repeat;
+		}
 	}
 
 	&__card {
 		flex: 1 1 50%;
-		position: relative;
-		&:last-child {
-			&::before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				width: 2px;
-				height: 100%;
-				background: url('@img/line.svg') 0 0/cover no-repeat;
-			}
-		}
 	}
 
 	&__service {
@@ -44,12 +43,17 @@
 	}
 
 	&__subscrible {
+		margin-bottom: 25px;
 	}
 
 	&__subscrible-btn {
 	}
 
 	&__subscrible-txt {
+		font-family: Montserrat;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 17px;
 	}
 
 	&__core {
