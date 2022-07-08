@@ -3,20 +3,49 @@
 	padding-bottom: 125px;
 	&__title {
 		margin-bottom: 70px;
+		text-align: center;
 	}
 
 	&__companies {
+		display: grid;
+		grid-template-columns: repeat(4, 1fr);
+		grid-template-rows: 1fr;
+		grid-column-gap: 60px;
+		align-items: center;
+		justify-items: center;
+		max-width: 1000px;
+		margin: 0 auto;
 	}
 
 	&__companies-intel {
+		max-width: 158px;
+		svg {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&__companies-asus {
+		max-width: 175px;
+		svg {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&__companies-invidia {
+		max-width: 275px;
+		svg {
+			width: 100%;
+			height: auto;
+		}
 	}
 
 	&__companies-binb {
+		max-width: 217px;
+		svg {
+			width: 100%;
+			height: auto;
+		}
 	}
 }
