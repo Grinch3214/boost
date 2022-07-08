@@ -10,11 +10,25 @@ function animationNavbar() {
 
 function animationWindow() {
 	const circle = document.querySelector('.circle');
-	window.addEventListener("scroll", (event) => {
-		let x = Math.floor(scrollY / 10);
+	const body = document.querySelector('body');
+	let delta = 0;
+	let heightBody = 0;
+	let heightUp = 0;
+	let scrollHeightBody = body.scrollHeight;
+	body.addEventListener("wheel", function(e) {
+		heightBody += Math.floor(e.deltaY * 0.45);
+		heightUp += Math.floor(e.deltaY * 0.03);
+		delta = Math.min(Math.max(0, heightBody), scrollHeightBody);
+		if (delta <= 0) {
+			return heightUp = 0
+		}
+		if (scrollHeightBody <= heightBody) {
+			return heightUp
+		};
 		circle.style = `
-		transform: rotate(-${x}deg);
-	`;
+			transform: rotate(-${heightUp}deg);
+			transition: all .3s ease;
+		`;
 	});
 };
 

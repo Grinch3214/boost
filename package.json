@@ -42,6 +42,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "locomotive-scroll": "^4.1.4",
     "swiper": "^8.2.6"
   }
 }
