@@ -1,4 +1,16 @@
 // Animations
+import LocomotiveScroll from 'locomotive-scroll';
+
+const scrollOptions = new LocomotiveScroll({
+	el: document.querySelector('[data-scroll-container]'),
+  smooth: true,
+	multiplier: .3,
+	resetNativeScroll: false,
+	smartphone: {
+		smooth: true
+	}
+});
+
 
 function animationNavbar() {
 	const navbar = document.querySelector('.header__navbar');
@@ -10,26 +22,15 @@ function animationNavbar() {
 
 function animationWindow() {
 	const circle = document.querySelector('.circle');
-	const body = document.querySelector('body');
-	let delta = 0;
-	let heightBody = 0;
-	let heightUp = 0;
-	let scrollHeightBody = body.scrollHeight;
-	body.addEventListener("wheel", function(e) {
-		heightBody += Math.floor(e.deltaY * 0.45);
-		heightUp += Math.floor(e.deltaY * 0.03);
-		delta = Math.min(Math.max(0, heightBody), scrollHeightBody);
-		if (delta <= 0) {
-			return heightUp = 0
-		}
-		if (scrollHeightBody <= heightBody) {
-			return heightUp
-		};
+
+	scrollOptions.on('scroll', (obj) => {
+		let anim = Math.floor(obj.delta.y / 8);
+		console.log(anim)
 		circle.style = `
-			transform: rotate(-${heightUp}deg);
+			transform: rotate(-${anim}deg);
 			transition: all .3s ease;
 		`;
 	});
 };
 
-export { animationNavbar,  animationWindow };
+export { scrollOptions, animationNavbar,  animationWindow };
