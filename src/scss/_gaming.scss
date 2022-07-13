@@ -1,30 +1,49 @@
 .gaming {
-	padding: 160px 0 130px 0;
+	padding: 80px 0 100px 0;
 	color: $white-color;
+	@media (min-width: $breakpoint1920) {
+		padding: 160px 0 130px 0;
+	}
 	&__title {
 		text-align: center;
-		margin-bottom: 130px;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 130px;
+		}
 	}
 
 	&__cards {
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		justify-items: center;
-		margin-bottom: 130px;
+		grid-column-gap: 120px;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint1920) {
+			grid-column-gap: 150px;
+			margin-bottom: 130px;
+		}
 	}
 
 	&__card {
-		max-width: 340px;
+		// max-width: 340px;
 	}
 
 	&__image {
-		max-width: 221px;
-		max-height: 140px;
+		max-width: 183px;
+		max-height: 116px;
 		text-align: center;
-		margin: 0 auto 50px;
+		margin: 0 auto 32px;
+		@media (min-width: $breakpoint1920) {
+			max-width: 221px;
+			max-height: 140px;
+			margin: 0 auto 50px;
+		}
 		img {
 			width: 100%;
-			height: 140px;
+			height: 116px;
+			@media (min-width: $breakpoint1920) {
+				height: 140px;
+			}
 		}
 	}
 
@@ -35,8 +54,14 @@
 	&__content-title {
 		font-family: Montserrat;
 		font-weight: 700;
-		font-size: 36px;
-		margin-bottom: 13px;
+		font-size: 24px;
+		line-height: 29px;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint1920) {
+			font-size: 36px;
+			line-height: 44px;
+			margin-bottom: 13px;
+		}
 	}
 
 	&__content-text {
@@ -46,9 +71,13 @@
 	&__note {
 		font-family: Amiko;
 		font-weight: 700;
-		font-size: 24px;
+		font-size: 18px;
 		text-align: center;
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint1920) {
+			font-size: 24px;
+			margin-bottom: 30px;
+		}
 	}
 
 	&__button {
@@ -56,5 +85,9 @@
 	}
 
 	&__button-btn {
+		padding: 15px 43px;
+		@media (min-width: $breakpoint1920) {
+			padding: 15px 52px;
+		}
 	}
 }
