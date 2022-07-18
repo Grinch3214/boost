@@ -1,6 +1,10 @@
 .partners {
-	padding-top: 160px;
-	padding-bottom: 125px;
+	padding-top: 140px;
+	padding-bottom: 70px;
+	@media (min-width: $breakpoint1920) {
+		padding-top: 160px;
+		padding-bottom: 125px;
+	}
 	&__title {
 		margin-bottom: 70px;
 		text-align: center;

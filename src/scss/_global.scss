@@ -97,6 +97,7 @@ body {
 	color: $white-color;
 	font-size: 28px;
 	line-height: 34px;
+	text-transform: uppercase;
 	@media (min-width: $breakpoint1310) {
 		font-size: 50px;
 		line-height: 61px;
