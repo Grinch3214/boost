@@ -1,7 +1,11 @@
 .footer {
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 50.85%, rgba(255, 255, 255, 0) 100%);
-	padding-top: 70px;
-	padding-bottom: 80px;
+	padding-top: 50px;
+	padding-bottom: 60px;
+	@media (min-width: $breakpoint1920) {
+		padding-top: 70px;
+		padding-bottom: 80px;
+	}
 	&__box {
 		display: flex;
 		justify-content: space-between;
@@ -15,10 +19,14 @@
 	&__title, &__follow {
 		font-family: Montserrat;
 		font-weight: 400;
-		font-size: 18px;
+		font-size: 12px;
 		text-transform: uppercase;
 		color: #9B99AD;
-		margin-bottom: 53px;
+		margin-bottom: 30px;
+		@media (min-width: $breakpoint1920) {
+			font-size: 18px;
+			margin-bottom: 53px;
+		}
 	}
 
 	&__list {
@@ -28,7 +36,12 @@
 	}
 
 	&__item {
-		margin-bottom: 21px;
+		margin-bottom: 15px;
+		font-size: 14px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 21px;
+			font-size: 20px;
+		}
 		&:last-child {
 			margin-bottom: 0;
 		}
@@ -55,10 +68,21 @@
 
 	&__icon-link {
 		display: block;
+		svg {
+			width: 24px;
+			height: 24px;
+			@media (min-width: $breakpoint1920) {
+				width: 35px;
+				height: 35px;
+			}
+		}
 	}
 
 	&__reserved {
 		color: #9B99AD;
-		font-size: 16px;
+		font-size: 12px;
+		@media (min-width: $breakpoint1920) {
+			font-size: 16px;
+		}
 	}
 }
