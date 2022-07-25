@@ -3,6 +3,8 @@
 	font-weight: 600;
 	padding-top: 80px;
 
+	// &__nav {} This class is placed at the bottom
+
 	&__navbar {
 		padding: 20px 0;
 		display: flex;
@@ -22,12 +24,22 @@
 	}
 
 	&__logo {
-		display: flex;
+		display: block;
 		max-width: 206px;
 
 		img {
 			width: 100%;
 			height: auto;
+			display: none;
+			@media (min-width: $breakpoint768) {
+				display: inline-block;
+			}
+		}
+		img + img {
+			display: inline-block;
+			@media (min-width: $breakpoint768) {
+				display: none;
+			}
 		}
 	}
 
@@ -59,7 +71,7 @@
 	}
 
 	&__buttons-lang {
-		display: flex;
+		display: none;
 		align-items: center;
 		border: 1px solid rgba(155, 153, 173, 0.2);
 		padding: 9px 13px;
@@ -68,6 +80,9 @@
 		color: $white-color;
 		font-weight: 700;
 		font-size: 14px;
+		@media (min-width: $breakpoint768) {
+			display: flex;
+		}
 		span {
 			margin-left: 7px;
 		}
@@ -75,48 +90,121 @@
 
 	&__buttons-login {
 		color: $white-color;
+		font-family: Amiko;
+		font-weight: 700;
 		background: linear-gradient(90deg, #2095D9 0%, #5C35EE 100%);
 		border-radius: 5px;
 		font-size: 14px;
+		line-height: 19px;
 		cursor: pointer;
 		display: block;
 		padding: 11px 28px;
 		margin-left: 20px;
+		@media (min-width: $breakpoint1920) {
+			font-family: Roboto;
+		}
 	}
 }
 
-nav {
+//whis show class
+.header__nav {
 	position: fixed;
 	z-index: 50;
 	top: 0;
 	left: 0;
 	right: 0;
 	height: auto;
-	padding: 0 30px;
+	padding: 0 20px;
 	transition: all .3s ease;
+
+	@media (min-width: $breakpoint768) {
+		padding: 0 30px;
+	}
+
 	&.show {
 		height: 100%;
 		background: #23272F;
-		background: linear-gradient(180deg, rgba(35,39,47,1) 70%, rgba(0,0,0,.5) 70%);
+		background: linear-gradient(180deg, rgba(35, 39, 47, 1) 70%, rgba(0, 0, 0, .5) 70%);
 		backdrop-filter: blur(20px);
+
 		// for burger munu <= 768
-		.header__navbar {
+
+		.header__navigation {
+			flex-grow: 0;
+
+			@media (min-width: $breakpoint768) {
+				flex-grow: 1;
+			}
 		}
-		.header__navigation {}
-		.header__buttons {}
+
+		.header__buttons {
+			flex-grow: 1;
+
+			@media (min-width: $breakpoint768) {
+				flex-grow: 0;
+			}
+		}
+
+		.header__buttons-lang {
+			display: flex;
+
+			@media (min-width: $breakpoint768) {
+				display: none;
+			}
+		}
+
+		.header__buttons-login {
+			display: none;
+
+			@media (min-width: $breakpoint768) {
+				display: block;
+			}
+		}
+
+		.header__logo {
+			display: none;
+
+			@media (min-width: $breakpoint768) {
+				display: block;
+			}
+		}
+
 		.header__list {
 			display: block;
 			position: absolute;
-			top: 80px;
+			top: 100px;
 			left: 0;
-			padding-left: 30px;
+			padding-left: 20px;
+
+			@media (min-width: $breakpoint768) {
+				top: 80px;
+				padding-left: 30px;
+			}
 		}
+
 		.header__item {
 			margin-bottom: 33px;
 			margin-left: 0;
 		}
+
+		.header__item-link {
+			&--md {
+				display: none;
+				@media (min-width: $breakpoint768) {
+					display: inline-block;
+				}
+			}
+
+			&--sm {
+				display: inline-block;
+				@media (min-width: $breakpoint768) {
+					display: none;
+				}
+			}
+		}
 	}
 }
+
 
 .burger {
 	display: block;

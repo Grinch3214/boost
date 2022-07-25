@@ -33,4 +33,4 @@ function animationWindow() {
 	});
 };
 
-export { scrollOptions, animationNavbar,  animationWindow };
+// export { scrollOptions, animationNavbar,  animationWindow };

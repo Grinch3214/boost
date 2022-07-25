@@ -18,7 +18,7 @@ body {
 }
 
 .container {
-  padding: 0 15px;
+  padding: 0 20px;
 	width: 100%;
 	// @media (min-width: $breakpoint576) {
 	// 	max-width: 540px;
@@ -114,7 +114,7 @@ body {
 	font-family: Montserrat;
 	font-weight: 700;
 	color: $white-color;
-	font-size: 24px;
+	font-size: 20px;
 	line-height: 28px;
 	@media (min-width: $breakpoint768) {
 		font-size: 40px;

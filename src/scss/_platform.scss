@@ -1,13 +1,19 @@
 .platform {
 	display: grid;
 	align-items: center;
-	min-height: 100vh;
+	min-height: unset;
 	color: $white-color;
+	@media (min-width: $breakpoint768) {
+		min-height: 100vh;
+	}
 	&__container {
 		display: flex;
 		align-items: center;
 		flex-direction: column;
-		margin-top: 99px;
+		margin-top: 9px;
+		@media (min-width: $breakpoint768) {
+			margin-top: 99px;
+		}
 		@media (min-width: $breakpoint1310) {
 			flex-direction: row;
 			margin-top: 0;
@@ -20,7 +26,10 @@
 	}
 
 	&__title {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 30px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 40px;
 		}
@@ -29,9 +38,13 @@
 	&__cards {
 		display: flex;
 		font-weight: 500;
-		margin-bottom: 40px;
-		font-size: 14px;
+		margin-bottom: 15px;
+		font-size: 12px;
 		line-height: 16px;
+		@media (min-width: $breakpoint768) {
+			font-size: 14px;
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 30px;
 		}
@@ -43,10 +56,14 @@
 	}
 
 	&__cards-item {
-		padding: 12px 12px 13px 17px;
-		min-width: 165px;
+		padding: 9px 12px 10px 17px;
+		min-width: 140px;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1.52%, rgba(255, 255, 255, 0) 93.94%);
 		position: relative;
+		@media (min-width: $breakpoint768) {
+			min-width: 165px;
+			padding: 12px 12px 13px 17px;
+		}
 		@media (min-width: $breakpoint1920) {
 			padding: 20px 38px 21px 25px;
 		}
@@ -74,7 +91,10 @@
 	}
 
 	&__price {
-		margin-bottom: 40px;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 20px;
 		}
@@ -154,9 +174,13 @@
 	&__image {
 		max-width: 645px;
 		width: 100%;
-		margin-right: -165px;
+		margin-right: 0;
+		@media (min-width: $breakpoint768) {
+			margin-right: -165px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-top: 0;
+			margin-right: 0;
 		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 924px;
