@@ -6,8 +6,11 @@
 		padding-top: 160px;
 	}
 	&__title {
-		margin-bottom: 80px;
+		margin-bottom: 50px;
 		text-align: center;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 80px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 100px;
 		}
@@ -16,23 +19,38 @@
 	&__container {
 		display: flex;
 		justify-content: space-between;
+		flex-direction: column;
+		@media (min-width: $breakpoint1310) {
+			flex-direction: row;
+		}
 	}
 
 	&__image {
 		max-width: 100%;
-		width: 50%;
+		width: 100%;
+		@media (min-width: $breakpoint1310) {
+			width: 50%;
+		}
 	}
 
 	&__image-box {
 		max-width: 645px;
-		width: 150%;
+		width: 100%;
+		margin-left: auto;
+		@media (min-width: $breakpoint1310) {
+			width: 150%;
+			margin-left: 0;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 1122px;
 		}
 		img {
 			display: inline-block;
 			width: 100%;
-			margin-left: calc(-50vw + 570px);
+			margin-left: 0;
+			@media (min-width: $breakpoint1310) {
+				margin-left: calc(-50vw + 570px);
+			}
 			@media (min-width: $breakpoint1920) {
 				margin-left: calc(-50vw + 805px);
 			}
@@ -41,9 +59,13 @@
 
 
 	&__list {
-		width: 50%;
-		max-width: 580px;
+		width: 100%;
+		max-width: 100%;
 		margin-top: 40px;
+		@media (min-width: $breakpoint1310) {
+			max-width: 580px;
+			width: 50%;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 662px;
 			margin-top: 80px;

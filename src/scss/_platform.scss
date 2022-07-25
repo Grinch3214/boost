@@ -6,9 +6,17 @@
 	&__container {
 		display: flex;
 		align-items: center;
+		flex-direction: column;
+		margin-top: 99px;
+		@media (min-width: $breakpoint1310) {
+			flex-direction: row;
+			margin-top: 0;
+		}
 	}
 
 	&__description {
+		position: relative;
+		z-index: 1;
 	}
 
 	&__title {
@@ -21,9 +29,12 @@
 	&__cards {
 		display: flex;
 		font-weight: 500;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
 		font-size: 14px;
 		line-height: 16px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 30px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
 			line-height: 24px;
@@ -40,7 +51,10 @@
 			padding: 20px 38px 21px 25px;
 		}
 		&:first-child {
-			margin-right: 20px;
+			margin-right: 0px;
+			@media (min-width: $breakpoint1310) {
+				margin-right: 20px;
+			}
 			@media (min-width: $breakpoint1920) {
 				margin-right: 50px;
 			}
@@ -49,15 +63,21 @@
 			content: '';
 			position: absolute;
 			height: 100%;
-			width: 4px;
+			width: 2px;
 			top: 0;
 			left: 0;
 			background: linear-gradient(#2095D9 0%, #5C35EE 100%);
+			@media (min-width: $breakpoint1310) {
+				width: 4px;
+			}
 		}
 	}
 
 	&__price {
-		margin-bottom: 20px;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 20px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 40px;
 		}
@@ -70,6 +90,9 @@
 		line-height: 19px;
 		text-transform: uppercase;
 		margin-bottom: 6px;
+		@media (min-width: $breakpoint768) {
+			font-size: 16px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
 			line-height: 24px;
@@ -131,6 +154,10 @@
 	&__image {
 		max-width: 645px;
 		width: 100%;
+		margin-right: -165px;
+		@media (min-width: $breakpoint1310) {
+			margin-top: 0;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 924px;
 		}

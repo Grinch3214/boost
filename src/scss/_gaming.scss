@@ -1,12 +1,18 @@
 .gaming {
-	padding: 80px 0 100px 0;
+	padding: 65px 0 90px 0;
 	color: $white-color;
+	@media (min-width: $breakpoint1310) {
+		padding: 80px 0 100px 0;
+	}
 	@media (min-width: $breakpoint1920) {
 		padding: 160px 0 130px 0;
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 80px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 130px;
 		}
@@ -14,10 +20,16 @@
 
 	&__cards {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		justify-items: center;
-		grid-column-gap: 120px;
-		margin-bottom: 40px;
+		grid-row-gap: 85px;
+		margin-bottom: 80px;
+		@media (min-width: $breakpoint1310) {
+			grid-template-columns: repeat(3, 1fr);
+			grid-column-gap: 120px;
+			grid-row-gap: 0px;
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1920) {
 			grid-column-gap: 150px;
 			margin-bottom: 130px;
@@ -25,14 +37,24 @@
 	}
 
 	&__card {
-		// max-width: 340px;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		@media (min-width: $breakpoint1310) {
+			flex-direction: column;
+			align-items: flex-start;
+		}
 	}
 
 	&__image {
-		max-width: 183px;
+		max-width: 170px;
 		max-height: 116px;
 		text-align: center;
-		margin: 0 auto 32px;
+		margin: 0 44px 0 0;
+		@media (min-width: $breakpoint1310) {
+			margin: 0 auto 32px;
+			max-width: 183px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 221px;
 			max-height: 140px;
@@ -48,7 +70,10 @@
 	}
 
 	&__content {
-		text-align: center;
+		text-align: left;
+		@media (min-width: $breakpoint1310) {
+			text-align: center;
+		}
 	}
 
 	&__content-title {

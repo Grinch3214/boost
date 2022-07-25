@@ -1,21 +1,31 @@
 .unlimited {
-	padding-top: 45px;
-	padding-bottom: 30px;
+	padding-top: 70px;
+	padding-bottom: 65px;
 	color: $white-color;
+	@media (min-width: $breakpoint1310) {
+		padding-top: 45px;
+		padding-bottom: 30px;
+	}
 	@media (min-width: $breakpoint1920) {
 		padding-top: 163px;
 		padding-bottom: 60px;
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 40px;
+		margin-bottom: 50px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 60px;
 		}
 	}
 
 	&__title-title {
-		margin-bottom: 5px;
+		margin-bottom: 10px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 5px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 20px;
 		}
@@ -29,9 +39,12 @@
 	}
 
 	&__wrap {
-		max-width: 730px;
+		max-width: 600px;
 		margin: 0 auto;
 		position: relative;
+		@media (min-width: $breakpoint1310) {
+			max-width: 730px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 1020px;
 		}
@@ -39,11 +52,16 @@
 
 	&__right-border {
 		position: absolute;
-		top: -20px;
-		right: -95px;
-		z-index: 2;
+		top: 100px;
+		right: 40px;
+		z-index: -1;
 		max-width: 199px;
 		pointer-events: none;
+		@media (min-width: $breakpoint1310) {
+			top: -20px;
+			right: -95px;
+			z-index: 2;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 277px;
 			top: -42px;
@@ -52,6 +70,16 @@
 		img {
 			width: 100%;
 			height: auto;
+			display: none;
+			@media (min-width: $breakpoint1310) {
+				display: inline-block;
+			}
+		}
+		img + img {
+			display: inline-block;
+			@media (min-width: $breakpoint1310) {
+				display: none;
+			}
 		}
 	}
 
@@ -77,8 +105,12 @@
 	}
 
 	&__footer {
-		padding: 24px 0;
+		padding: 24px 46px;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 50.85%, rgba(255, 255, 255, 0) 100%);
+		margin-top: 150px;
+		@media (min-width: $breakpoint1310) {
+			margin-top: 0;
+		}
 		@media (min-width: $breakpoint1920) {
 			padding: 46px 0;
 		}
@@ -104,7 +136,10 @@
 	}
 
 	&__footer-item-img {
-		margin-right: 25px;
+		margin-right: 20px;
+		@media (min-width: $breakpoint1310) {
+			margin-right: 25px;
+		}
 		&--win {
 			svg {
 				width: 50px;
@@ -153,6 +188,13 @@
 		}
 		span + span {
 			font-weight: 400;
+			font-size: 12px;
+			@media (min-width: $breakpoint1310) {
+				font-size: 14px;
+			}
+			@media (min-width: $breakpoint1920) {
+				font-size: 20px;
+			}
 		}
 	}
 }
@@ -163,22 +205,34 @@
 }
 
 .swiper-slide {
-	padding: 40px 43px 0;
+	padding: 58px 57px 0;
+	@media (min-width: $breakpoint1310) {
+		padding: 40px 43px 0;
+	}
 	@media (min-width: $breakpoint1920) {
 		padding: 55px 60px 0;
 	}
 	&__container {
 		display: flex;
-		margin-bottom: 20px;
+		flex-direction: column;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint1310) {
+			flex-direction: row;
+			margin-bottom: 20px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 31px;
 		}
 	}
 
 	&__container-img-wrap {
-		margin-right: 20px;
 		display: flex;
 		align-items: center;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 0;
+			margin-right: 20px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-right: 30px;
 		}
@@ -234,7 +288,10 @@
 	}
 
 	&__btn {
-		text-align: center;
+		text-align: left;
+		@media (min-width: $breakpoint1310) {
+			text-align: center;
+		}
 	}
 
 	&__btn-btn {
@@ -305,13 +362,25 @@
 
 		&__inner {
 			display: flex;
-			margin-bottom: 20px;
+			flex-direction: column;
+			margin-bottom: 46px;
+			max-width: 280px;
+			@media (min-width: $breakpoint1310) {
+				flex-direction: row;
+				margin-bottom: 20px;
+				max-width: 100%;
+			}
 		}
 
 		&__image {
-			margin-right: 33px;
+			margin-right: 0;
+			margin-bottom: 45px;
 			max-width: 211px;
 			flex-shrink: 0;
+			@media (min-width: $breakpoint1310) {
+				margin-bottom: 0;
+				margin-right: 33px;
+			}
 			img {
 				width: 100%;
 				height: auto;
@@ -338,7 +407,12 @@
 		}
 
 		&__center-item {
-			width: 100%;
+			width: auto;
+			margin-right: auto;
+			@media (min-width: $breakpoint1310) {
+				width: 100%;
+				margin-right: 0;
+			}
 			a {
 				display: block;
 				text-align: center;
