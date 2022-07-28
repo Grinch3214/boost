@@ -1,31 +1,84 @@
 .footer {
-	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 50.85%, rgba(255, 255, 255, 0) 100%);
-	padding-top: 50px;
-	padding-bottom: 60px;
+	padding-top: 36px;
+	padding-bottom: 24px;
+	@media (min-width: $breakpoint768) {
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 50.85%, rgba(255, 255, 255, 0) 100%);
+		padding-top: 50px;
+		padding-bottom: 60px;
+	}
 	@media (min-width: $breakpoint1920) {
 		padding-top: 70px;
 		padding-bottom: 80px;
 	}
 	&__box {
 		display: flex;
-		justify-content: space-between;
+		flex-direction: column;
+		@media (min-width: $breakpoint768) {
+			flex-direction: row;
+			justify-content: space-between;
+		}
 	}
 
 	&__inner {
 		display: flex;
 		flex-direction: column;
+		position: relative;
+		@media (min-width: $breakpoint768) {
+			position: static;
+		}
 	}
 
 	&__title, &__follow {
+		position: relative;
 		font-family: Montserrat;
-		font-weight: 400;
-		font-size: 12px;
+		font-weight: 500;
+		font-size: 14px;
+		color: $white-color;
 		text-transform: uppercase;
-		color: #9B99AD;
-		margin-bottom: 30px;
+		margin: 0 -20px 8px;
+		padding: 16px 20px 17px;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 100%);
+		&::before {
+			content: '';
+			position: absolute;
+			display: block;
+			top: 50%;
+			right: 20px;
+			transform: translateY(-50%) rotate(-45deg);
+			width: 9px;
+			height: 9px;
+			border-bottom: 2px solid $white-color;
+			border-right: 2px solid $white-color;
+			transition: all 0.2s ease-out;
+			@media (min-width: $breakpoint768) {
+				display: none;
+			}
+		}
+		&.active {
+			&::before {
+				transform: translateY(-50%) rotate(45deg);
+			}
+		}
+		@media (min-width: $breakpoint768) {
+			position: static;
+			color: #9B99AD;
+			font-size: 12px;
+			font-weight: 400;
+			padding: 0;
+			margin: 0 0 30px;
+			background: transparent;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
 			margin-bottom: 53px;
+		}
+	}
+
+	&__follow {
+		&::before {
+			width: 0;
+			height: 0;
+			border: unset;
 		}
 	}
 
@@ -33,6 +86,14 @@
 		font-family: Roboto;
 		font-weight: 400;
 		font-size: 20px;
+		padding: 0;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.2s ease-out;
+		@media (min-width: $breakpoint768) {
+			overflow: visible;
+			max-height: unset;
+		}
 	}
 
 	&__item {
@@ -54,13 +115,28 @@
 	&__social {
 		font-size: 0;
 		flex-grow: 1;
+		position: absolute;
+		top: 13px;
+		right: 0;
+		@media (min-width: $breakpoint768) {
+			position: static;
+		}
 	}
 
 	&__icon {
 		display: inline-block;
 		font-size: 12px;
-		margin-right: 10px;
+		margin-right: 6px;
 		line-height: 1;
+		@media (min-width: $breakpoint768) {
+			margin-right: 10px;
+		}
+		&:nth-child(3) {
+			display: none;
+			@media (min-width: $breakpoint768) {
+				display: inline-block;
+			}
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-right: 15px;
 		}
@@ -84,6 +160,12 @@
 	&__reserved {
 		color: #9B99AD;
 		font-size: 12px;
+		text-align: center;
+		margin-top: 20px;
+		@media (min-width: $breakpoint768) {
+			text-align: left;
+			margin-top: 0;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 16px;
 		}

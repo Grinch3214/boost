@@ -1,6 +1,10 @@
 .partners {
-	padding-top: 65px;
-	padding-bottom: 85px;
+	padding-top: 35px;
+	padding-bottom: 100px;
+	@media (min-width: $breakpoint768) {
+		padding-top: 65px;
+		padding-bottom: 85px;
+	}
 	@media (min-width: $breakpoint1310) {
 		padding-top: 140px;
 		padding-bottom: 70px;
@@ -10,8 +14,11 @@
 		padding-bottom: 125px;
 	}
 	&__title {
-		margin-bottom: 50px;
+		margin-bottom: 34px;
 		text-align: center;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 50px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 40px;
 		}
@@ -22,20 +29,26 @@
 
 	&__companies {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);
-		grid-template-rows: 1fr;
-		grid-column-gap: 60px;
+		grid-template-columns: repeat(2, 2fr);
+		grid-gap: 20px 20px;
 		align-items: center;
 		justify-items: center;
 		max-width: 662px;
 		margin: 0 auto;
+		@media (min-width: $breakpoint768) {
+			grid-template-columns: repeat(4, 1fr);
+			grid-gap: 0 60px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 1000px;
 		}
 	}
 
 	&__companies-intel {
-		max-width: 93px;
+		max-width: 62px;
+		@media (min-width: $breakpoint768) {
+			max-width: 93px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 158px;
 		}
@@ -46,7 +59,10 @@
 	}
 
 	&__companies-asus {
-		max-width: 102px;
+		max-width: 68px;
+		@media (min-width: $breakpoint768) {
+			max-width: 102px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 175px;
 		}
@@ -57,7 +73,10 @@
 	}
 
 	&__companies-invidia {
-		max-width: 161px;
+		max-width: 107px;
+		@media (min-width: $breakpoint768) {
+			max-width: 161px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 275px;
 		}
@@ -68,7 +87,10 @@
 	}
 
 	&__companies-binb {
-		max-width: 127px;
+		max-width: 84px;
+		@media (min-width: $breakpoint768) {
+			max-width: 127px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 217px;
 		}

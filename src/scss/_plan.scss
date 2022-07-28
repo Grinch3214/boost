@@ -1,7 +1,10 @@
 .plan {
 	position: relative;
-	padding: 65px 0 70px 0;
+	padding: 38px 0 0;
 	color: $white-color;
+	@media (min-width: $breakpoint768) {
+		padding: 65px 0 70px 0;
+	}
 	@media (min-width: $breakpoint1310) {
 		padding: 93px 0 90px 0;
 	}
@@ -10,7 +13,10 @@
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 85px;
+		margin-bottom: 33px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 85px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 40px;
 		}
@@ -27,8 +33,11 @@
 	}
 
 	&__title-txt {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 24px;
+		@media (min-width: $breakpoint768) {
+			font-size: 16px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 24px;
 		}
@@ -92,7 +101,7 @@
 
 	&__core {
 		position: static;
-		margin-top: 105px;
+		margin-top: 27px;
 		height: 100%;
 		max-width: 100%;
 		width: 100%;
@@ -100,6 +109,9 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
+		@media (min-width: $breakpoint768) {
+			margin-top: 105px;
+		}
 		@media (min-width: $breakpoint1310) {
 			background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.1) 100%);
 			position: absolute;
@@ -114,12 +126,16 @@
 	}
 
 	&__features {
-		max-width: 390px;
+		max-width: 241px;
 		margin: 0 auto;
-		padding: 41px 0 50px;
+		padding: 23px 0 28px;
 		font-family: Montserrat;
+		@media (min-width: $breakpoint768) {
+			max-width: 390px;
+			padding: 41px 0 50px;
+		}
 		@media (min-width: $breakpoint1310) {
-			min-width: 260px;
+			max-width: 260px;
 			padding: 0;
 		}
 		@media (min-width: $breakpoint1920) {
@@ -171,8 +187,11 @@
 	text-align: center;
 	&:last-child {
 		.plan-card__title-chip {
-			padding: 0 33px;
+			padding: 0 24px;
 			background: linear-gradient(90deg, #2095D9 0%, #5C35EE 100%);
+			@media (min-width: $breakpoint768) {
+				padding: 0 33px;
+			}
 			@media (min-width: $breakpoint1920) {
 				padding: 4px 43px;
 			}
@@ -181,27 +200,37 @@
 	&__title {
 		font-weight: 900;
 		text-transform: uppercase;
-		margin-bottom: 30px;
+		margin-bottom: 16px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 30px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 47px;
 		}
 	}
 
 	&__title-title {
-		font-size: 30px;
+		font-size: 20px;
 		margin-bottom: 10px;
+		@media (min-width: $breakpoint768) {
+			font-size: 30px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 40px;
 		}
 	}
 
 	&__title-chip {
-		font-size: 12px;
-		line-height: 19px;
+		font-size: 10px;
+		line-height: 12px;
 		display: inline-block;
 		padding: 0 16px;
 		background: rgba(255, 255, 255, 0.3);
 		border-radius: 50px;
+		@media (min-width: $breakpoint768) {
+			font-size: 12px;
+			line-height: 19px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 16px;
 			padding: 4px 19px;
@@ -209,7 +238,10 @@
 	}
 
 	&__price {
-		margin-bottom: 32px;
+		margin-bottom: 44px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 32px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 65px;
 		}
@@ -218,15 +250,22 @@
 	&__price-price {
 		font-family: Montserrat;
 		font-weight: 700;
-		font-size: 40px;
-		line-height: 48px;
+		font-size: 30px;
+		line-height: 37px;
+		@media (min-width: $breakpoint768) {
+			font-size: 40px;
+			line-height: 48px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 50px;
 			line-height: 61px;
 		}
 		sup {
-			font-size: 16px;
+			font-size: 12px;
 			font-weight: 400;
+			@media (min-width: $breakpoint768) {
+				font-size: 16px;
+			}
 			@media (min-width: $breakpoint1920) {
 				font-size: 24px;
 			}
@@ -235,32 +274,46 @@
 
 	&__price-month {
 		font-weight: 900;
-		font-size: 16px;
+		font-size: 12px;
 		text-transform: uppercase;
+		@media (min-width: $breakpoint768) {
+			font-size: 16px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 20px;
 		}
 	}
 
 	&__footer {
-		font-size: 12px;
+		font-size: 9px;
 		line-height: 16px;
+		@media (min-width: $breakpoint768) {
+			font-size: 12px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 14px;
 		}
-		sup {
-			font-size: 10px;
-			margin-right: 2px;
-			@media (min-width: $breakpoint1920) {
-				font-size: 12px;
-			}
-		}
 		span {
 			font-weight: 500;
-			font-size: 14px;
+			font-size: 12px;
 			margin-right: 5px;
+			display: block;
+			@media (min-width: $breakpoint768) {
+				font-size: 14px;
+				display: inline;
+			}
 			@media (min-width: $breakpoint1920) {
 				font-size: 18px;
+			}
+			sup {
+				font-size: 8px;
+				margin-right: 2px;
+				@media (min-width: $breakpoint768) {
+					font-size: 10px;
+				}
+				@media (min-width: $breakpoint1920) {
+					font-size: 12px;
+				}
 			}
 		}
 	}

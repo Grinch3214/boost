@@ -6,14 +6,38 @@ export function tabsOnSwiper() {
 		modules: [Navigation, Pagination],
 	
 		// If we need pagination
-		pagination: {
-			el: '.swiper__pagination',
-			clickable: true,
-			renderBullet: function (index, className) {
-				return '<span class="' + className + '">' + (tabs[index]) + "</span>";
+		breakpoints: {
+			320: {
+				pagination: {
+					enabled: true,
+					el: '.swiper__pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + (tabs[index]) + "</span>";
+					},
+				},
+				allowTouchMove: true,
 			},
+			768: {
+				allowTouchMove: false,
+				pagination: {
+					enabled: true,
+					el: '.swiper__pagination',
+					clickable: true,
+					renderBullet: function (index, className) {
+						return '<span class="' + className + '">' + (tabs[index]) + "</span>";
+					},
+				},
+			}
 		},
-		allowTouchMove: false,
+		// pagination: {
+		// 	el: '.swiper__pagination',
+		// 	clickable: true,
+		// 	renderBullet: function (index, className) {
+		// 		return '<span class="' + className + '">' + (tabs[index]) + "</span>";
+		// 	},
+		// },
+		// allowTouchMove: false,
 	
 		// Navigation arrows
 		navigation: {

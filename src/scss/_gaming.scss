@@ -26,12 +26,13 @@
 
 	&__cards {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
+		// grid-template-columns: repeat(1, 1fr);
 		justify-items: stretch;
+		justify-content: center;
 		grid-row-gap: 33px;
 		margin-bottom: 50px;
 		@media (min-width: $breakpoint768) {
-			justify-items: center;
+			// justify-items: center;
 			grid-row-gap: 85px;
 			margin-bottom: 80px;
 		}
@@ -39,6 +40,7 @@
 			grid-template-columns: repeat(3, 1fr);
 			grid-column-gap: 120px;
 			grid-row-gap: 0px;
+			justify-items: center;
 			margin-bottom: 40px;
 		}
 		@media (min-width: $breakpoint1920) {
@@ -53,9 +55,6 @@
 		align-items: center;
 		&:first-child {
 			grid-area: 1 / 1 / 2 / 2;
-			@media (min-width: $breakpoint1310) {
-
-			}
 		}
 		&:nth-child(2) {
 			grid-area: 3 / 1 / 4 / 2;

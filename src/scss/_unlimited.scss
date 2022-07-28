@@ -1,7 +1,11 @@
 .unlimited {
-	padding-top: 70px;
-	padding-bottom: 65px;
+	padding-top: 35px;
+	padding-bottom: 0;
 	color: $white-color;
+	@media (min-width: $breakpoint768) {
+		padding-top: 70px;
+		padding-bottom: 65px;
+	}
 	@media (min-width: $breakpoint1310) {
 		padding-top: 45px;
 		padding-bottom: 30px;
@@ -12,7 +16,10 @@
 	}
 	&__title {
 		text-align: center;
-		margin-bottom: 50px;
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 50px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 40px;
 		}
@@ -32,16 +39,22 @@
 	}
 
 	&__title-note {
-		font-size: 16px;
+		font-size: 14px;
+		@media (min-width: $breakpoint768) {
+			font-size: 16px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 24px;
 		}
 	}
 
 	&__wrap {
-		max-width: 600px;
-		margin: 0 auto;
+		margin: 0 -20px;
 		position: relative;
+		@media (min-width: $breakpoint768) {
+			max-width: 600px;
+			margin: 0 auto;
+		}
 		@media (min-width: $breakpoint1310) {
 			max-width: 730px;
 		}
@@ -51,12 +64,16 @@
 	}
 
 	&__right-border {
+		display: none;
 		position: absolute;
 		top: 100px;
 		right: 40px;
 		z-index: -1;
 		max-width: 199px;
 		pointer-events: none;
+		@media (min-width: $breakpoint768) {
+			display: block;
+		}
 		@media (min-width: $breakpoint1310) {
 			top: -20px;
 			right: -95px;
@@ -70,16 +87,20 @@
 		img {
 			width: 100%;
 			height: auto;
-			display: none;
-			@media (min-width: $breakpoint1310) {
-				display: inline-block;
-			}
 		}
-		img + img {
+	}
+
+	&__right-border--first {
+		display: none;
+		@media (min-width: $breakpoint1310) {
 			display: inline-block;
-			@media (min-width: $breakpoint1310) {
-				display: none;
-			}
+		}
+	}
+
+	&__right-border--second {
+		display: inline-block;
+		@media (min-width: $breakpoint1310) {
+			display: none;
 		}
 	}
 
@@ -97,7 +118,13 @@
 		border-image: 
 			linear-gradient(
 				180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%
+			) 1 0 0;
+			@media (min-width: $breakpoint768) {
+				border-image: 
+			linear-gradient(
+				180deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0) 100%
 			) 1 1 0;
+			}
 			@media (min-width: $breakpoint1920) {
 				padding-top: 64px;
 				min-height: 471px;
@@ -105,9 +132,14 @@
 	}
 
 	&__footer {
+		position: relative;
+		overflow: hidden;
 		padding: 24px 46px;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.09) 50.85%, rgba(255, 255, 255, 0) 100%);
-		margin-top: 150px;
+		margin-top: 20px;
+		@media (min-width: $breakpoint768) {
+			margin-top: 150px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-top: 0;
 		}
@@ -116,14 +148,34 @@
 		}
 	}
 
+	&__footer-right-img {
+		position: absolute;
+		z-index: -1;
+		top: 24px;
+		right: -50px;
+		max-width: 121px;
+		@media (min-width: $breakpoint768) {
+			display: none;
+		}
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
 	&__footer-list {
 		font-family: Montserrat;
 		font-weight: 700;
-		max-width: 865px;
+		max-width: 200px;
 		font-size: 14px;
 		margin: 0 auto;
 		display: flex;
+		flex-direction: column;
 		justify-content: space-between;
+		@media (min-width: $breakpoint768) {
+			max-width: 865px;
+			flex-direction: row;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 1200px;
 			font-size: 20px;
@@ -133,6 +185,10 @@
 	&__footer-item {
 		display: flex;
 		align-items: center;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__footer-item-img {
@@ -188,7 +244,10 @@
 		}
 		span + span {
 			font-weight: 400;
-			font-size: 12px;
+			font-size: 14px;
+			@media (min-width: $breakpoint768) {
+				font-size: 12px;
+			}
 			@media (min-width: $breakpoint1310) {
 				font-size: 14px;
 			}
@@ -205,7 +264,10 @@
 }
 
 .swiper-slide {
-	padding: 58px 57px 0;
+	padding: 20px 20px 0;
+	@media (min-width: $breakpoint768) {
+		padding: 58px 57px 0;
+	}
 	@media (min-width: $breakpoint1310) {
 		padding: 40px 43px 0;
 	}
@@ -215,7 +277,12 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
-		margin-bottom: 40px;
+		align-items: center;
+		margin: 0 0 25px;
+		@media (min-width: $breakpoint768) {
+			margin: 0 0 40px;
+			align-items: start;
+		}
 		@media (min-width: $breakpoint1310) {
 			flex-direction: row;
 			margin-bottom: 20px;
@@ -228,7 +295,10 @@
 	&__container-img-wrap {
 		display: flex;
 		align-items: center;
-		margin-bottom: 40px;
+		margin-bottom: 25px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 40px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 0;
 			margin-right: 20px;
@@ -239,7 +309,10 @@
 	}
 
 	&__container-img {
-		max-width: 308px;
+		max-width: 260px;
+		@media (min-width: $breakpoint768) {
+			max-width: 308px;
+		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 428px;
 		}
@@ -257,11 +330,14 @@
 
 	&__container-item {
 		font-weight: 700;
-		font-size: 12px;
+		font-size: 11px;
 		line-height: 14px;
 		margin-bottom: 15px;
 		display: flex;
 		align-items: center;
+		@media (min-width: $breakpoint768) {
+			font-size: 12px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 25px;
 			font-size: 18px;
@@ -288,7 +364,10 @@
 	}
 
 	&__btn {
-		text-align: left;
+		text-align: center;
+		@media (min-width: $breakpoint768) {
+			text-align: left;
+		}
 		@media (min-width: $breakpoint1310) {
 			text-align: center;
 		}
@@ -303,6 +382,7 @@
 	font-weight: 700;
 	font-size: 20px;
 	margin: 0;
+	min-height: 46px;
 	padding: 0 50px;
 	position: absolute;
   text-align: center;
@@ -316,12 +396,40 @@
 	display: flex;
 	justify-content: space-around;
 	background: linear-gradient(90deg, rgba(255, 255, 255, 0) 1.37%, rgba(255, 255, 255, 0.3) 50.85%, rgba(255, 255, 255, 0) 100%);
-}
-.swiper-button-prev {
-}
-.swiper-button-next {
+	@media (min-width: $breakpoint768) {
+		min-height: unset;
+	}
 }
 
+// navigation arrows
+.swiper-button-prev, .swiper-button-next{
+	display: block;
+	position: absolute;
+	top: 12px;
+	left: 16px;
+	z-index: 20;
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	@media (min-width: $breakpoint768) {
+		display: none;
+	}
+	svg path {
+		fill-opacity: 1;
+	}
+}
+.swiper-button-next {
+	left: auto;
+	right: 16px;
+}
+
+.swiper-button-disabled {
+	svg path {
+		fill-opacity: 0.5;
+	}
+}
+
+// custom pagination tabs
 .swiper-pagination-bullet {
 	border-radius: 0;
 	width: auto;
@@ -331,8 +439,11 @@
 	color:#9B99AD;
 	opacity: 1;
 	background: transparent;
-	display: flex;
+	display: none;
 	align-items: center;
+	@media (min-width: $breakpoint768) {
+		display: flex;
+	}
 	@media (min-width: $breakpoint1920) {
 		height: 64px;
 		font-size: 20px;
@@ -343,28 +454,31 @@
 	color:#fff;
 }
 
-// .swiper-button-next {
-// 	position: absolute;
-// 	z-index: 30;
-// 	top: 0;
-// 	right: 0;
-// }
-
-
 //tabs 2,3,4
 
 .devices {
 
 		&__wrap {
-			max-width: 550px;
-			margin: 0 auto;
+			padding: 0 20px;
+			@media (min-width: $breakpoint768) {
+				max-width: 550px;
+				margin: 0 auto;
+				padding: 0;
+			}
 		}
 
 		&__inner {
 			display: flex;
 			flex-direction: column;
-			margin-bottom: 46px;
+			margin: 0 auto 15px;
 			max-width: 280px;
+			text-align: center;
+			align-items: center;
+			@media (min-width: $breakpoint768) {
+				margin: 0 0 46px;
+				text-align: left;
+				align-items: start;
+			}
 			@media (min-width: $breakpoint1310) {
 				flex-direction: row;
 				margin-bottom: 20px;
@@ -374,9 +488,13 @@
 
 		&__image {
 			margin-right: 0;
-			margin-bottom: 45px;
-			max-width: 211px;
+			margin-bottom: 20px;
+			max-width: 165px;
 			flex-shrink: 0;
+			@media (min-width: $breakpoint768) {
+				max-width: 211px;
+				margin-bottom: 45px;
+			}
 			@media (min-width: $breakpoint1310) {
 				margin-bottom: 0;
 				margin-right: 33px;
@@ -384,6 +502,13 @@
 			img {
 				width: 100%;
 				height: auto;
+			}
+		}
+
+		&__image-beta {
+			margin-left: -20px;
+			@media (min-width: $breakpoint768) {
+				margin: 0;
 			}
 		}
 
@@ -396,7 +521,15 @@
 
 		&__links {
 			display: flex;
+			flex-direction: column;
 			justify-content: space-between;
+			max-width: 210px;
+			margin: 0 auto;
+			@media (min-width: $breakpoint768) {
+				flex-direction: row;
+				max-width: unset;
+				margin: 0;
+			}
 		}
 
 		&__center {
@@ -404,6 +537,10 @@
 		}
 
 		&__item {
+			margin-bottom: 6px;
+			@media (min-width: $breakpoint768) {
+				margin-bottom: 0;
+			}
 		}
 
 		&__center-item {
@@ -423,11 +560,32 @@
 		}
 
 		&__item-link {
+			width: 100%;
+			@media (min-width: $breakpoint768) {
+				width: auto;
+			}
 			.icon-apple svg {
-				width: 23px;
+				width: 13px;
+				@media (min-width: $breakpoint768) {
+					width: 23px;
+				}
 			}
 			.icon-android svg {
-				width: 22px;
+				width: 12px;
+				@media (min-width: $breakpoint768) {
+					width: 22px;
+				}
+			}
+			&--custom-link {
+				padding: 20px 44px;
+				line-height: 20px;
+				@media (min-width: $breakpoint768) {
+					padding: 10px 18px;
+					line-height: 18px;
+				}
+				@media (min-width: $breakpoint1310) {
+					padding: 10px 28px;
+				}
 			}
 		}
 }
