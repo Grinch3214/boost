@@ -1,15 +1,16 @@
 <section class="power" data-scroll-section>
 	<div class="container">
-		<h3 class="power__title subtitle" data-scroll data-scroll-speed="5">
+		<h3 class="power__title subtitle title-effect" data-scroll-repeat="true" data-scroll-class="title-effect-off" data-scroll>
 			Power up your devices
 		</h3>
-		<div class="power__container">
-			<div class="power__image" data-scroll data-scroll-speed="4">
-				<div class="power__image-box">
+		<div class="power__container" id="fixed-elements">
+			<div class="power__image">
+				<div class="power__image-box" data-scroll data-scroll-sticky data-scroll-target="#fixed-elements">
 					<img src="@img/power-1.png" alt="background image">
 				</div>
 			</div>
-			<ul class="power__list">
+			<!-- <ul class="power__list" data-scroll data-scroll-speed="4"></ul> -->
+			<ul class="power__list" data-scroll data-scroll-speed="2" data-scroll-class="left-scroll" data-scroll-repeat="true">
 				<li class="power__item">
 					<h4 class="power__item-title">Your Games, Our Power</h4>
 					<div class="power__item-content content">

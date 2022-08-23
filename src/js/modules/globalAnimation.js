@@ -19,6 +19,48 @@ function animationNavbar() {
 		clearTimeout(anim);
 	}, 150)
 };
+// в этой функции по скролу можем отслеживать активное окно и добавлять классы
+// для каких-то css эффектов UPD: не актуальна при локомотиве :(
+
+// function testOpt() {
+// 	scrollOptions.on('scroll', (item) => {
+
+// 		const amimItems = document.querySelectorAll('.fade');
+// 		if (amimItems.length > 0) {
+// 			function animOnScroll() {
+// 				for (let index = 0; index < amimItems.length; index++) {
+// 					const animItem = amimItems[index];
+// 					console.log('animItem: ', animItem)
+// 					const animItemHeight = animItem.offsetHeight;
+// 					console.log('animItemHeight: ', animItemHeight)
+// 					const animItemOffset = offset(animItem).top;
+// 					const animStart = 1.2;
+
+// 					let animItemPoint = window.innerHeight - animItemHeight / animStart;
+
+// 					if(animItemHeight > window.innerHeight) {
+// 						animItemPoint = window.innerHeight - window.innerHeight / animStart;
+// 					}
+
+// 					if((item.delta.y > animItemOffset - animItemPoint) && item.delta.y < (animItemOffset + animItemHeight)) {
+// 						animItem.classList.add('show')
+// 					} else {
+// 						animItem.classList.remove('show')
+// 					}
+// 				}
+// 			}
+
+// 			function offset(el) {
+// 				const rect = el.getBoundingClientRect(),
+// 				scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+// 				scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+// 				return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+// 			}
+// 			animOnScroll();
+// 		}
+
+// 	})
+// };
 
 function animationWindow() {
 	const circle = document.querySelector('.circle');

@@ -59,7 +59,7 @@ body {
 		position: absolute;
 		bottom: -160vw;
 		right: -125vw;
-		background: radial-gradient(50% 50% at 50% 50%, #9F1288 0%, #21019C 62.81%, #120B32 100%);
+		background: radial-gradient(50% 50% at 50% 50%, rgba(159, 18, 136, 1) 0%, rgba(33, 1, 156, 1) 62.81%, rgba(18, 11, 50, 1) 100%);
 		width: 1272px;
 		height: 1000px;
 		border-radius: 50%;
@@ -77,6 +77,14 @@ body {
 		@media (min-width: $breakpoint1920) {
 			width: 2321px;
 			height: 1824px;
+		}
+		@media (min-width: 2100px) {
+			width: 2600px;
+			height: 2200px;
+		}
+		@media (min-width: 2500px) {
+			width: 3200px;
+			height: 2600px;
 		}
 	}
 }
@@ -227,3 +235,39 @@ body {
 		margin-right: 0;
 	}
 }
+// custom scroll effects:
+
+// .fade {
+// 	opacity: 0;
+// 	transition: opacity 1s;
+// }
+// .show {
+// 	opacity: 1;
+// }
+
+// titles effect
+.title-effect {
+	opacity: 0;
+	transform: translate(0px, -80%);
+	visibility: hidden;
+	transition: all .8s;
+}
+.title-effect-off {
+	opacity: 1;
+	visibility: inherit;
+	transform: translate(0px, 0px);
+}
+
+// blur effect on header
+.blur {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 80px;
+	background: rgba(18, 11, 50, 0.1);
+	backdrop-filter: blur(3px);
+	z-index: 2;
+}
+
