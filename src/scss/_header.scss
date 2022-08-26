@@ -32,11 +32,11 @@
 			height: auto;
 			display: none;
 			@media (min-width: $breakpoint768) {
-				display: inline-block;
+				display: block;
 			}
 		}
 		img + img {
-			display: inline-block;
+			display: block;
 			@media (min-width: $breakpoint768) {
 				display: none;
 			}
@@ -98,7 +98,7 @@
 		line-height: 19px;
 		cursor: pointer;
 		display: block;
-		padding: 11px 28px;
+		padding: 11px 28px 10px 28px;
 		margin-left: 20px;
 		@media (min-width: $breakpoint1920) {
 			font-family: Roboto;

@@ -46,6 +46,11 @@ body {
 }
 
 // background radial gradient
+// бля буду, мозгов не хватает додумать как сделать лучше, поэтому хардкод :\
+// :root {
+// 	--a-width: calc(90% + 320px);
+// 	--a-heigth: calc(180% + 600px);
+// }
 .circle {
 	position: fixed;
 	z-index: -1;
@@ -57,9 +62,9 @@ body {
 	&::before {
 		content: '';
 		position: absolute;
+		background: radial-gradient(50% 50% at 50% 50%, rgba(159, 18, 136, 1) 0%, rgba(33, 1, 156, 1) 62.81%, rgba(18, 11, 50, 1) 100%);
 		bottom: -160vw;
 		right: -125vw;
-		background: radial-gradient(50% 50% at 50% 50%, rgba(159, 18, 136, 1) 0%, rgba(33, 1, 156, 1) 62.81%, rgba(18, 11, 50, 1) 100%);
 		width: 1272px;
 		height: 1000px;
 		border-radius: 50%;
@@ -69,23 +74,33 @@ body {
 			right: -35vw;
 		}
 		@media (min-width: $breakpoint1310) {
-			width: 1755px;
-			height: 1380px;
-			bottom: -70vw;
-			right: -15vw;
+			// width: 1755px;
+			// height: 1380px;
+			// bottom: -70vw;
+			// right: -15vw;
+			top: 0;
+			bottom: 0;
+			right: -50vw;
+			width: var(--a-width);
+			height: var(--a-heigth);
 		}
-		@media (min-width: $breakpoint1920) {
-			width: 2321px;
-			height: 1824px;
-		}
-		@media (min-width: 2100px) {
-			width: 2600px;
-			height: 2200px;
-		}
-		@media (min-width: 2500px) {
-			width: 3200px;
-			height: 2600px;
-		}
+		// @media (min-width: 1510px) {
+		// 	width: 150%;
+		// 	height: 180%;
+		// 	right: -23vw;
+		// }
+		// @media (min-width: $breakpoint1920) {
+		// 	width: 2321px;
+		// 	height: 1824px;
+		// }
+		// @media (min-width: 2100px) {
+		// 	width: 2600px;
+		// 	height: 2200px;
+		// }
+		// @media (min-width: 2500px) {
+		// 	width: 3200px;
+		// 	height: 2600px;
+		// }
 	}
 }
 @keyframes pulsation {

@@ -1,15 +1,24 @@
 // Animations
 import LocomotiveScroll from 'locomotive-scroll';
+const mediaQuery = window.matchMedia('(min-width: 1310px)');
 
-const scrollOptions = new LocomotiveScroll({
+let scrollOptions = new LocomotiveScroll({
 	el: document.querySelector('[data-scroll-container]'),
   smooth: true,
-	multiplier: .7,
-	resetNativeScroll: false,
 	smartphone: {
 		smooth: true
-	}
+	},
+	tablet: {
+		smooth: true,
+	},
+	reloadOnContextChange: true,
 });
+
+setTimeout(locomotiveHeightBug, 3500);
+function locomotiveHeightBug(){
+  window.dispatchEvent(new Event('resize'));
+}
+
 new ResizeObserver(() => scrollOptions.update()).observe(document.querySelector("[data-scroll-container]"));
 
 function animationNavbar() {
@@ -66,13 +75,19 @@ function animationWindow() {
 	const circle = document.querySelector('.circle');
 
 	scrollOptions.on('scroll', (obj) => {
-		let anim = Math.floor(obj.delta.y / 8);
+		let anim = Math.floor(obj.delta.y / 14);
 		// console.log(anim)
 		circle.style = `
 			transform: rotate(-${anim}deg);
 			transition: all .3s ease;
 		`;
 	});
+
+	const animateRoot = document.styleSheets[0];
+	animateRoot.insertRule(`:root{
+		--a-width:calc(105vw + ${window.innerWidth}px);
+		--a-heigth:calc(180vh + ${window.innerHeight}px);
+	}`);
 };
 
 //footer tabs
@@ -97,4 +112,35 @@ function footerAccordionOnMobile() {
   accordionOnMobile();
 };
 
+// function brackpoints() {
+// 	const stickyBlock = document.querySelector('.power__image-box');
+// 	const cardsAnimation = document.querySelectorAll('.gaming__card');
+
+// 	function removeDataScrollSpeed() {
+// 		for (let i = 0; i < cardsAnimation.length; i++) {
+// 			cardsAnimation[i].dataset.scrollSpeed = 0
+// 		}
+// 	}
+
+// 	if (window.innerWidth <= 1310 && stickyBlock.getAttribute('data-scroll-target')) {
+// 		stickyBlock.removeAttribute('data-scroll-target');
+// 		stickyBlock.removeAttribute('data-scroll-sticky');
+// 		removeDataScrollSpeed();
+// 	}
+// 	window.addEventListener('resize', function() {
+// 		if (window.innerWidth <= 1310) {
+// 			stickyBlock.removeAttribute('data-scroll-target');
+// 			stickyBlock.removeAttribute('data-scroll-sticky');
+			
+// 			removeDataScrollSpeed();
+// 		} else {
+// 			stickyBlock.setAttribute('data-scroll-target', '#fixed-elements')
+// 			stickyBlock.setAttribute('data-scroll-sticky', '');
+
+// 			cardsAnimation[0].dataset.scrollSpeed = 3;
+// 			cardsAnimation[1].dataset.scrollSpeed = 2;
+// 			cardsAnimation[2].dataset.scrollSpeed = -3;
+// 		}
+// 	})
+// }
 export { scrollOptions, animationNavbar,  animationWindow, footerAccordionOnMobile };
