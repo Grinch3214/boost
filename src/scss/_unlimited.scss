@@ -196,46 +196,54 @@
 		@media (min-width: $breakpoint1310) {
 			margin-right: 25px;
 		}
-		&--win {
-			svg {
-				width: 50px;
-				height: 50px;
-				@media (min-width: $breakpoint1920) {
-					width: 67px;
-					height: 67px;
-				}
+		svg {
+			width: 50px;
+			height: 50px;
+			@media (min-width: $breakpoint1920) {
+				width: 67px;
+				height: 67px;
 			}
 		}
-		&--apple {
-			svg {
-				width: 42px;
-				height: 50px;
-				@media (min-width: $breakpoint1920) {
-					width: 57px;
-					height: 68px;
-				}
-			}
-		}
-		&--linux {
-			svg {
-				width: 48px;
-				height: 50px;
-				@media (min-width: $breakpoint1920) {
-					width: 66px;
-					height: 68px;
-				}
-			}
-		}
-		&--android {
-			svg {
-				width: 42px;
-				height: 50px;
-				@media (min-width: $breakpoint1920) {
-					width: 58px;
-					height: 68px;
-				}
-			}
-		}
+		// &--win {
+		// 	svg {
+		// 		width: 50px;
+		// 		height: 50px;
+		// 		@media (min-width: $breakpoint1920) {
+		// 			width: 67px;
+		// 			height: 67px;
+		// 		}
+		// 	}
+		// }
+		// &--apple {
+		// 	svg {
+		// 		width: 42px;
+		// 		height: 50px;
+		// 		@media (min-width: $breakpoint1920) {
+		// 			width: 57px;
+		// 			height: 68px;
+		// 		}
+		// 	}
+		// }
+		// &--linux {
+		// 	svg {
+		// 		width: 48px;
+		// 		height: 50px;
+		// 		@media (min-width: $breakpoint1920) {
+		// 			width: 66px;
+		// 			height: 68px;
+		// 		}
+		// 	}
+		// }
+		// &--android {
+		// 	svg {
+		// 		width: 42px;
+		// 		height: 50px;
+		// 		@media (min-width: $breakpoint1920) {
+		// 			width: 58px;
+		// 			height: 68px;
+		// 		}
+		// 	}
+		// }
 	}
 
 	&__footer-item-txt {
@@ -617,25 +625,3 @@
 	50% { opacity:0; }
 	100% { opacity:1; }
 }
-
-// .unlimited__footer-list li:nth-child(1) {
-
-// 	// transition: all .3s;
-// 	// transition-delay: .3s;
-// 	// transition-property: all;
-// }
-// .unlimited__footer-list li:nth-child(2) {
-// 	// transition: all .5s;
-// 	transition-delay: .4s;
-// 	transition-property: all;
-// }
-// .unlimited__footer-list li:nth-child(3) {
-// 	// transition: all .7s;
-// 	transition-delay: .5s;
-// 	transition-property: all;
-// }
-// .unlimited__footer-list li:nth-child(4) {
-// 	// transition: all .9s;
-// 	transition-delay: .6s;
-// 	transition-property: all;
-// }
