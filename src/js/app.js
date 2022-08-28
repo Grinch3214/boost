@@ -3,12 +3,18 @@ import { locomotiveScrollAnimation, animationNavbar, footerAccordionOnMobile } f
 import { tabsOnSwiper } from './modules/tabs.js';
 import burgerMenu from './modules/burger.js';
 
+const isAnimate = document.querySelector('.isAnimate');
+
+
 flsFunctions.isWebp();
 // burger
 burgerMenu();
 
 // animation
-locomotiveScrollAnimation();
+if(isAnimate) {
+	locomotiveScrollAnimation();
+}
+
 animationNavbar();
 
 // tabs

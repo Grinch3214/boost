@@ -1,0 +1,112 @@
+.download {
+	color: $white-color;
+	padding-top: 163px;
+	padding-bottom: 100px;
+	&__head {
+		margin-bottom: 80px;
+	}
+
+	&__head-title {
+		margin-bottom: 20px;
+	}
+
+	&__head-text {
+		font-size: 24px;
+		line-height: 24px;
+	}
+
+	&__desktop {
+		display: flex;
+		margin-bottom: 80px;
+	}
+
+	&__desktop-image {
+		max-width: 220px;
+		width: 100%;
+		margin-right: 30px;
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+
+	&__desktop-box {
+		width: 100%;
+	}
+
+	&__desktop-title {
+		font-size: 24px;
+		line-height: 24px;
+		margin-bottom: 20px;
+		font-weight: 700;
+	}
+
+	&__desktop-buttons {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__desktop-item {
+		max-width: 221px;
+		width: 100%;
+		margin-right: 25px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	&__desktop-link {
+	}
+
+	&__desktop-undertxt {
+		font-size: 12px;
+		font-weight: 400;
+		line-height: 14px;
+		margin-top: 10px;
+	}
+
+	&__desktop-underlinks {
+	}
+
+	&__desktop-underlinks-item {
+	}
+
+	&__box {
+	}
+
+	&__mobile {
+	}
+
+	&__mobile-image {
+	}
+
+	&__mobile-box {
+	}
+
+	&__mobile-title {
+	}
+
+	&__mobile-link {
+	}
+
+	&__mobile-undertxt {
+	}
+
+	&__tv {
+	}
+
+	&__tv-image {
+	}
+
+	&__tv-box {
+	}
+
+	&__tv-title {
+	}
+
+	&__tv-link {
+	}
+
+	&__tv-undertxt {
+	}
+}

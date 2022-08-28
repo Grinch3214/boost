@@ -57,10 +57,24 @@
 		margin-left: 35px;
 	}
 
-	&__item-link {
-		color: $white-color;
-		text-transform: uppercase;
-	}
+		&__item-link {
+			color: $white-color;
+			text-transform: uppercase;
+	
+			&--md {
+				display: none;
+				@media (min-width: $breakpoint1310) {
+					display: inline-block;
+				}
+			}
+	
+			&--sm {
+				display: inline-block;
+				@media (min-width: $breakpoint1310) {
+					display: none;
+				}
+			}
+		}
 
 	&__buttons {
 		font-family: Roboto;
@@ -185,22 +199,6 @@
 		.header__item {
 			margin-bottom: 33px;
 			margin-left: 0;
-		}
-
-		.header__item-link {
-			&--md {
-				display: none;
-				@media (min-width: $breakpoint768) {
-					display: inline-block;
-				}
-			}
-
-			&--sm {
-				display: inline-block;
-				@media (min-width: $breakpoint768) {
-					display: none;
-				}
-			}
 		}
 	}
 }
