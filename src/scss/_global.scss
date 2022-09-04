@@ -40,7 +40,7 @@ body {
 
 .container-fluid {
 	padding: 0 15px;
-	@media (min-width: $breakpoint576) {
+	@media (min-width: $breakpoint768) {
 		padding: 0 30px;
 	}
 }
@@ -151,12 +151,8 @@ body {
 	color: $white-color;
 	font-size: 20px;
 	line-height: 28px;
-	@media (min-width: $breakpoint768) {
-		font-size: 40px;
-		line-height: 59px;
-	}
 	@media (min-width: $breakpoint1310) {
-		font-size: 48px;
+		font-size: 40px;
 		line-height: 58px;
 	}
 	@media (min-width: $breakpoint1920) {
@@ -287,15 +283,36 @@ body {
 
 // titles effect
 .title-effect {
-	opacity: 0;
-	transform: translate(0px, -80%);
-	visibility: hidden;
-	transition: all .8s;
+	// opacity: 0;
+	// transform: translate(0px, -80%);
+	// visibility: hidden;
+	// transition: all .8s;
 }
 .title-effect-off {
-	opacity: 1;
-	visibility: inherit;
-	transform: translate(0px, 0px);
+	// opacity: 1;
+	// visibility: inherit;
+	// transform: translate(0px, 0px);
+		animation-duration: 0.8s;
+		animation-fill-mode: forwards;
+		animation-name: title_effect;
+		animation-timing-function: ease-in-out;
+}
+
+@keyframes title_effect {
+	0% {
+		opacity: 0;
+		visibility: hidden;
+	}
+	50% {
+		opacity: 0;
+		transform: translate(0px, -80%);
+		visibility: hidden;
+	}
+	100% {
+		opacity: 1;
+		visibility: inherit;
+		transform: translate(0px, 0px);
+	}
 }
 
 // blur effect on header
@@ -306,8 +323,9 @@ body {
 	right: 0;
 	bottom: 0;
 	height: 80px;
-	background: rgba(18, 11, 50, 0.1);
+	background-color: rgba(18, 11, 50, 0.1);
 	backdrop-filter: blur(3px);
+	filter: blur(3px);
 	z-index: 2;
 }
 

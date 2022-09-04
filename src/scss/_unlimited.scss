@@ -1,18 +1,18 @@
 .unlimited {
-	padding-top: 35px;
+	padding-top: 40px;
 	padding-bottom: 0;
 	color: $white-color;
 	@media (min-width: $breakpoint768) {
-		padding-top: 70px;
-		padding-bottom: 65px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	@media (min-width: $breakpoint1310) {
-		padding-top: 45px;
-		padding-bottom: 30px;
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 	@media (min-width: $breakpoint1920) {
-		padding-top: 163px;
-		padding-bottom: 60px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 	&__title {
 		text-align: center;

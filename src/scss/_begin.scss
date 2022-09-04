@@ -1,13 +1,17 @@
 .begin {
-	padding-top: 30px;
-	padding-bottom: 10px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	@media (min-width: $breakpoint768) {
-		padding-top: 90px;
-		padding-bottom: 25px;
+		padding-top: 60px;
+		padding-bottom: 60px;
+	}
+	@media (min-width: $breakpoint1310) {
+		padding-top: 70px;
+		padding-bottom: 70px;
 	}
 	@media (min-width: $breakpoint1920) {
-		padding-top: 150px;
-		padding-bottom: 70px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 	&__inner {
 		display: flex;

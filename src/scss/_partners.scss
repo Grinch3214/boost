@@ -1,17 +1,17 @@
 .partners {
-	padding-top: 35px;
-	padding-bottom: 100px;
+	padding-top: 40px;
+	padding-bottom: 40px;
 	@media (min-width: $breakpoint768) {
-		padding-top: 65px;
-		padding-bottom: 85px;
+		padding-top: 60px;
+		padding-bottom: 60px;
 	}
 	@media (min-width: $breakpoint1310) {
-		padding-top: 140px;
+		padding-top: 70px;
 		padding-bottom: 70px;
 	}
 	@media (min-width: $breakpoint1920) {
-		padding-top: 160px;
-		padding-bottom: 125px;
+		padding-top: 120px;
+		padding-bottom: 120px;
 	}
 	&__title {
 		margin-bottom: 34px;

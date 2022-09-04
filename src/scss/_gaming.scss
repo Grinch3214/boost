@@ -1,14 +1,14 @@
 .gaming {
-	padding: 35px 0 45px 0;
+	padding: 40px 0 45px 0;
 	color: $white-color;
 	@media (min-width: $breakpoint768) {
-		padding: 65px 0 90px 0;
+		padding: 60px 0 60px 0;
 	}
 	@media (min-width: $breakpoint1310) {
-		padding: 80px 0 100px 0;
+		padding: 70px 0 70px 0;
 	}
 	@media (min-width: $breakpoint1920) {
-		padding: 160px 0 130px 0;
+		padding: 120px 0 120px 0;
 	}
 	&__title {
 		text-align: center;

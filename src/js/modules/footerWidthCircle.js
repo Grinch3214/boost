@@ -1,7 +1,10 @@
 export default function footerPulsationCircle() {
 	//? ----- calculate :before circle for resize -----
-
-	window.addEventListener('resize', calculateWidthForFooterBg)
+	document.onreadystatechange = function(){
+		if(document.readyState === 'complete'){
+			calculateWidthForFooterBg()
+		}
+	}
 
 	function calculateWidthForFooterBg() {
 		const animatedRoot = document.styleSheets[0];
@@ -10,5 +13,5 @@ export default function footerPulsationCircle() {
 			--a-heigth:calc(180vh + ${window.innerHeight}px);
 		}`);
 	}
-	calculateWidthForFooterBg();
+	// calculateWidthForFooterBg();
 }

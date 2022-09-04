@@ -3,6 +3,7 @@ import { locomotiveScrollAnimation, animationNavbar, footerAccordionOnMobile } f
 import { tabsOnSwiper } from './modules/tabs.js';
 import burgerMenu from './modules/burger.js';
 import footerPulsationCircle from './modules/footerWidthCircle.js';
+import { tabsOnLeftContent, accordionOnMobileForFaq } from './modules/faq.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -22,6 +23,16 @@ animationNavbar();
 
 // tabs
 tabsOnSwiper();
+
+// tabs and accordion for faq page
+tabsOnLeftContent();
+window.addEventListener('resize', (event) => {
+	tabsOnLeftContent();
+});
+
+accordionOnMobileForFaq();
+
+
 
 //footer
 footerAccordionOnMobile();

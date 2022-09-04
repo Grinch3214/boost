@@ -36,11 +36,16 @@ function locomotiveScrollAnimation() {
 		});
 	
 		//? ----- calculate :before circle for resize -----
-		const animateRoot = document.styleSheets[0];
-		animateRoot.insertRule(`:root{
-			--a-width:calc(105vw + ${window.innerWidth}px);
-			--a-heigth:calc(180vh + ${window.innerHeight}px);
-		}`);
+		document.onreadystatechange = function(){
+			if(document.readyState === 'complete'){
+				const animateRoot = document.styleSheets[0];
+				console.log(animateRoot)
+				animateRoot.insertRule(`:root{
+					--a-width:calc(105vw + ${window.innerWidth}px);
+					--a-heigth:calc(180vh + ${window.innerHeight}px);
+				}`);
+			}
+		}
 	};
 	animationWindow();
 
