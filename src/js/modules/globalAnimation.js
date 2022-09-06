@@ -16,7 +16,7 @@ function locomotiveScrollAnimation() {
 	});
 
 	//! This timeout and observe need for reset calculate height!!!
-	setTimeout(locomotiveHeightBug, 3500);
+	setTimeout(locomotiveHeightBug, 3000);
 	function locomotiveHeightBug(){
 		window.dispatchEvent(new Event('resize'));
 	};
@@ -26,26 +26,58 @@ function locomotiveScrollAnimation() {
 	//? ----- animation on main page for circle background -----
 	function animationWindow() {
 		const circle = document.querySelector('.circle');
+		const circleLinesRight = document.querySelector('.circle-lines');
+		const powerSection = document.querySelector('.power');
+		const offsetPower = powerSection.offsetTop;
 	
 		scrollOptions.on('scroll', (obj) => {
 			let anim = Math.floor(obj.delta.y / 14);
+			let animLines = Math.floor(obj.delta.y / 25);
 			circle.style = `
 				transform: rotate(-${anim}deg);
 				transition: all .3s ease;
 			`;
-		});
-	
-		//? ----- calculate :before circle for resize -----
-		document.onreadystatechange = function(){
-			if(document.readyState === 'complete'){
-				const animateRoot = document.styleSheets[0];
-				console.log(animateRoot)
-				animateRoot.insertRule(`:root{
-					--a-width:calc(105vw + ${window.innerWidth}px);
-					--a-heigth:calc(180vh + ${window.innerHeight}px);
-				}`);
+			circleLinesRight.style = `
+				transform: rotate(${animLines+50}deg);
+				transition: all 0.5s ease;
+			`;
+			if (offsetPower < obj.delta.y) {
+				circleLinesRight.classList.add('active');
+			} else {
+				circleLinesRight.classList.remove('active');
 			}
+		});
+
+		//? ----- calculate :before circle for resize -----
+
+		const css = `:root{
+			--a-width:calc(105vw + ${window.innerWidth}px);
+			--a-heigth:calc(180vh + ${window.innerHeight}px);
+			--b-width:calc(${window.innerWidth}px - 200px);
+			--c-width:calc(${window.innerWidth}px + 600px);
+		}`,
+		head = document.head || document.getElementsByTagName('head')[0],
+		style = document.createElement('style');
+
+		head.appendChild(style);
+
+		style.type = 'text/css';
+		if (style.styleSheet){
+			// This is required for IE8 and below.
+			style.styleSheet.cssText = css;
+		} else {
+			style.appendChild(document.createTextNode(css));
 		}
+
+		// document.onreadystatechange = function(){
+		// 	if(document.readyState === 'complete'){
+		// 		const animateRoot = document.styleSheets[0];
+		// 		animateRoot.insertRule(`:root{
+		// 			--a-width:calc(105vw + ${window.innerWidth}px);
+		// 			--a-heigth:calc(180vh + ${window.innerHeight}px);
+		// 		}`);
+		// 	}
+		// }
 	};
 	animationWindow();
 
@@ -54,6 +86,8 @@ function locomotiveScrollAnimation() {
 		const stickyBlock = document.querySelector('.power__image-box');
 		const cardsAnimation = document.querySelectorAll('.gaming__card');
 		const partnersAnimation = document.querySelectorAll('.partners__companies > li');
+		const powerContainer = document.querySelector('.power__container');
+		console.log(powerContainer.id)
 	
 		function removeDataScrollSpeed(removeDataAnim) {
 			for (let i = 0; i < removeDataAnim.length; i++) {
@@ -66,6 +100,7 @@ function locomotiveScrollAnimation() {
 				stickyBlock.removeAttribute('data-scroll-target');
 				stickyBlock.removeAttribute('data-scroll-sticky');
 				stickyBlock.removeAttribute('data-scroll');
+				stickyBlock.style = '';
 				removeDataScrollSpeed(cardsAnimation);
 				removeDataScrollSpeed(partnersAnimation);
 			} else {
