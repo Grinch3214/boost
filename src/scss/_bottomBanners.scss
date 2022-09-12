@@ -1,0 +1,84 @@
+.banner {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: auto;
+	z-index: 20;
+	transition: all .4s ease;
+	&__button {
+		position: absolute;
+		display: block;
+		top: -12px;
+		right: 20px;
+		width: 24px;
+		height: 24px;
+		border-radius: 50%;
+		background: #151923;
+		z-index: 1;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 7px;
+			left: 50%;
+			width: 8px;
+			height: 8px;
+			transform: translate(-50%) rotate(-45deg);
+			border-bottom: 2px solid $white-color;
+			border-left: 2px solid $white-color;
+			transition: all .2s ease-in-out;
+		}
+		&.active {
+			&::before {
+				transform: translate(-50%) rotate(135deg);
+				top: 10px;
+			}
+		}
+	}
+	img {
+		width: 100%;
+		height: auto;
+	}
+	&__sm {
+		display: block;
+		@media (min-width: $breakpoint768) {
+			display: none;
+		}
+		@media (min-width: $breakpoint1310) {
+		}
+		@media (min-width: $breakpoint1920) {
+		}
+	}
+	&__md {
+		display: none;
+		@media (min-width: $breakpoint768) {
+			display: block;
+		}
+		@media (min-width: $breakpoint1310) {
+			display: none;
+		}
+		@media (min-width: $breakpoint1920) {
+		}
+	}
+	&__l {
+		display: none;
+		@media (min-width: $breakpoint768) {
+		}
+		@media (min-width: $breakpoint1310) {
+			display: block;
+		}
+		@media (min-width: $breakpoint1920) {
+			display: none;
+		}
+	}
+	&__xl {
+		display: none;
+		@media (min-width: $breakpoint768) {
+		}
+		@media (min-width: $breakpoint1310) {
+		}
+		@media (min-width: $breakpoint1920) {
+			display: block;
+		}
+	}
+}

@@ -16,6 +16,7 @@ function locomotiveScrollAnimation() {
 	});
 
 	//! This timeout and observe need for reset calculate height!!!
+	setTimeout(locomotiveHeightBug, 600);
 	setTimeout(locomotiveHeightBug, 3000);
 	function locomotiveHeightBug(){
 		window.dispatchEvent(new Event('resize'));
@@ -68,18 +69,59 @@ function locomotiveScrollAnimation() {
 		} else {
 			style.appendChild(document.createTextNode(css));
 		}
-
-		// document.onreadystatechange = function(){
-		// 	if(document.readyState === 'complete'){
-		// 		const animateRoot = document.styleSheets[0];
-		// 		animateRoot.insertRule(`:root{
-		// 			--a-width:calc(105vw + ${window.innerWidth}px);
-		// 			--a-heigth:calc(180vh + ${window.innerHeight}px);
-		// 		}`);
-		// 	}
-		// }
 	};
 	animationWindow();
+
+	//? ------ COOKIE main page ------
+	const cookie = document.querySelector('.cookie');
+	const cookieCloseBtn = document.querySelector('.cookie__close');
+	const cookieAllowBtn = document.querySelector('.cookie__btn');
+	function cookiePopUp() {
+		cookieCloseBtn.addEventListener('click', (event) => {
+			cookie.style.display = 'none';
+		});
+	}
+	cookiePopUp();
+
+	function createLocalStorage() {
+    cookieAllowBtn.addEventListener('click', (event) => {
+			localStorage.setItem('boosteroid', true);
+			cookie.style.display = 'none';
+		});
+	}
+	createLocalStorage();
+
+	function checkLocalStorage() {
+		let localStg = localStorage.getItem('boosteroid');
+		if (localStg) {
+			return cookie.style.display = 'none';
+		}
+	}
+	checkLocalStorage();
+
+	//? ------ BANNER open/close ------
+	const banner = document.querySelector('.banner');
+	const bannerButton = document.querySelector('.banner__button');
+	const footer = document.querySelector('.footer');
+
+	bannerButton.addEventListener('click', (event) => {
+		bannerButton.classList.toggle('active');
+
+		if (banner.style.maxHeight === '100%') {
+			banner.style.maxHeight = '3%';
+			footer.style.paddingBottom = `${(banner.scrollHeight / 100 * 3 + 25)}px`;
+		} else {
+			banner.style.maxHeight = '100%';
+			footer.style.paddingBottom = `${banner.scrollHeight + 25}px`;
+		}
+	});
+
+	function hidingAndVisibleTheBanner() {
+		footer.style.paddingBottom = `${banner.scrollHeight + 25}px`;
+	}
+	hidingAndVisibleTheBanner();
+
+	window.addEventListener('resize', hidingAndVisibleTheBanner);
 
 	//? ------ change data atributes for main page -----
 	function changeDataAtributesForMainPage() {

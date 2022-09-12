@@ -75,6 +75,12 @@
 	}
 
 	&__follow {
+		span {
+			color: transparent;
+			@media (min-width: $breakpoint768) {
+				color: #9B99AD;
+			}
+		}
 		&::before {
 			width: 0;
 			height: 0;
@@ -104,12 +110,18 @@
 			font-size: 20px;
 		}
 		&:last-child {
-			margin-bottom: 0;
+			@media (min-width: $breakpoint1310) {
+				margin-bottom: 0;
+			}
 		}
 	}
 
 	&__item-link {
 		color: $white-color;
+		transition: all .4s ease;
+		&:hover {
+			color: #00A3FF;
+		}
 	}
 
 	&__social {
@@ -117,9 +129,12 @@
 		flex-grow: 1;
 		position: absolute;
 		top: 13px;
-		right: 0;
+		white-space: nowrap;
+		left: 50%;
+		transform: translate(-50%);
 		@media (min-width: $breakpoint768) {
 			position: static;
+			transform: translate(0);
 		}
 	}
 
@@ -130,12 +145,6 @@
 		line-height: 1;
 		@media (min-width: $breakpoint768) {
 			margin-right: 10px;
-		}
-		&:nth-child(3) {
-			display: none;
-			@media (min-width: $breakpoint768) {
-				display: inline-block;
-			}
 		}
 		@media (min-width: $breakpoint1920) {
 			margin-right: 15px;

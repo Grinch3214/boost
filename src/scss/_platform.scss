@@ -23,6 +23,12 @@
 	&__description {
 		position: relative;
 		z-index: 1;
+		@media (min-width: 520px) {
+			width: 100%;
+		}
+		@media (min-width: $breakpoint768) {
+			width: auto;
+		}
 	}
 
 	&__title {
@@ -175,6 +181,10 @@
 		max-width: 645px;
 		width: 100%;
 		margin-right: 0;
+		margin-top: 20px;
+		@media (min-width: 520px) {
+			margin-top: -45px;
+		}
 		@media (min-width: $breakpoint768) {
 			margin-right: -165px;
 			margin-top: -100px;

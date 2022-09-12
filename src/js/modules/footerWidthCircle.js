@@ -1,17 +1,19 @@
 export default function footerPulsationCircle() {
 	//? ----- calculate :before circle for resize -----
-	document.onreadystatechange = function(){
-		if(document.readyState === 'complete'){
-			calculateWidthForFooterBg()
-		}
-	}
+	const css = `:root{
+		--a-width:calc(105vw + ${window.innerWidth}px);
+		--a-heigth:calc(180vh + ${window.innerHeight}px);
+	}`,
+	head = document.head || document.getElementsByTagName('head')[0],
+	style = document.createElement('style');
 
-	function calculateWidthForFooterBg() {
-		const animatedRoot = document.styleSheets[0];
-		animatedRoot.insertRule(`:root{
-			--a-width:calc(105vw + ${window.innerWidth}px);
-			--a-heigth:calc(180vh + ${window.innerHeight}px);
-		}`);
+	head.appendChild(style);
+
+	style.type = 'text/css';
+	if (style.styleSheet){
+		// This is required for IE8 and below.
+		style.styleSheet.cssText = css;
+	} else {
+		style.appendChild(document.createTextNode(css));
 	}
-	// calculateWidthForFooterBg();
 }
