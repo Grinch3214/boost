@@ -6,6 +6,7 @@ function locomotiveScrollAnimation() {
 	let scrollOptions = new LocomotiveScroll({
 		el: document.querySelector('[data-scroll-container]'),
 		smooth: true,
+		touchMultiplier: 2.5,
 		smartphone: {
 			smooth: true
 		},
