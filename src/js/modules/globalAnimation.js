@@ -52,24 +52,35 @@ function locomotiveScrollAnimation() {
 
 		//? ----- calculate :before circle for resize -----
 
-		const css = `:root{
-			--a-width:calc(105vw + ${window.innerWidth}px);
-			--a-heigth:calc(180vh + ${window.innerHeight}px);
-			--b-width:calc(${window.innerWidth}px - 200px);
-			--c-width:calc(${window.innerWidth}px + 600px);
-		}`,
-		head = document.head || document.getElementsByTagName('head')[0],
-		style = document.createElement('style');
+		// const css = `:root{
+		// 	--a-width:calc(105vw + ${window.innerWidth}px);
+		// 	--a-heigth:calc(180vh + ${window.innerHeight}px);
+		// 	--b-width:calc(${window.innerWidth}px - 200px);
+		// 	--c-width:calc(${window.innerWidth}px + 600px);
+		// }`,
+		// head = document.head || document.getElementsByTagName('head')[0],
+		// style = document.createElement('style');
 
-		head.appendChild(style);
+		// head.appendChild(style);
 
-		style.type = 'text/css';
-		if (style.styleSheet){
-			// This is required for IE8 and below.
-			style.styleSheet.cssText = css;
-		} else {
-			style.appendChild(document.createTextNode(css));
-		}
+		// style.type = 'text/css';
+		// if (style.styleSheet){
+		// 	// This is required for IE8 and below.
+		// 	style.styleSheet.cssText = css;
+		// } else {
+		// 	style.appendChild(document.createTextNode(css));
+		// }
+
+		//! Loaded Content if need
+		
+		let mask = document.querySelector('.mask');
+		document.addEventListener("DOMContentLoaded", (event) => {
+			mask.classList.add('hide');
+			setTimeout(() => {
+				mask.remove();
+			}, 600)
+		});
+
 	};
 	animationWindow();
 
