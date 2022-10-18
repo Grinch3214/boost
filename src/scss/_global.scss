@@ -359,8 +359,10 @@ body {
 		border-radius: 5px;
 		border: 2px solid transparent;
 		background: linear-gradient(rgb(32, 149, 217), rgb(92, 53, 238)) border-box;
-		-webkit-mask: linear-gradient(#fff 0 0) padding-box, linear-gradient(#fff 0 0);
-		-webkit-mask-composite: destination-out;
+		-webkit-mask: 
+			linear-gradient(#fff 0 0) padding-box,
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
 		mask-composite: exclude;
 	}
 	&__icon {
@@ -416,6 +418,32 @@ body {
 				line-height: 21px;
 			}
 		}
+	}
+}
+
+.border-radius-gradient {
+	position: relative;
+	display: inline-block;
+	font-weight: 700;
+	font-size: 12px;
+	text-transform: uppercase;
+	background: transparent;
+	color: $white-color;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		border-radius: 2px;
+		border: 2px solid transparent;
+		background: linear-gradient(90deg, rgb(245, 38, 60), rgb(106, 18, 159)) border-box;
+		-webkit-mask:
+			linear-gradient(#fff 0 0) padding-box, 
+			linear-gradient(#fff 0 0);
+		-webkit-mask-composite: xor;
+		mask-composite: exclude;
 	}
 }
 

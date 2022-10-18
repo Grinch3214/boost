@@ -10,8 +10,14 @@ export const js = () => {
 		))
 		.pipe(webpack({
 			mode: app.isBuild ? 'production' : 'development',
+			// entry only for this project, next time delete it
+			// entry: {
+			// 	app: './src/js/app.js',
+			// 	mainLang: './src/js/mainLang.js'
+			// },
 			output: {
 				filename: 'app.min.js'
+				// filename: '[name].min.js'
 			}
 		}))
 		.pipe(app.gulp.dest(app.path.build.js))

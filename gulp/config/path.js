@@ -15,11 +15,12 @@ export const path = {
 	},
 	src: {
 		js: `${srcFolder}/js/app.js`,
+		// js: `${srcFolder}/js/*.js`,
 		images: `${srcFolder}/img/**/*.{jpg,jpeg,png,gif,webp}`,
 		svg: `${srcFolder}/img/**/*.svg`,
 		scss: `${srcFolder}/scss/style.scss`,
 		html: `${srcFolder}/*.html`,
-		html: `${srcFolder}/**/*.html`,
+		html: `${srcFolder}/**/*.html`, // Для отслеживания всех html
 		files: `${srcFolder}/files/**/*.*`,
 		svgicons: `${srcFolder}/svgicons/*.svg`,
 	},
