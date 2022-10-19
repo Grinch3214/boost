@@ -1,0 +1,160 @@
+.dropdown {
+	color: $white-color;
+	position: absolute;
+	min-width: 100%;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	margin: 0 auto 7px auto;
+	max-width: 240px;
+	border-radius: 5px;
+	border: 1px solid rgba(155, 153, 173, 0.2);
+	overflow: hidden;
+
+	@media (min-width: $breakpoint768) {
+		position: static;
+		min-width: none;
+		border: 0;
+		transform: translateX(0px);
+		border-radius: 0;
+		margin: 0;
+		max-width: none;
+		overflow: visible;
+		background-color: transparent;
+	}
+
+	&__select {
+		position: relative;
+		background-color: transparent;
+		height: 40px;
+		&::after {
+			content: "";
+			position: absolute;
+			width: 10px;
+			height: 10px;
+			top: 50%;
+			right: 15px;
+			transform: translateY(-50%) rotate(45deg);
+			border-bottom: 2px solid white;
+			border-right: 2px solid white;
+			cursor: pointer;
+			transition: border-color 0.4s;
+		}
+		@media (min-width: $breakpoint768) {
+			display: none;
+		}
+	}
+	input {
+		position: relative;
+		font-weight: 700;
+		display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0 15px;
+    background: none;
+    outline: none;
+    border: none;
+    color: $white-color;
+    cursor: pointer;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 17px;
+		max-width: 130px;
+		padding-bottom: 10px;
+		position: relative;
+		display: none;
+		@media (min-width: $breakpoint768) {
+			display: block;
+		}
+		@media (min-width: $breakpoint1310) {
+			font-size: 24px;
+			line-height: 29px;
+			max-width: 210px;
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1920) {
+			font-size: 36px;
+			line-height: 44px;
+			min-width: 300px;
+			padding-bottom: 30px;
+		}
+		&::before {
+			@media (min-width: $breakpoint768) {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				height: 1px;
+				background: rgba($color: $white-color, $alpha: 0.2);
+			}
+		}
+	}
+
+	&__list {
+		line-height: 14px;
+		position: relative;
+    height: 0;
+    // transition: 0.4s;
+		@media (min-width: $breakpoint768) {
+			margin-top: 10px;
+			overflow: visible;
+			height: auto;
+		}
+		@media (min-width: $breakpoint1310) {
+			margin-top: 20px;
+			line-height: 24px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-top: 30px;
+		}
+	}
+
+	&__item {
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 30px;
+		}
+		&.selected {
+			color: $white-color;
+		}
+	}
+
+	&__link {
+		color: $white-color;
+		background: transparent;
+		font-size: 12px;
+		border: 0;
+		text-align: left;
+		@media (min-width: $breakpoint1310) {
+			font-size: 18px;
+		}
+		@media (min-width: $breakpoint1920) {
+			font-size: 27px;
+		}
+	}
+
+	//active class
+	&.active {
+		background-color: #0B071F;
+		.dropdown__select {
+			&::after {
+				border: none;
+				border-left: 2px solid white;
+				border-top: 2px solid white;
+			}
+		}
+
+		.dropdown__list {
+			height: 100%;
+			padding-left: 15px;
+			padding-top: 15px;
+		}
+	}
+
+}

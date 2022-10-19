@@ -5,6 +5,7 @@ import { tabsOnSwiper } from './modules/tabs.js';
 import burgerMenu from './modules/burger.js';
 import footerPulsationCircle from './modules/footerWidthCircle.js';
 import { tabsOnLeftContent, accordionOnMobileForFaq } from './modules/faq.js';
+import dropdownMenu from './modules/dropdown.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -33,8 +34,6 @@ window.addEventListener('resize', (event) => {
 });
 
 accordionOnMobileForFaq();
-
-
-
+dropdownMenu();
 //footer
 footerAccordionOnMobile();
