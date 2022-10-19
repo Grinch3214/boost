@@ -10,13 +10,16 @@
 
 	&__image {
 		display: block;
-		flex-shrink: 0;
 		color: $white-color;
-		max-height: 145px;
+		min-height: 80px;
 		max-width: 100%;
 		border-radius: 10px;
 		overflow: hidden;
-		margin-bottom: 15px;
+		margin-bottom: 2px;
+		@media (min-width: $breakpoint1310) {
+			min-height: 145px;
+			margin-bottom: 15px;
+		}
 		@media (min-width: $breakpoint1920) {
 			min-height: 205px;
 		}
@@ -38,9 +41,14 @@
 	}
 	&__tag-category {
 		font-weight: 700;
-		font-size: 12px;
-		padding: 0 5px;
-		line-height: 20px;
+		font-size: 8px;
+		padding: 2px 5px;
+		line-height: 10px;
+		@media (min-width: $breakpoint1310) {
+			font-size: 12px;
+			line-height: 20px;
+			padding: 0 5px;
+		}
 	}
 	&__inner {
 		color: $white-color;
@@ -52,8 +60,12 @@
 	}
 	&__title, &__subtitle {
 		color: inherit;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 11px;
+		line-height: 14px;
+		@media (min-width: $breakpoint1310) {
+			font-size: 14px;
+			line-height: 18px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
 			line-height: 24px;
