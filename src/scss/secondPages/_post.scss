@@ -12,11 +12,14 @@
 		display: block;
 		flex-shrink: 0;
 		color: $white-color;
-		max-height: 205px;
+		max-height: 145px;
 		max-width: 100%;
 		border-radius: 10px;
 		overflow: hidden;
 		margin-bottom: 15px;
+		@media (min-width: $breakpoint1920) {
+			min-height: 205px;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -28,21 +31,33 @@
 		height: 100%;
 	}
 	&__tag {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 15px;
+		}
 	}
 	&__tag-category {
+		font-weight: 700;
+		font-size: 12px;
 		padding: 0 5px;
 		line-height: 20px;
 	}
 	&__inner {
 		color: $white-color;
-		margin-bottom: 15px;
+		margin-bottom: 10px;
 		flex: 1 1 auto;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 15px;
+		}
 	}
 	&__title, &__subtitle {
 		color: inherit;
-		font-size: 18px;
-		line-height: 24px;
+		font-size: 14px;
+		line-height: 18px;
+		@media (min-width: $breakpoint1920) {
+			font-size: 18px;
+			line-height: 24px;
+		}
 	}
 	&__title {
 		font-weight: 700;
@@ -59,8 +74,12 @@
 			display: inline-block;
 			margin-left: 10px;
 			font-weight: 600;
-			font-size: 12px;
-			line-height: 15px;
+			font-size: 10px;
+			line-height: 12px;
+			@media (min-width: $breakpoint1920) {
+				font-size: 12px;
+				line-height: 15px;
+			}
 		}
 	}
 }
