@@ -445,6 +445,16 @@ body {
 	}
 }
 
+.tag {
+	color: $white-color;
+	font-size: 12px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 15px;
+	padding: 2px 5px 3px;
+	margin-right: 10px;
+}
+
 .text-md-left-xl-center {
 	text-align: left;
 	@media (min-width: $breakpoint1310) {
