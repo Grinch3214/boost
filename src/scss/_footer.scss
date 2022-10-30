@@ -110,7 +110,7 @@
 			font-size: 20px;
 		}
 		&:last-child {
-			@media (min-width: $breakpoint1310) {
+			@media (min-width: $breakpoint768) {
 				margin-bottom: 0;
 			}
 		}

@@ -142,6 +142,7 @@
 	//active class
 	&.active {
 		background-color: #0B071F;
+		border-color: #0B071F;
 		.dropdown__select {
 			&::after {
 				border: none;
