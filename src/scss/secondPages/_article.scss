@@ -24,14 +24,15 @@
 
 	&__head {
 		position: relative;
-		height: 170px;
+		height: 145px;
 		border-radius: 10px;
 		padding: 20px 30px 25px;
 		overflow: hidden;
 		background: url('../@img/blog/article_image.jpg') 0 0/cover no-repeat;
-		margin-bottom: 40px;
+		margin-bottom: 22px;
 		@media (min-width: $breakpoint768) {
 			margin-bottom: 40px;
+			height: 170px;
 		}
 		@media (min-width: $breakpoint1310) {
 			height: 300px;
@@ -61,13 +62,25 @@
 		flex-direction: column;
 		height: 100%;
 		justify-content: space-between;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__tag {
 		display: flex;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 0;
+		}
 	}
 
 	&__name {
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 0;
+		}
 		// font-size: 0;
 		// max-width: 560px;
 	}
@@ -104,8 +117,8 @@
 	}
 
 	&__box {
-		display: grid;
 		@media (min-width: $breakpoint768) {
+			display: grid;
 			grid-template-columns: 70% 1fr;
 			gap: 60px;
 		}
@@ -129,8 +142,8 @@
 	}
 
 	&__body-content {
-		margin-bottom: 20px;
-		@media (min-width: $breakpoint1920) {
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
 			margin-bottom: 20px;
 		}
 	}
@@ -148,9 +161,12 @@
 	}
 
 	&__body-img {
-		height: 200px;
+		height: 145px;
 		overflow: hidden;
 		border-radius: 10px;
+		@media (min-width: $breakpoint768) {
+			height: 200px;
+		}
 		@media (min-width: $breakpoint1310) {
 			height: 350px;
 		}
@@ -187,16 +203,30 @@
 	}
 
 	&__footer {
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 50px;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint768) {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			margin-bottom: 50px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 60px;
 		}
 	}
 
-	&__footer-tags {}
+	&__footer-tags {
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 0;
+		}
+		.tag {
+			margin-bottom: 10px;
+			@media (min-width: $breakpoint768) {
+				margin-bottom: 0;
+			}
+		}
+	}
 
 	&__footer-social {
 		display: flex;
@@ -255,8 +285,10 @@
 
 	&__more-posts {
 		display: grid;
-    grid-template-columns: repeat(3, 1fr);
-		gap: 44px;
+		@media (min-width: $breakpoint768) {
+			grid-template-columns: repeat(3, 1fr);
+			gap: 44px;
+		}
 		@media (min-width: $breakpoint1310) {
 			gap: 50px;
 		}
@@ -265,7 +297,12 @@
 		}
 	}
 
-	&__aside {}
+	&__aside {
+		display: none;
+		@media (min-width: $breakpoint1310) {
+			display: block;
+		}
+	}
 	&__aside-social {
 		font-size: 0;
 		line-height: 10px;
