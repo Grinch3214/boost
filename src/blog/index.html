@@ -13,49 +13,50 @@
 <body>
 	<div class="circle"></div>
 	<div class="blur"></div>
-	<header class="header">
-		<nav id="navigation" class="header__nav">
-			<div class="header__navbar">
-				<div class="header__navigation">
-					<a class="header__logo" href="../index.html">
-						<img src="../@img/logo.svg" alt="boosteroid logo">
-						<img src="../@img/logo_mini.svg" width="49" height="30" alt="boosteroid logo mini">
-					</a>
-					<ul class="header__list">
-						<li class="header__item">
-							<a href="../downloads/index.html" class="header__item-link header__item-link--md">downloads</a>
-							<a href="../downloads/index.html" class="header__item-link header__item-link--sm">our app</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__item-link">Blog</a>
-						</li>
-						<li class="header__item">
-							<a href="../faq/index.html" class="header__item-link">faq</a>
-						</li>
-						<li class="header__item">
-							<a href="#" class="header__item-link">Help center</a>
-						</li>
-					</ul>
+	<div class="wrapper">
+		<header class="header">
+			<nav id="navigation" class="header__nav">
+				<div class="header__navbar">
+					<div class="header__navigation">
+						<a class="header__logo" href="../index.html">
+							<img src="../@img/logo.svg" alt="boosteroid logo">
+							<img src="../@img/logo_mini.svg" width="49" height="30" alt="boosteroid logo mini">
+						</a>
+						<ul class="header__list">
+							<li class="header__item">
+								<a href="../downloads/index.html" class="header__item-link header__item-link--md">downloads</a>
+								<a href="../downloads/index.html" class="header__item-link header__item-link--sm">our app</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__item-link">Blog</a>
+							</li>
+							<li class="header__item">
+								<a href="../faq/index.html" class="header__item-link">faq</a>
+							</li>
+							<li class="header__item">
+								<a href="#" class="header__item-link">Help center</a>
+							</li>
+						</ul>
+					</div>
+					<div class="header__buttons">
+						<button class="header__buttons-lang">
+							<img src="https://boosteroid.com/wp-content/themes/salient-child/img/flags/gb-flag.svg" alt="eng">
+							<span>English</span>
+						</button>
+						<a href="#" class="header__buttons-login second-btn">Sign In</a>
+					</div>
+					<div class="burger">
+						<span></span>
+					</div>
 				</div>
-				<div class="header__buttons">
-					<button class="header__buttons-lang">
-						<img src="https://boosteroid.com/wp-content/themes/salient-child/img/flags/gb-flag.svg" alt="eng">
-						<span>English</span>
-					</button>
-					<a href="#" class="header__buttons-login second-btn">Sign In</a>
-				</div>
-				<div class="burger">
-					<span></span>
-				</div>
-			</div>
-		</nav>
-	</header>
-
-		<main>
-			@@include("../html/secondPages/blog.html", {})
-		</main>
-
-		@@include("../html/secondPages/footer_with_bg.html", {})
+			</nav>
+		</header>
+	
+			<main>
+				@@include("../html/secondPages/blog.html", {})
+			</main>
+	
+			@@include("../html/secondPages/footer_with_bg.html", {})
 	</div>
 
 	<script src="../js/app.min.js"></script>

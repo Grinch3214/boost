@@ -28,7 +28,7 @@
 		border-radius: 10px;
 		padding: 20px 30px 25px;
 		overflow: hidden;
-		background: url('../@img/blog/article_image.jpg') 0 0/cover no-repeat;
+		background: url('@img/blog/article_image.jpg') 0 0/cover no-repeat;
 		margin-bottom: 22px;
 		@media (min-width: $breakpoint768) {
 			margin-bottom: 40px;
@@ -299,7 +299,7 @@
 
 	&__aside {
 		display: none;
-		@media (min-width: $breakpoint1310) {
+		@media (min-width: $breakpoint768) {
 			display: block;
 		}
 	}
