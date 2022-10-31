@@ -24,12 +24,20 @@
 
 	&__head {
 		position: relative;
-		height: 300px;
+		height: 170px;
 		border-radius: 10px;
-		padding: 60px 50px;
+		padding: 20px 30px 25px;
 		overflow: hidden;
 		background: url('../@img/blog/article_image.jpg') 0 0/cover no-repeat;
-		margin-bottom: 30px;
+		margin-bottom: 40px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 40px;
+		}
+		@media (min-width: $breakpoint1310) {
+			height: 300px;
+			margin-bottom: 30px;
+			padding: 60px 50px;
+		}
 		@media (min-width: $breakpoint1920) {
 			height: 350px;
 			padding: 60px 70px;
@@ -66,9 +74,13 @@
 
 	&__title, &__subtitle {
 		// display: inline-block;
-		font-size: 24px;
-		line-height: 30px;
+		font-size: 16px;
+		line-height: 20px;
 		font-weight: 700;
+		@media (min-width: $breakpoint1310) {
+			font-size: 24px;
+			line-height: 30px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 40px;
 			line-height: 45px;
@@ -80,6 +92,9 @@
 	}
 
 	&__inner {
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 10px;
+		}
 		@media (min-width: $breakpoint1310) {
 			margin-bottom: 20px;
 		}
@@ -104,9 +119,13 @@
 	}
 
 	&__body {
-		font-size: 16px;
-		line-height: 30px;
+		font-size: 12px;
+		line-height: 18px;
 		color: #9B99AD;
+		@media (min-width: $breakpoint1310) {
+			font-size: 16px;
+			line-height: 30px;
+		}
 	}
 
 	&__body-content {
@@ -117,16 +136,24 @@
 	}
 
 	&__body-content-title {
-		margin-top: 25px;
-		margin-bottom: 20px;
-		font-size: 24px;
+		margin-top: 17px;
+		margin-bottom: 15px;
+		font-size: 16px;
 		color: $white-color;
+		@media (min-width: $breakpoint1310) {
+			margin-top: 25px;
+			margin-bottom: 20px;
+			font-size: 24px;
+		}
 	}
 
 	&__body-img {
-		height: 350px;
+		height: 200px;
 		overflow: hidden;
 		border-radius: 10px;
+		@media (min-width: $breakpoint1310) {
+			height: 350px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-top: 30px;
 		}
@@ -144,12 +171,17 @@
 			&::before {
 				content: '';
 				position: absolute;
-				top: 10px;
+				top: 6px;
 				left: 0;
-				width: 7px;
-				height: 7px;
+				width: 5px;
+				height: 5px;
 				border-radius: 50%;
 				background: $white-color;
+				@media (min-width: $breakpoint1310) {
+					width: 7px;
+					height: 7px;
+					top: 10px;
+				}
 			}
 		}
 	}
@@ -158,7 +190,10 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
-		margin-bottom: 60px;
+		margin-bottom: 50px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 60px;
+		}
 	}
 
 	&__footer-tags {}
@@ -180,9 +215,14 @@
 		display: flex;
 		a {
 			display: block;
-			width: 26px;
-			height: 26px;
-			margin-right: 10px;
+			width: 16px;
+			height: 16px;
+			margin-right: 5px;
+			@media (min-width: $breakpoint1310) {
+				width: 26px;
+				height: 26px;
+				margin-top: 10px;
+			}
 			@media (min-width: $breakpoint1920) {
 				margin-top: 25px;
 				margin-right: 12px;
@@ -194,8 +234,12 @@
 			}
 		}
 		svg {
-			width: 26px;
-			height: 26px;
+			width: 16px;
+			height: 16px;
+			@media (min-width: $breakpoint1310) {
+				width: 26px;
+				height: 26px;
+			}
 			@media (min-width: $breakpoint1920) {
 				width: 40px;
 				height: 40px;
@@ -212,20 +256,32 @@
 	&__more-posts {
 		display: grid;
     grid-template-columns: repeat(3, 1fr);
-		gap: 80px;
+		gap: 44px;
+		@media (min-width: $breakpoint1310) {
+			gap: 50px;
+		}
+		@media (min-width: $breakpoint1920) {
+			gap: 80px;
+		}
 	}
 
 	&__aside {}
 	&__aside-social {
 		font-size: 0;
 		line-height: 10px;
-		margin-bottom: 70px;
+		margin-bottom: 30px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 70px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 60px;
 		}
 	}
 	&__aside-title {
-		margin-bottom: 20px;
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 20px;
+		}
 		@media (min-width: $breakpoint1920) {
 			margin-bottom: 30px;
 		}
@@ -242,16 +298,24 @@
 		}
 		a {
 			display: block;
-			width: 26px;
-			height: 26px;
+			width: 16px;
+			height: 16px;
+			@media (min-width: $breakpoint1310) {
+				width: 26px;
+				height: 26px;
+			}
 			@media (min-width: $breakpoint1920) {
 				width: 40px;
 				height: 40px;
 			}
 		}
 		svg {
-			width: 26px;
-			height: 26px;
+			width: 16px;
+			height: 16px;
+			@media (min-width: $breakpoint1310) {
+				width: 26px;
+				height: 26px;
+			}
 			@media (min-width: $breakpoint1920) {
 				width: 40px;
 				height: 40px;
@@ -267,20 +331,30 @@
 
 //aside-post
 .aside-post {
-	margin-bottom: 40px;
+	margin-bottom: 15px;
+	@media (min-width: $breakpoint1310) {
+		margin-bottom: 40px;
+	}
 	@media (min-width: $breakpoint1920) {
 		margin-bottom: 30px;
 	}
 	&__tag {
-		margin-bottom: 15px;
+		margin-bottom: 10px;
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__content {
 		display: block;
-		font-size: 14px;
-		line-height: 18px;
+		font-size: 11px;
+		line-height: 14px;
 		margin-bottom: 10px;
 		color: $white-color;
+		@media (min-width: $breakpoint1310) {
+			font-size: 14px;
+			kh: 18px;
+		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
 			line-height: 24px;

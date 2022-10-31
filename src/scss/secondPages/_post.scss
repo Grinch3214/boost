@@ -113,13 +113,24 @@
 		color:rgb(155, 153, 173);
 		span {
 			display: inline-block;
-			margin-left: 10px;
+			margin-left: 5px;
 			font-weight: 600;
 			font-size: 10px;
 			line-height: 12px;
+			@media (min-width: $breakpoint1310) {
+				margin-left: 10px;
+			}
 			@media (min-width: $breakpoint1920) {
 				font-size: 12px;
 				line-height: 15px;
+			}
+		}
+		svg {
+			width: 8px;
+			height: 8px;
+			@media (min-width: $breakpoint1310) {
+				width: 10px;
+				height: 10px;
 			}
 		}
 	}
