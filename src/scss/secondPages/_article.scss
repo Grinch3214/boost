@@ -24,12 +24,17 @@
 
 	&__head {
 		position: relative;
-		height: 350px;
+		height: 300px;
 		border-radius: 10px;
-		padding: 60px 70px;
+		padding: 60px 50px;
 		overflow: hidden;
 		background: url('../@img/blog/article_image.jpg') 0 0/cover no-repeat;
-		margin-bottom: 60px;
+		margin-bottom: 30px;
+		@media (min-width: $breakpoint1920) {
+			height: 350px;
+			padding: 60px 70px;
+			margin-bottom: 60px;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -61,16 +66,27 @@
 
 	&__title, &__subtitle {
 		// display: inline-block;
-		font-size: 40px;
-		line-height: 45px;
+		font-size: 24px;
+		line-height: 30px;
 		font-weight: 700;
+		@media (min-width: $breakpoint1920) {
+			font-size: 40px;
+			line-height: 45px;
+		}
 	}
 
 	&__subtitle {
 		font-weight: 400;
 	}
 
-	&__inner {}
+	&__inner {
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 30px;
+		}
+	}
 
 	&__box {
 		display: grid;
@@ -95,6 +111,9 @@
 
 	&__body-content {
 		margin-bottom: 20px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__body-content-title {
@@ -108,7 +127,9 @@
 		height: 350px;
 		overflow: hidden;
 		border-radius: 10px;
-		margin-top: 30px;
+		@media (min-width: $breakpoint1920) {
+			margin-top: 30px;
+		}
 		img {
 			width: 100%;
 			height: 100%;
@@ -159,11 +180,25 @@
 		display: flex;
 		a {
 			display: block;
-			width: 40px;
-			height: 40px;
-			margin-right: 12px;
+			width: 26px;
+			height: 26px;
+			margin-right: 10px;
+			@media (min-width: $breakpoint1920) {
+				margin-top: 25px;
+				margin-right: 12px;
+				width: 40px;
+				height: 40px;
+			}
 			&:last-child {
 				margin-right: 0;
+			}
+		}
+		svg {
+			width: 26px;
+			height: 26px;
+			@media (min-width: $breakpoint1920) {
+				width: 40px;
+				height: 40px;
 			}
 		}
 	}
@@ -184,22 +219,43 @@
 	&__aside-social {
 		font-size: 0;
 		line-height: 10px;
-		margin-bottom: 60px;
+		margin-bottom: 70px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 60px;
+		}
 	}
 	&__aside-title {
-		margin-bottom: 30px;
+		margin-bottom: 20px;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 30px;
+		}
 	}
 	&__aside-social-item {
 		font-size: 14px;
 		display: inline-block;
-		margin-right: 14px;
+		margin-right: 12px;
+		@media (min-width: $breakpoint1920) {
+			margin-right: 14px;
+		}
 		&:last-child {
 			margin-right: 0;
 		}
 		a {
 			display: block;
-			width: 40px;
-			height: 40px;
+			width: 26px;
+			height: 26px;
+			@media (min-width: $breakpoint1920) {
+				width: 40px;
+				height: 40px;
+			}
+		}
+		svg {
+			width: 26px;
+			height: 26px;
+			@media (min-width: $breakpoint1920) {
+				width: 40px;
+				height: 40px;
+			}
 		}
 	}
 	&__aside-social-icon {
@@ -211,16 +267,25 @@
 
 //aside-post
 .aside-post {
-	margin-bottom: 30px;
+	margin-bottom: 40px;
+	@media (min-width: $breakpoint1920) {
+		margin-bottom: 30px;
+	}
 	&__tag {
 		margin-bottom: 15px;
 	}
 
 	&__content {
-		font-size: 18px;
-		line-height: 24px;
-		margin-bottom: 15px;
+		display: block;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 10px;
 		color: $white-color;
+		@media (min-width: $breakpoint1920) {
+			font-size: 18px;
+			line-height: 24px;
+			margin-bottom: 15px;
+		}
 	}
 
 	&__content-title {
