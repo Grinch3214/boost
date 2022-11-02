@@ -68,6 +68,11 @@
 
 	&__breadcrumbs-link {
 		color: inherit;
+		border-bottom: 1px solid transparent;
+		transition: all .2s ease;
+		&:hover {
+			border-color: #9B99AD;
+		}
 	}
 
 	&__box {

@@ -251,10 +251,10 @@
 			@media (min-width: $breakpoint1310) {
 				width: 26px;
 				height: 26px;
-				margin-top: 10px;
+				margin-right: 10px;
 			}
 			@media (min-width: $breakpoint1920) {
-				margin-top: 25px;
+				// margin-top: 25px;
 				margin-right: 12px;
 				width: 40px;
 				height: 40px;
@@ -390,7 +390,7 @@
 		color: $white-color;
 		@media (min-width: $breakpoint1310) {
 			font-size: 14px;
-			kh: 18px;
+			line-height: 18px;
 		}
 		@media (min-width: $breakpoint1920) {
 			font-size: 18px;
