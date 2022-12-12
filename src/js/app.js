@@ -6,7 +6,8 @@ import burgerMenu from './modules/burger.js';
 import footerPulsationCircle from './modules/footerWidthCircle.js';
 import { tabsOnLeftContent, accordionOnMobileForFaq } from './modules/faq.js';
 import dropdownMenu from './modules/dropdown.js';
-import changePositionDiv from './modules/changePositionBlock.js'
+import changePositionDiv from './modules/changePositionBlock.js';
+import cookiePopUpBox from './modules/cookiePopUpBox.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -40,3 +41,6 @@ dropdownMenu();
 //footer
 footerAccordionOnMobile();
 changePositionDiv();
+
+// Cookie
+cookiePopUpBox();

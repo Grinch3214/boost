@@ -37,10 +37,105 @@
 								<a href="#" class="header__item-link">Help center</a>
 							</li>
 						</ul>
+
+						<div class="header__languages">
+							<span class="close-lang "></span>
+							<p>Select Your Language</p>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#united_kingdom"></use>
+								</svg>
+								<span>English</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#france"></use>
+								</svg>
+								<span>Français</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#germany"></use>
+								</svg>
+								<span>Deutsche</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#italy"></use>
+								</svg>
+								<span>Italiano</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#spain"></use>
+								</svg>
+								<span>Español</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#ukraine"></use>
+								</svg>
+								<span>Українська</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#romania"></use>
+								</svg>
+								<span>Română</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#portugal"></use>
+								</svg>
+								<span>Português</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#serbia"></use>
+								</svg>
+								<span>Srpski</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#poland"></use>
+								</svg>
+								<span>Polski</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#czech_respublic"></use>
+								</svg>
+								<span>Čeština</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#greece"></use>
+								</svg>
+								<span>Ελληνική</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#magyar"></use>
+								</svg>
+								<span>Magyar</span>
+							</a>
+							<a class="header__languages-btn" href="#">
+								<svg>
+									<use href="../@img/sprites/sprite.svg#turkey"></use>
+								</svg>
+								<span>Türkçe</span>
+							</a>
+						</div>
+		
+						<span class="lang-overlay"></span>
+
+
 					</div>
 					<div class="header__buttons">
 						<button class="header__buttons-lang">
-							<img src="https://boosteroid.com/wp-content/themes/salient-child/img/flags/gb-flag.svg" alt="eng">
+							<svg>
+								<use href="../@img/sprites/sprite.svg#united_kingdom"></use>
+							</svg>
 							<span>English</span>
 						</button>
 						<a href="#" class="header__buttons-login second-btn">Sign In</a>
@@ -58,6 +153,7 @@
 	
 			@@include("../html/secondPages/footer_with_bg.html", {})
 	</div>
+	@@include("../html/cookiePopUp.html", {})
 
 	<script src="../js/app.min.js"></script>
 </body>

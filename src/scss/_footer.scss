@@ -16,6 +16,7 @@
 		@media (min-width: $breakpoint768) {
 			flex-direction: row;
 			justify-content: space-between;
+			column-gap: 50px;
 		}
 	}
 
@@ -25,6 +26,10 @@
 		position: relative;
 		@media (min-width: $breakpoint768) {
 			position: static;
+			flex: 1;
+			&:nth-child(2) {
+				flex: 2;
+			}
 		}
 	}
 
