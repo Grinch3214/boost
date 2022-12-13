@@ -37,10 +37,36 @@
 		margin: 0 auto;
 		@media (min-width: $breakpoint768) {
 			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 0 60px;
+			grid-gap: 30px 60px;
 		}
 		@media (min-width: $breakpoint1920) {
 			max-width: 1000px;
+		}
+	}
+
+	&__companies-company {
+	
+	}
+
+	&__companies-link {
+		display: block;
+		line-height: 0;
+		svg {
+			width: 100%;
+			height: 40px;
+			opacity: .5;
+			transition: .3s;
+			@media (min-width: $breakpoint768) {
+				height: 60px;
+			}
+			@media (min-width: $breakpoint1920) {
+				height: 102px;
+			}
+		}
+		&:hover {
+			svg {
+				opacity: 1;
+			}
 		}
 	}
 

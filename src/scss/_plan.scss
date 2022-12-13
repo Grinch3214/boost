@@ -99,6 +99,7 @@
 		line-height: 17px;
 		max-width: 600px;
 		margin: 0 auto;
+		opacity: .7;
 		@media (min-width: $breakpoint768) {
 			min-width: 300px;
 			font-size: 14px;
@@ -244,13 +245,13 @@
 	}
 
 	&__price {
-		margin-bottom: 44px;
-		@media (min-width: $breakpoint768) {
-			margin-bottom: 32px;
-		}
-		@media (min-width: $breakpoint1920) {
-			margin-bottom: 65px;
-		}
+		margin-bottom: 6px;
+		// @media (min-width: $breakpoint768) {
+		// 	margin-bottom: 10px;
+		// }
+		// @media (min-width: $breakpoint1920) {
+		// 	margin-bottom: 65px;
+		// }
 	}
 
 	&__price-price {
@@ -293,6 +294,7 @@
 	&__footer {
 		font-size: 9px;
 		line-height: 16px;
+		color: #FF3E3E;
 		@media (min-width: $breakpoint768) {
 			font-size: 12px;
 		}
