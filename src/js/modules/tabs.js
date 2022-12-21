@@ -1,7 +1,27 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 export function tabsOnSwiper() {
-	const tabs = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
+	// const tabs = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
+	let tabs = [];
+
+	const arrEn = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
+	const arrEs = ['Navegador', 'Aplicación de escritorio', 'Aplicación de TV', 'Aplicación movil'];
+	const arrUa = ['Браузер', 'Desktop App', ' TV App', 'Mobile App'];
+	const arrRo = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
+
+	let hash = window.location.hash;
+	hash = hash.substring(1);
+
+	if (hash == 'en') {
+		tabs = arrEn
+	} else if (hash == 'es') {
+		tabs = arrEs
+	} else if (hash == 'ua') {
+		tabs = arrUa
+	} else if (hash == 'ro') {
+		tabs = arrRo
+	}
+
 	const swiper = new Swiper('.unlimited__swiper', {
 		modules: [Navigation, Pagination],
 	

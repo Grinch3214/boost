@@ -64,6 +64,7 @@
 	&__cards-item {
 		padding: 9px 12px 10px 17px;
 		min-width: 140px;
+		flex: 0 1 40%;
 		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1.52%, rgba(255, 255, 255, 0) 93.94%);
 		position: relative;
 		@media (min-width: $breakpoint768) {
@@ -135,7 +136,7 @@
 			font-size: 18px;
 			line-height: 24px;
 		}
-		span {
+		&--price {
 			font-size: 30px;
 			font-weight: 700;
 			margin-right: 6px;
@@ -151,14 +152,14 @@
 				font-size: 20px;
 			}
 		}
-		span + span {
-			color: #FF3E3E;
-			text-decoration: line-through;
-			font-size: 18px;
-			@media (min-width: $breakpoint1920) {
-				font-size: 24px;
-			}
-		}
+		// span + span {
+		// 	color: #FF3E3E;
+		// 	text-decoration: line-through;
+		// 	font-size: 18px;
+		// 	@media (min-width: $breakpoint1920) {
+		// 		font-size: 24px;
+		// 	}
+		// }
 	}
 
 	&__price-subscription {

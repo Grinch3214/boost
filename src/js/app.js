@@ -1,4 +1,5 @@
 import * as flsFunctions from './modules/functions.js';
+import changeLang from './modules/changeLang.js';
 import { locomotiveScrollAnimation, animationNavbar, footerAccordionOnMobile } from './modules/globalAnimation.js';
 import footerYear from './modules/footerYear.js';
 import { tabsOnSwiper } from './modules/tabs.js';
@@ -11,8 +12,8 @@ import cookiePopUpBox from './modules/cookiePopUpBox.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
-
 flsFunctions.isWebp();
+changeLang();
 // burger
 burgerMenu();
 footerYear();
