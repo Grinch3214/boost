@@ -30,6 +30,7 @@ export default function changeLang() {
 		
 		if(localStorage.getItem('language') === null) {
 			localStorage.setItem('language', 'en');
+			location.reload();
 			return
 		}
 		let hash = window.location.hash;

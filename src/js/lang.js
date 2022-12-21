@@ -371,4 +371,4 @@ export const languages = {
 		"ua": "",
 		"ro": ""
 	},
-}
+};
