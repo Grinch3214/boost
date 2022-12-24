@@ -151,7 +151,7 @@
 	&__footer-right-img {
 		position: absolute;
 		z-index: -1;
-		top: 24px;
+		bottom: 24px;
 		right: -50px;
 		max-width: 121px;
 		@media (min-width: $breakpoint768) {
@@ -159,7 +159,7 @@
 		}
 		img {
 			width: 100%;
-			height: auto;
+			height: 100%;
 		}
 	}
 

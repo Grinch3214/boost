@@ -6,7 +6,7 @@ export function tabsOnSwiper() {
 
 	const arrEn = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
 	const arrEs = ['Navegador', 'Aplicación de escritorio', 'Aplicación de TV', 'Aplicación movil'];
-	const arrUa = ['Браузер', 'Desktop App', ' TV App', 'Mobile App'];
+	const arrUa = ['Браузер', 'Десктопний додаток', 'TV додаток', 'Мобільний додаток'];
 	const arrRo = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
 
 	let hash = window.location.hash;
