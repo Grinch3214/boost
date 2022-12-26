@@ -1,6 +1,6 @@
 .power {
 	padding-bottom: 40px;
-	padding-top: 40px;
+	padding-top: 80px;
 	@media (min-width: $breakpoint768) {
 		padding-bottom: 60px;
 		padding-top: 60px;
@@ -63,7 +63,8 @@
 		@media (min-width: $breakpoint1920) {
 			max-width: 1122px;
 		}
-		img {
+
+		&-img {
 			display: inline-block;
 			width: 100%;
 			margin-left: 0;
@@ -72,6 +73,19 @@
 			}
 			@media (min-width: $breakpoint1920) {
 				margin-left: calc(-50vw + 805px);
+			}
+		}
+
+		&--sm {
+			display: inline-block;
+			@media (min-width: $breakpoint1310) {
+				display: none;
+			}
+		}
+		&--lg {
+			display: none;
+			@media (min-width: $breakpoint1310) {
+				display: inline-block;
 			}
 		}
 	}
