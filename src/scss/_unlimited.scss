@@ -246,9 +246,10 @@
 	&__container {
 		display: flex;
 		flex-direction: column;
-		align-items: flex-start;
+		align-items: center;
 		margin: 0 0 25px;
 		@media (min-width: $breakpoint768) {
+			align-items: flex-start;
 			margin: 0 0 40px;
 		}
 		@media (min-width: $breakpoint1310) {
@@ -333,7 +334,7 @@
 	}
 
 	&__btn {
-		// text-align: center;
+		text-align: center;
 		@media (min-width: $breakpoint768) {
 			text-align: left;
 		}
@@ -515,9 +516,11 @@
 		&__links {
 			display: flex;
 			flex-flow: column;
-			max-width: 210px;
-			margin: 0 auto;
+			// max-width: 210px;
+			// margin: 0 auto;
+			text-align: center;
 			@media (min-width: $breakpoint768) {
+				text-align: left;
 				flex-flow: row wrap;
 				column-gap: 20px;
 				row-gap: 10px;
@@ -527,11 +530,11 @@
 			}
 			@media (min-width: $breakpoint1310) {
 				// flex-flow: nowrap;
-				justify-content: space-between;
+				// justify-content: space-between;
 				margin-bottom: 20px;
 			}
 			@media (min-width: $breakpoint1920) {
-				flex-flow: nowrap;
+				// flex-flow: nowrap;
 				margin-bottom: 20px;
 			}
 		}
@@ -568,19 +571,13 @@
 
 		&__item-link {
 			.icon-apple svg {
-				width: 13px;
-				@media (min-width: $breakpoint768) {
-					width: 23px;
-				}
+				width: 23px;
 				@media (min-width: $breakpoint1920) {
 					width: 28px;
 				}
 			}
 			.icon-android svg {
-				width: 12px;
-				@media (min-width: $breakpoint768) {
-					width: 22px;
-				}
+				width: 22px;
 				@media (min-width: $breakpoint1920) {
 					width: 28px;
 				}

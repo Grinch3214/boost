@@ -529,5 +529,29 @@ export const languages = {
 		"ua": "Тепер будь-який пристрій - топова ігрова станція",
 		"ro": ""
 	},
-
+	// !SECTION DOWNLOAD
+	"download__head-title": {
+		"en": "Download Boosteroid",
+		"es": "Descargar Boosteroid",
+		"ua": "Завантажити Boosteroid",
+		"ro": ""
+	},
+	"download__head-text": {
+		"en": "For Your Device",
+		"es": "Para tu dispositivo",
+		"ua": "Для вашого пристрою",
+		"ro": ""
+	},
+	"download__mobile-undertxt": {
+		"en": "Version 8+",
+		"es": "Versión 8+",
+		"ua": "Версія 8+",
+		"ro": ""
+	},
+	"download__tv-undertxt": {
+		"en": "Version 8+",
+		"es": "Versión 8+",
+		"ua": "Версія 8+",
+		"ro": ""
+	},
 };

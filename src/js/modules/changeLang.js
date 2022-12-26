@@ -20,6 +20,36 @@ export default function changeLang() {
 		"ro": "img/sprites/sprite.svg#romania",
 	};
 
+	function translateAllButtonsWithIcons() {
+		const buttonsArr = [
+			{
+				"en": "Download for",
+				"es": "Descarga para",
+				"ua": "Завантажити для",
+				"ro": ""
+			}
+		];
+		const allButtonsWithIcons = document.querySelectorAll('.download-for');
+		let hash = window.location.hash.substring(1);
+		if(allButtonsWithIcons) {
+			allButtonsWithIcons.forEach((item, index) => {
+				if(hash === 'en') {
+					return item.innerText = buttonsArr[0].en
+				}
+				if(hash === 'es') {
+					return item.innerText = buttonsArr[0].es
+				}
+				if(hash === 'ua') {
+					return item.innerText = buttonsArr[0].ua
+				}
+				// if(hash === 'ro') {
+				// 	return item.innerText = buttonsArr[0].ro
+				// }
+			})
+		};
+	};
+	translateAllButtonsWithIcons();
+
 	function changeURLLanfuage(item) {
 		let lang = item.dataset.lang
 		location.href = window.location.pathname + '#' + lang.toLowerCase();
