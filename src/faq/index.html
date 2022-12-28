@@ -23,17 +23,17 @@
 					</a>
 					<ul class="header__list">
 						<li class="header__item">
-							<a href="../downloads/index.html" class="header__item-link header__item-link--md">downloads</a>
-							<a href="../downloads/index.html" class="header__item-link header__item-link--sm">our app</a>
+							<a href="../downloads/" class="header__item-link header__item-link--md">downloads</a>
+							<a href="../downloads/" class="header__item-link header__item-link--sm">our app</a>
 						</li>
 						<li class="header__item">
-							<a href="../blog/index.html" class="header__item-link header__item-link--blog">Blog</a>
+							<a href="https://boosteroid.com/blog/" class="header__item-link header__item-link--blog">Blog</a>
 						</li>
 						<li class="header__item">
-							<a href="#" class="header__item-link">faq</a>
+							<a href="/" class="header__item-link" onclick="return false">faq</a>
 						</li>
 						<li class="header__item">
-							<a href="#" class="header__item-link header__item-link--help">Help center</a>
+							<a href="https://help.boosteroid.com/en/" class="header__item-link header__item-link--help">Help center</a>
 						</li>
 					</ul>
 
@@ -150,7 +150,9 @@
 			@@include("../html/faq.html", {})
 		</main>
 
-		@@include("../html/secondPages/footer_with_bg.html", {})
+		@@include("../html/secondPages/footer_with_bg.html", {
+			"link": '/'
+		})
 	</div>
 	@@include("../html/cookiePopUp.html", {})
 

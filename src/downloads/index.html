@@ -24,8 +24,8 @@
 						</a>
 						<ul class="header__list">
 							<li class="header__item">
-								<a href="#" class="header__item-link header__item-link--md">downloads</a>
-								<a href="#" class="header__item-link header__item-link--sm">our app</a>
+								<a href="#" class="header__item-link header__item-link--md" onclick="return false">downloads</a>
+								<a href="#" class="header__item-link header__item-link--sm" onclick="return false">our app</a>
 							</li>
 							<li class="header__item">
 								<a href="https://boosteroid.com/blog/" class="header__item-link header__item-link--blog">Blog</a>
@@ -150,7 +150,9 @@
 				@@include("../html/secondPages/download.html", {})
 			</main>
 	
-			@@include("../html/secondPages/footer_with_bg.html", {})
+			@@include("../html/secondPages/footer_with_bg.html", {
+				"link": '../faq/'
+			})
 	</div>
 
 	@@include("../html/cookiePopUp.html", {})
