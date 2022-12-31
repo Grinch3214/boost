@@ -519,8 +519,10 @@
 			// max-width: 210px;
 			// margin: 0 auto;
 			text-align: center;
+			justify-content: center;
 			@media (min-width: $breakpoint768) {
 				text-align: left;
+				justify-content: flex-start;
 				flex-flow: row wrap;
 				column-gap: 20px;
 				row-gap: 10px;
@@ -532,6 +534,7 @@
 				// flex-flow: nowrap;
 				// justify-content: space-between;
 				margin-bottom: 20px;
+				justify-content: center;
 			}
 			@media (min-width: $breakpoint1920) {
 				// flex-flow: nowrap;
