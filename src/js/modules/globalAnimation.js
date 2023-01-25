@@ -140,10 +140,17 @@ function locomotiveScrollAnimation() {
 				cardsAnimation[1].dataset.scrollSpeed = 2;
 				cardsAnimation[2].dataset.scrollSpeed = -3;
 	
-				partnersAnimation[0].dataset.scrollSpeed = 2;
+				partnersAnimation[0].dataset.scrollSpeed = 1;
 				partnersAnimation[1].dataset.scrollSpeed = 1;
-				partnersAnimation[2].dataset.scrollSpeed = -1;
-				partnersAnimation[3].dataset.scrollSpeed = -2;
+				partnersAnimation[2].dataset.scrollSpeed = 1;
+				partnersAnimation[3].dataset.scrollSpeed = -1;
+				partnersAnimation[4].dataset.scrollSpeed = -1;
+				partnersAnimation[5].dataset.scrollSpeed = -1;
+				partnersAnimation[6].dataset.scrollSpeed = 1;
+				partnersAnimation[7].dataset.scrollSpeed = 1;
+				partnersAnimation[8].dataset.scrollSpeed = 0;
+				partnersAnimation[9].dataset.scrollSpeed = -1;
+				partnersAnimation[10].dataset.scrollSpeed = -1;
 			}
 		};
 		changingAttributes();

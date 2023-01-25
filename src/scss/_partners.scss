@@ -28,24 +28,28 @@
 	}
 
 	&__companies {
-		display: grid;
-		grid-template-columns: repeat(2, 2fr);
-		grid-gap: 20px 20px;
-		align-items: center;
-		justify-items: center;
-		max-width: 662px;
-		margin: 0 auto;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: center;
+		gap: 20px 20px;
 		@media (min-width: $breakpoint768) {
-			grid-template-columns: repeat(4, 1fr);
-			grid-gap: 30px 60px;
+			gap: 30px 60px;
 		}
 		@media (min-width: $breakpoint1920) {
-			max-width: 1000px;
 		}
 	}
 
 	&__companies-company {
-	
+		flex: 0 1 29%;
+		@media (min-width: $breakpoint768) {
+			flex: 0 1 18%;
+		}
+		@media (min-width: $breakpoint1310) {
+			flex: 0 1 12.2%;
+		}
+		@media (min-width: $breakpoint1920) {
+			flex: 0 1 13%;
+		}
 	}
 
 	&__companies-link {
@@ -54,6 +58,7 @@
 		svg {
 			width: 100%;
 			height: 40px;
+			fill: white;
 			opacity: .5;
 			transition: .3s;
 			@media (min-width: $breakpoint768) {
