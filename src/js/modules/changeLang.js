@@ -42,9 +42,9 @@ export default function changeLang() {
 				if(hash === 'ua') {
 					return item.innerText = buttonsArr[0].ua
 				}
-				// if(hash === 'ro') {
-				// 	return item.innerText = buttonsArr[0].ro
-				// }
+				if(hash === 'ro') {
+					return item.innerText = buttonsArr[0].ro
+				}
 			})
 		};
 	};
