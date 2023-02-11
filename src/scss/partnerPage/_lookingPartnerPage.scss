@@ -14,6 +14,9 @@
 	&__title {
 		margin-bottom: 10px;
 		text-align: center;
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 20px;
+		}
 	}
 
 	&__txt {
@@ -27,6 +30,10 @@
 		@media (min-width: $breakpoint1310) {
 			font-size: 18px;
 			margin-bottom: 70px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 100px;
+			font-size: 24px;
 		}
 	}
 
@@ -44,6 +51,11 @@
 			max-width: 875px;
 			font-size: 18px;
 			line-height: 27px;
+		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 1100px;
+			font-size: 24px;
+			line-height: 36px;
 		}
 	}
 
@@ -65,6 +77,12 @@
 			right: 0;
 			bottom: -45px;
 		}
+		@media (min-width: $breakpoint1920) {
+			width: 532px;
+			height: 598px;
+			right: -100px;
+			bottom: -82px;
+		}
 	}
 
 	&__item {
@@ -77,6 +95,9 @@
 		@media (min-width: $breakpoint1310) {
 			padding: 20px 190px 26px 37px;
 		}
+		@media (min-width: $breakpoint1920) {
+			padding: 29px 185px 29px 47px;
+		}
 		&::before {
 			content: '';
 			position: absolute;
@@ -88,6 +109,9 @@
 		}
 		&:not(:last-child) {
 			margin-bottom: 10px;
+			@media (min-width: $breakpoint1920) {
+				margin-bottom: 20px;
+			}
 		}
 		p {
 			font-weight: 700;
