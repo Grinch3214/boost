@@ -535,3 +535,52 @@ body {
 	z-index: 2;
 }
 
+.hidden-svg {
+	position: absolute;
+	z-index: -1;
+	width: 0;
+	height: 0;
+}
+
+// no comments, new page - new styles...
+
+.partner-page-title {
+	font-family: Montserrat;
+	font-weight: 800;
+	color: $white-color;
+	font-size: 24px;
+	line-height: 30px;
+	text-transform: uppercase;
+	@media (min-width: $breakpoint768) {
+		font-size: 36px;
+		line-height: 44px;
+	}
+	@media (min-width: $breakpoint1310) {
+		font-size: 60px;
+		line-height: 73px;
+	}
+	@media (min-width: $breakpoint1920) {
+		font-size: 80px;
+		line-height: 98px;
+	}
+}
+
+.partner-page-subtitle {
+	font-family: Montserrat;
+	font-weight: 700;
+	color: $white-color;
+	font-size: 20px;
+	line-height: 24px;
+	@media (min-width: $breakpoint768) {
+		font-size: 24px;
+		line-height: 29px;
+	}
+	@media (min-width: $breakpoint1310) {
+		font-size: 44px;
+		line-height: 54px;
+	}
+	@media (min-width: $breakpoint1920) {
+		font-size: 60px;
+		line-height: 73px;
+	}
+}

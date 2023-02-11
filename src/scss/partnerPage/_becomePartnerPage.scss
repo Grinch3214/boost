@@ -1,0 +1,137 @@
+.become {
+	display: grid;
+	align-items: center;
+	color: $white-color;
+	padding-bottom: 30px;
+	padding-top: 75px;
+	@media (min-width: $breakpoint768) {
+		min-height: calc(100vh - 80px);
+		padding: 0;
+	}
+	&__container {
+		display: flex;
+		align-items: center;
+		flex-direction: column;
+		@media (min-width: $breakpoint768) {
+			flex-flow: row;
+		}
+		@media (min-width: $breakpoint1310) {
+		}
+	}
+
+	&__box {
+		
+		@media (min-width: $breakpoint1310) {
+			margin-right: -40px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-right: -50px;
+		}
+	}
+
+	&__title {
+		margin-bottom: 25px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 28px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 40px;
+		}
+	}
+
+	&__txt {
+		margin-bottom: 25px;
+		font-size: 14px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1310) {
+			font-size: 18px;
+			margin-bottom: 50px;
+		}
+		@media (min-width: $breakpoint1920) {
+			font-size: 24px;
+		}
+	}
+
+	&__btns {
+		display: flex;
+		gap: 8px;
+		@media (min-width: $breakpoint768) {
+			gap: 20px;
+		}
+	}
+
+	&__btns-part {
+		flex: 50%;
+		font-size: 12px;
+		width: 100%;
+		padding: 9px 0px 8px;
+		max-width: unset;
+		@media (min-width: $breakpoint768) {
+			max-width: 180px;
+			padding: 11px 20px 10px;
+		}
+		@media (min-width: $breakpoint1310) {
+			padding: 19px 20px 19px;
+			font-size: 24px;
+			line-height: 28px;
+			max-width: 300px;
+		}
+	}
+
+	&__btns-more {
+		flex: 50%;
+		border: 1px solid #9B99AD;
+		border-radius: 5px;
+		display: inline-block;
+		color: $white-color;
+		font-size: 12px;
+    line-height: 14px;
+    padding: 10px 20px 9px;
+		text-transform: uppercase;
+		font-weight: 900;
+		cursor: pointer;
+		text-align: center;
+		width: 100%;
+		@media (min-width: $breakpoint768) {
+			max-width: 180px;
+			padding: 12px 20px 10px;
+		}
+		@media (min-width: $breakpoint1310) {
+			padding: 18px 20px 18px;
+			font-size: 24px;
+			line-height: 28px;
+			max-width: 300px;
+		}
+	}
+
+	&__image {
+		max-width: 520px;
+		margin: 0 auto;
+		@media (min-width: $breakpoint768) {
+			max-width: unset;
+			margin: 0;
+			flex: 1 0 315px;
+		}
+		@media (min-width: $breakpoint1310) {
+			flex: 1 0 542px;
+		}
+		@media (min-width: $breakpoint1920) {
+			flex: 1 0 50%;
+		}
+		img {
+			width: 100%;
+			height: auto;
+			@media (min-width: $breakpoint1310) {
+				margin-left: 50px;
+			}
+			@media (min-width: $breakpoint1920) {
+				margin-left: 0;
+			}
+		}
+	}
+}

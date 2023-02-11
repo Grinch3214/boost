@@ -1,0 +1,119 @@
+.youget {
+	padding: 50px 0;
+	background: url('@img/partner-page/partnerPage_bg_1.jpg') no-repeat 50%/cover;
+	position: relative;
+	z-index: 1;
+	@media (min-width: $breakpoint768) {
+		padding: 70px 0;
+	}
+	@media (min-width: $breakpoint1310) {
+		padding: 120px 0;
+	}
+	@media (min-width: $breakpoint1920) {
+		padding: 200px 0;
+	}
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(11, 7, 32, .94);
+		z-index: -1;
+	}
+	&__title {
+		margin-bottom: 44px;
+		text-align: center;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 40px;
+		}
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 70px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 100px;
+		}
+	}
+
+	&__cards {
+		font-family: Montserrat;
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+		@media (min-width: $breakpoint768) {
+			flex-flow: row;
+			gap: 60px;
+			justify-content: center;
+		}
+		@media (min-width: $breakpoint1310) {
+			gap: 150px;
+		}
+		@media (min-width: $breakpoint1920) {
+			gap: 230px;
+		}
+	}
+
+	&__card {
+		display: flex;
+		color: $white-color;
+		align-items: center;
+		gap: 20px;
+		max-width: 240px;
+    width: 100%;
+		@media (min-width: $breakpoint768) {
+			flex-flow: column;
+			max-width: unset;
+		}
+		@media (min-width: $breakpoint1920) {
+			gap: 50px;
+		}
+		&:not(:last-child) {
+			margin-bottom: 15px;
+			@media (min-width: $breakpoint768) {
+				margin-bottom: 0;
+			}
+		}
+
+		svg {
+			width: 70px;
+			height: 70px;
+			@media (min-width: $breakpoint768) {
+				width: 100px;
+				height: 100px;
+			}
+			@media (min-width: $breakpoint1310) {
+				width: 180px;
+				height: 180px;
+			}
+			@media (min-width: $breakpoint1920) {
+				width: 240px;
+				height: 240px;
+			}
+		}
+	}
+
+	&__desc {
+		font-size: 16px;
+		line-height: 18px;
+		@media (min-width: $breakpoint768) {
+			text-align: center;
+			font-size: 18px;
+			line-height: 24px;
+		}
+		@media (min-width: $breakpoint1310) {
+			font-size: 27px;
+			line-height: 36px;
+		}
+		@media (min-width: $breakpoint1920) {
+			font-size: 36px;
+			line-height: 45px;
+		}
+		p {
+			font-weight: 700;
+		}
+		p+p {
+			font-weight: 400;
+		}
+	}
+}

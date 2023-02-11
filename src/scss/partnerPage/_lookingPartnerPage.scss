@@ -1,0 +1,99 @@
+.looking {
+	padding: 50px 0 100px;
+	color: $white-color;
+	overflow: hidden;
+	@media (min-width: $breakpoint768) {
+		padding: 70px 0;
+	}
+	@media (min-width: $breakpoint1310) {
+		padding: 120px 0;
+	}
+	@media (min-width: $breakpoint1920) {
+		padding: 200px 0;
+	}
+	&__title {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	&__txt {
+		margin-bottom: 20px;
+		text-align: center;
+		font-size: 12px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 40px;
+			font-size: 14px;
+		}
+		@media (min-width: $breakpoint1310) {
+			font-size: 18px;
+			margin-bottom: 70px;
+		}
+	}
+
+	&__box {
+		font-size: 12px;
+		line-height: 16px;
+		position: relative;
+		@media (min-width: $breakpoint768) {
+			font-size: 14px;
+			line-height: 18px;
+			max-width: 550px;
+			margin: 0 auto;
+		}
+		@media (min-width: $breakpoint1310) {
+			max-width: 875px;
+			font-size: 18px;
+			line-height: 27px;
+		}
+	}
+
+	&__box-image {
+		position: absolute;
+		bottom: -231px;
+    right: -94px;
+		width: 276px;
+		height: 309px;
+		@media (min-width: $breakpoint768) {
+			width: 336px;
+			height: 377px;
+			right: -73px;
+			bottom: -32px;
+		}
+		@media (min-width: $breakpoint1310) {
+			width: 356px;
+			height: 400px;
+			right: 0;
+			bottom: -45px;
+		}
+	}
+
+	&__item {
+		padding: 16px 24px 16px 27px;
+		position: relative;
+		background: linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1.5%, rgba(255, 255, 255, 0) 94%);
+		@media (min-width: $breakpoint768) {
+			padding: 23px 240px 23px 37px;
+		}
+		@media (min-width: $breakpoint1310) {
+			padding: 20px 190px 26px 37px;
+		}
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			width: 7px;
+			background: linear-gradient(180deg, rgb(245, 38, 60) 0%, rgb(106, 18, 159) 100%);
+		}
+		&:not(:last-child) {
+			margin-bottom: 10px;
+		}
+		p {
+			font-weight: 700;
+		}
+		p+p {
+			font-weight: 300;
+		}
+	}
+}
