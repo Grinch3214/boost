@@ -6224,6 +6224,51 @@ button.swiper-pagination-bullet {
   font-weight: 300;
 }
 
+.readon {
+  padding: 50px 0;
+  color: #fff;
+}
+.readon__title {
+  margin-bottom: 10px;
+  text-align: center;
+}
+.readon__txt {
+  margin-bottom: 30px;
+  font-size: 12px;
+  line-height: 28px;
+  text-align: center;
+}
+.readon__box {
+  padding: 10px;
+  background: linear-gradient(90deg, rgba(106, 18, 159, 0.5) 0%, rgba(32, 149, 217, 0) 100%);
+}
+.readon__box:not(:last-child) {
+  margin-bottom: 5px;
+}
+.readon__box-title {
+  font-family: Montserrat;
+  font-weight: 800;
+  font-size: 8px;
+  text-transform: uppercase;
+  line-height: 30px;
+}
+.readon__box-item {
+  font-size: 10px;
+  line-height: 12px;
+  color: #9B99AD;
+}
+.readon__box-item + li {
+  margin-top: 10px;
+}
+.readon__box-item a {
+  color: #00A3FF;
+  text-decoration: none;
+}
+.readon__box-item span {
+  color: #fff;
+  font-weight: 700;
+}
+
 .footer {
   padding-top: 36px;
   padding-bottom: 24px;
