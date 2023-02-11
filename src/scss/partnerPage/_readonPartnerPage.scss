@@ -1,0 +1,55 @@
+.readon {
+	padding: 50px 0;
+	color: $white-color;
+	&__title {
+		margin-bottom: 10px;
+		text-align: center;
+	}
+
+	&__txt {
+		margin-bottom: 30px;
+		font-size: 12px;
+		line-height: 28px;
+		text-align: center;
+	}
+
+	&__accordion {
+	}
+
+	&__box {
+		padding: 10px;
+		background: linear-gradient(90deg, rgba(106, 18, 159, 0.5) 0%, rgba(32, 149, 217, 0) 100%);
+		&:not(:last-child) {
+			margin-bottom: 5px;
+		}
+	}
+
+	&__box-title {
+		font-family: Montserrat;
+		font-weight: 800;
+		font-size: 8px;
+		text-transform: uppercase;
+		line-height: 30px;
+	}
+
+	&__box-list {
+	}
+
+	&__box-item {
+		font-size: 10px;
+		line-height: 12px;
+		color: #9B99AD;
+		+li {
+			margin-top: 10px;
+		}
+		a {
+			color: #00A3FF;
+			text-decoration: none;
+		}
+
+		span {
+			color: $white-color;
+			font-weight: 700;
+		}
+	}
+}
