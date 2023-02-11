@@ -5701,7 +5701,6 @@ button.swiper-pagination-bullet {
   .footer__box {
     flex-direction: row;
     justify-content: space-between;
-    column-gap: 50px;
   }
 }
 .footer__inner {
@@ -5713,9 +5712,6 @@ button.swiper-pagination-bullet {
   .footer__inner {
     position: static;
     flex: 1;
-  }
-  .footer__inner:nth-child(2) {
-    flex: 2;
   }
 }
 .footer__title, .footer__follow {
