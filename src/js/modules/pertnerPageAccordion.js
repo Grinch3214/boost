@@ -1,6 +1,5 @@
 export default function partnerPageAccordion() {
   const accordion = document.querySelectorAll('.readon__box-title');
-	const accordionList = document.querySelectorAll('.readon__box-list');
 
 	accordion.forEach((elem, id) => {
 		elem.addEventListener("click", function (event) {
