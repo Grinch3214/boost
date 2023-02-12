@@ -114,6 +114,7 @@ input::-ms-clear {
 
 button {
   cursor: pointer;
+  border: 0;
 }
 
 button::-moz-focus-inner {
@@ -6227,6 +6228,19 @@ button.swiper-pagination-bullet {
 .readon {
   padding: 50px 0;
   color: #fff;
+  background: url("../img/partner-page/partnerPage_bg_2.jpg") no-repeat 50%/cover;
+  position: relative;
+  z-index: 1;
+}
+.readon::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(11, 7, 32, 0.94);
+  z-index: -1;
 }
 .readon__title {
   margin-bottom: 10px;
@@ -6248,14 +6262,42 @@ button.swiper-pagination-bullet {
 .readon__box-title {
   font-family: Montserrat;
   font-weight: 800;
+  text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
   font-size: 8px;
   text-transform: uppercase;
-  line-height: 30px;
+  line-height: 12px;
+  position: relative;
+}
+.readon__box-title::before, .readon__box-title::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 3px;
+  width: 2px;
+  height: 6px;
+  background: #fff;
+  border-radius: 1px;
+  transition: transform 0.2s linear;
+}
+.readon__box-title:after {
+  width: 6px;
+  height: 2px;
+  right: 1px;
+}
+.readon__box-title.active::before, .readon__box-title.active::after {
+  transform: translateY(-50%) rotate(45deg);
+}
+.readon__box-list {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.2s linear;
 }
 .readon__box-item {
   font-size: 10px;
   line-height: 12px;
   color: #9B99AD;
+  padding-top: 10px;
 }
 .readon__box-item + li {
   margin-top: 10px;
