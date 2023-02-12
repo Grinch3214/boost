@@ -1,19 +1,22 @@
 <section class="interested">
 	<div class="container">
-
+		<svg class="interested__line">
+			<use href="#linePartner"></use>
+		</svg>
 		<div class="interested__box">
 			<div class="interested__desc">
-				<h2 class="interested__title">Interested?</h2>
+				<h2 class="interested__title partner-page-title">Interested?</h2>
 				<p class="interested__txt">Fill in the form to get your	FREE HOURS to play</p>
-				<p>You will also receive more details about this offer and the link to register in our partners program!</p>
+				<p class="interested__txt">You will also receive more details about this offer and the link to register in our partners program!</p>
 			</div>
-			<form class="interested__form" action="">
-				<input class="interested__form-name" type="text" placeholder="Your Name *">
-				<input class="interested__form-email" type="email" placeholder="Your Email *">
-				<input class="interested__form-email-boosteoid" type="email" placeholder="Boosteroid account email *">
-				<button class="interested__form-send">request a quote</button>
+			<form class="interested__form" action="https://fom.in.ua/echo" method="POST" target="_blank">
+				<input class="interested__form-name" name="name" type="text" placeholder="Your Name *" required>
+				<input class="interested__form-email" name="email" type="email" placeholder="Your Email *" required>
+				<input class="interested__form-email-boosteoid" name="boosteroid-email" type="email" placeholder="Boosteroid account email *" required>
+				<button class="interested__form-send basic-button">request a quote</button>
 			</form>
 		</div>
+		<img class="interested__img" src="../img/partner-page/partnerPage_3.png" alt="content image">
 
 	</div>
 </section>
