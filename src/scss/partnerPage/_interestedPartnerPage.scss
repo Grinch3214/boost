@@ -1,18 +1,144 @@
 .interested {
+	padding: 50px 0 0;
+	color: $white-color;
+	text-align: center;
+	position: relative;
+	overflow: hidden;
+	@media (min-width: $breakpoint768) {
+		padding: 70px 0 0;
+	}
+	@media (min-width: $breakpoint1310) {
+		padding: 120px 0 0;
+	}
+	@media (min-width: $breakpoint1920) {
+		padding: 200px 0 0;
+	}
 
+	&__line {
+		display: none;
+		@media (min-width: $breakpoint768) {
+			display: block;
+			position: absolute;
+			top: -380px;
+			left: -150px;
+			width: 533px;
+			height: 540px;
+		}
+		@media (min-width: $breakpoint1310) {
+			width: 813px;
+			height: 825px;
+			top: -486px;
+			left: -60px;
+		}
+		@media (min-width: $breakpoint1920) {
+			width: 1698px;
+			height: 1722px;
+			top: -170%;
+			left: -25%;
+		}
+	}
 	&__box {
+		margin-bottom: 30px;
+		@media (min-width: $breakpoint768) {
+			position: relative;
+			display: flex;
+			gap: 50px;
+			max-width: 570px;
+			margin: 0 auto 30px;
+			text-align: left;
+		}
+		@media (min-width: $breakpoint1310) {
+			max-width: 875px;
+			gap: 130px;
+			margin-bottom: 40px;
+		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 1240px;
+			margin-bottom: 90px;
+		}
 	}
 
 	&__desc {
 	}
 
 	&__title {
+		margin-bottom: 15px;
+		@media (min-width: $breakpoint768) {
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1310) {
+			margin-bottom: 30px;
+		}
+		@media (min-width: $breakpoint1920) {
+			margin-bottom: 15px;
+		}
 	}
 
 	&__txt {
+		font-family: Montserrat;
+		font-size: 12px;
+		text-transform: uppercase;
+		font-weight: 900;
+		margin-bottom: 15px;
+		+.interested__txt {
+			font-family: Roboto;
+			color: #9B99AD;
+			font-weight: 400;
+			text-transform: none;
+			max-width: 210px;
+			margin: 0 auto 20px;
+			@media (min-width: 540px) {
+				max-width: unset;
+			}
+		}
+		@media (min-width: $breakpoint768) {
+			font-size: 14px;
+			line-height: 17px;
+			margin-bottom: 20px;
+		}
+		@media (min-width: $breakpoint1310) {
+			font-size: 18px;
+			line-height: 22px;
+			margin-bottom: 30px;
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		@media (min-width: $breakpoint1920) {
+			font-size: 24px;
+			line-height: 29px;
+			margin-bottom: 50px;
+		}
 	}
 
 	&__form {
+		text-align: left;
+		@media (min-width: $breakpoint768) {
+			max-width: 250px;
+		}
+		@media (min-width: $breakpoint1310) {
+			max-width: 300px;
+		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 400px;
+		}
+		input {
+			width: 100%;
+			background: rgba(155, 153, 173, 0.15);
+			border: none;
+			padding: 12px 15px;
+			font-size: 14px;
+			color: $white-color;
+			margin-bottom: 10px;
+			border-radius: 5px;
+			@media (min-width: $breakpoint1310) {
+				font-size: 16px;
+				padding: 18px 20px;
+			}
+			&::placeholder {
+				color: #9B99AD;
+			}
+		}
 	}
 
 	&__form-name {
@@ -25,5 +151,33 @@
 	}
 
 	&__form-send {
+		max-width: unset;
+		padding: 11px 0px 10px;
+		font-size: 14px;
+		@media (min-width: $breakpoint768) {
+			max-width: 180px;
+		}
+		@media (min-width: $breakpoint1310) {
+			margin-top: 10px;
+			max-width: unset;
+			font-size: 24px;
+			padding: 23px 0px 23px;
+		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 300px;
+		}
+	}
+	&__img {
+		max-width: 100%;
+		@media (min-width: $breakpoint768) {
+			max-width: 570px;
+			width: 100%;
+		}
+		@media (min-width: $breakpoint1310) {
+			max-width: 875px;
+		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 1240px;
+		}
 	}
 }
