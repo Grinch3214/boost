@@ -9,6 +9,7 @@ import { tabsOnLeftContent, accordionOnMobileForFaq } from './modules/faq.js';
 import dropdownMenu from './modules/dropdown.js';
 import changePositionDiv from './modules/changePositionBlock.js';
 import cookiePopUpBox from './modules/cookiePopUpBox.js';
+import pertnerPageAccordion from './modules/pertnerPageAccordion.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -42,6 +43,8 @@ dropdownMenu();
 //footer
 footerAccordionOnMobile();
 changePositionDiv();
+// partnerPage Accordion
+pertnerPageAccordion();
 
 // Cookie
 cookiePopUpBox();

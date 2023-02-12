@@ -1,6 +1,20 @@
 .readon {
 	padding: 50px 0;
 	color: $white-color;
+	background: url('@img/partner-page/partnerPage_bg_2.jpg') no-repeat 50%/cover;
+	position: relative;
+	z-index: 1;
+	&::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(11, 7, 32, .94);
+		z-index: -1;
+	}
+
 	&__title {
 		margin-bottom: 10px;
 		text-align: center;
@@ -27,18 +41,46 @@
 	&__box-title {
 		font-family: Montserrat;
 		font-weight: 800;
+		text-shadow: 1px 2px 2px rgba(0, 0, 0, 0.8);
 		font-size: 8px;
 		text-transform: uppercase;
-		line-height: 30px;
+		line-height: 12px;
+		position: relative;
+		&::before, &::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 3px;
+			width: 2px;
+			height: 6px;
+			background: $white-color;
+			border-radius: 1px;
+			transition: transform .2s linear;
+		}
+		&:after {
+			width: 6px;
+			height: 2px;
+			right: 1px;
+		}
+		&.active {
+			&::before, &::after {
+				transform: translateY(-50%) rotate(45deg);
+			}
+		}
 	}
 
 	&__box-list {
+		max-height: 0;
+		overflow: hidden;
+		transition: all .2s linear;
 	}
 
 	&__box-item {
 		font-size: 10px;
 		line-height: 12px;
 		color: #9B99AD;
+		padding-top: 10px;
 		+li {
 			margin-top: 10px;
 		}
