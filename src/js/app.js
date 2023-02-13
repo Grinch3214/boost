@@ -10,6 +10,7 @@ import dropdownMenu from './modules/dropdown.js';
 import changePositionDiv from './modules/changePositionBlock.js';
 import cookiePopUpBox from './modules/cookiePopUpBox.js';
 import pertnerPageAccordion from './modules/pertnerPageAccordion.js';
+import animationOnTitles from './modules/animationOnScrollForTitles.js';
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -45,6 +46,7 @@ footerAccordionOnMobile();
 changePositionDiv();
 // partnerPage Accordion
 pertnerPageAccordion();
+animationOnTitles();
 
 // Cookie
 cookiePopUpBox();
