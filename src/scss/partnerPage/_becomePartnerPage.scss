@@ -81,6 +81,9 @@
 			line-height: 28px;
 			max-width: 300px;
 		}
+		@media (min-width: $breakpoint1920) {
+			max-width: 300px;
+		}
 	}
 
 	&__btns-more {
