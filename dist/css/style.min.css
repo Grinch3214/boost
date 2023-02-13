@@ -5753,6 +5753,23 @@ button.swiper-pagination-bullet {
   }
 }
 
+.js-scroll {
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.fade-in-down {
+  transform: translateY(-100%);
+}
+
+.js-scroll.scrolled.fade-in-down {
+  transform: translateY(0%);
+}
+
 .become {
   display: grid;
   align-items: center;

@@ -1,0 +1,15 @@
+.js-scroll {
+  opacity: 0;
+  transition: all .5s;
+}
+.js-scroll.scrolled {
+  opacity: 1;
+}
+
+.fade-in-down {
+	transform: translateY(-100%);
+}
+
+.js-scroll.scrolled.fade-in-down {
+	transform: translateY(0%);
+}
