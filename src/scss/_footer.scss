@@ -161,9 +161,16 @@
 		svg {
 			width: 24px;
 			height: 24px;
+			fill: $white-color;
+			transition: .4s;
 			@media (min-width: $breakpoint1920) {
 				width: 35px;
 				height: 35px;
+			}
+		}
+		&:hover {
+			svg {
+				fill: #00A3FF;
 			}
 		}
 	}

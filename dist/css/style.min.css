@@ -6874,12 +6874,17 @@ button.swiper-pagination-bullet {
 .footer__icon-link svg {
   width: 24px;
   height: 24px;
+  fill: #fff;
+  transition: 0.4s;
 }
 @media (min-width: 1819.98px) {
   .footer__icon-link svg {
     width: 35px;
     height: 35px;
   }
+}
+.footer__icon-link:hover svg {
+  fill: #00A3FF;
 }
 .footer__reserved {
   color: #9B99AD;
