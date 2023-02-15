@@ -62,13 +62,6 @@ export default function changeLang() {
 			localStorage.setItem('language', 'en');
 			location.reload();
 			return
-		}
-		let hash = window.location.hash;
-		hash = hash.substr(1);
-		if (!allLangArr.includes(hash)) {
-			// location.href = window.location.pathname + '#en';
-			location.href = window.location.pathname + `#${localStorage.getItem('language')}`;
-			location.reload();
 		};
 
 		allLanguage.forEach(item => {
@@ -95,6 +88,13 @@ export default function changeLang() {
 				}
 			})
 		});
+
+		let hash = window.location.hash;
+		hash = hash.substr(1);
+		if (!allLangArr.includes(hash)) {
+				location.href = window.location.pathname + `#${localStorage.getItem('language')}`;
+				location.reload();
+		};
 
 
 		if (languages) {
