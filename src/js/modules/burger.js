@@ -7,6 +7,7 @@ export default function burgerMenu() {
 	const headerButtonLang = document.querySelector('.header__buttons-lang');
 	const overlayLang = document.querySelector('.lang-overlay');
 	const closePopUpLang = document.querySelector('.close-lang');
+	const headerLangButtons = document.querySelectorAll('.header__languages-btn');
 
 	burger.addEventListener('click', function(e) {
 		burger.classList.toggle('active');
@@ -49,4 +50,7 @@ export default function burgerMenu() {
 	
 	overlayLang.addEventListener('click', removeClassForLanguages);
 	closePopUpLang.addEventListener('click', removeClassForLanguages);
+	headerLangButtons.forEach(btn => {
+		btn.addEventListener('click', removeClassForLanguages);
+	})
 }

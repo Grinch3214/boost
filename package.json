@@ -42,6 +42,7 @@
     "webpack-stream": "^7.0.0"
   },
   "dependencies": {
+    "i18next": "^22.4.9",
     "locomotive-scroll": "^4.0.6",
     "swiper": "^8.2.6"
   }

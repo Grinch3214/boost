@@ -1,5 +1,4 @@
 import * as flsFunctions from './modules/functions.js';
-import changeLang from './modules/changeLang.js';
 import { locomotiveScrollAnimation, animationNavbar, footerAccordionOnMobile } from './modules/globalAnimation.js';
 import footerYear from './modules/footerYear.js';
 import { tabsOnSwiper } from './modules/tabs.js';
@@ -11,11 +10,11 @@ import changePositionDiv from './modules/changePositionBlock.js';
 import cookiePopUpBox from './modules/cookiePopUpBox.js';
 import pertnerPageAccordion from './modules/pertnerPageAccordion.js';
 import animationOnTitles from './modules/animationOnScrollForTitles.js';
+import changeLanguagei18n from './modules/newChangeLanguage.js'
 
 const isAnimate = document.querySelector('.isAnimate');
 
 flsFunctions.isWebp();
-changeLang();
 // burger
 burgerMenu();
 footerYear();
@@ -50,3 +49,4 @@ animationOnTitles();
 
 // Cookie
 cookiePopUpBox();
+changeLanguagei18n();

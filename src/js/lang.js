@@ -230,7 +230,7 @@ export const languages = {
 	"unlimited__title-title": {
 		"en": "Unlimited AAA gaming",
 		"es": "Juegos AAA ilimitados",
-		"ua": "Необмежена кількість AAA ігор ",
+		"ua": "Необмежена кількість AAA ігор",
 		"ro": "Jocuri AAA nelimitat"
 	},
 	"unlimited__title-note p": {
