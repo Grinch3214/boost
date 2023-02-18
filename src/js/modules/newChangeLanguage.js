@@ -1,53 +1,62 @@
 import i18next from "i18next"
 
 export default function changeLanguagei18n() {
-	
-	function updateContent() {
-		const elements = document.getElementsByClassName('i18nelement');
-		
-		for (let i = 0; i < elements.length; i++) {
-			const element = elements[i];
-			const k = element.getAttribute('data-i18n');
-			element.innerHTML = i18next.t(k);
-		}
-	}
+  const elements = document.querySelectorAll('[data-i18n]');
 
-	async function i18Loader() {
-		const langs = ['en', 'es', 'ua', 'ro'];
-		const jsons = await Promise.all(
-			langs.map((item) => fetch('files/i18/' + item + '.json').then((r) => r.json()))
-		);
-		const res = langs.reduce((acc, ite, idx) => {
-			acc[ite] = { translation: jsons[idx] };
-			return acc
-		}, {});
-		
+  async function loadLanguageResources() {
+    const languages = ['en', 'es', 'ua', 'ro'];
+    const resources = {};
+    
+    try {
+      for (const language of languages) {
+				const response = await fetch(
+          window.location.pathname !== '/' ? `../files/i18/${language}.json` : `files/i18/${language}.json`
+        );
+        const json = await response.json();
+        resources[language] = { translation: json };
+      }
+    } catch (err) {
+      console.error(err);
+    }
+    
+    return resources;
+  }
 
-		if(localStorage.getItem('language') === null) {
-			localStorage.setItem('language', 'en');
-		};
-		
-		const getLang = localStorage.getItem('language');
-		console.log(getLang)
-		await i18next.init({
-			lng: getLang,
-			debug: true,
-			resources: res
-		});
-		updateContent();
-		i18next.on('languageChanged', () => {
-			updateContent();
-		});
-		const langSelector = document.querySelectorAll('.header__languages-btn');
-		langSelector.forEach(lang => {
-			lang.addEventListener('click', event => {
-				const currentLang = lang.getAttribute('data-lang');
-				console.log(currentLang)
-				i18next.changeLanguage(currentLang);
-				localStorage.setItem('language', currentLang);
-			})
-		})
-	}
-	i18Loader();
+  async function initialize() {
+    try {
+      const resources = await loadLanguageResources();
+      const language = localStorage.getItem('language') || 'en';
+      await i18next.init({
+        lng: language,
+        debug: true,
+        resources
+      });
+      
+      updateContent();
+      i18next.on('languageChanged', () => {
+        updateContent();
+      });
+      
+      const langSelectors = document.querySelectorAll('.header__languages-btn');
+      
+      langSelectors.forEach((langSelector) => {
+        langSelector.addEventListener('click', () => {
+          const currentLang = langSelector.getAttribute('data-lang');
+          localStorage.setItem('language', currentLang);
+          i18next.changeLanguage(currentLang);
+        });
+      });
+    } catch (err) {
+      console.error(err);
+    }
+  }
 
+  function updateContent() {
+    elements.forEach((element) => {
+      const key = element.getAttribute('data-i18n');
+      element.innerHTML = i18next.t(key);
+    });
+  }
+
+  initialize();
 }

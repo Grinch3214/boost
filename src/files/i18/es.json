@@ -1,8 +1,125 @@
 {
+	"global": {
+		"play_now": "JUEGA AHORA",
+		"subscrible": "SUSCRIBETE",
+		"download_for": "Descarga para",
+		"browser_app": "Navegador & Aplicación",
+		"tv_mob_brows": "Aplicación móvil y de TV, navegador",
+		"chromebook": "Aplicación web de Chromebook"
+	},
+
 	"link" : {
-		"ourapp": "Our App",
+		"ourapp": "Nuestras aplicaciones",
 		"faq": "faq",
-		"helpcenter": "Help Center",
-		"blog": "Blog"
+		"helpcenter": "Centro de ayuda",
+		"blog": "Blog",
+		"login": "Iniciar sesión",
+		"select": "Elige tu idioma"
+	},
+
+	"platform": {
+		"title": "PLATAFORMA DE JUEGOS EN LA NUBE",
+		"device": "Ejecuta juegos de PC en cualquier dispositivo",
+		"play": "¡Sin descargas! <br> Juega en el navegador",
+		"price": "Ajustes altos — Precios bajos",
+		"price_from": "Desde",
+		"price_subsc": "por mes con suscripción anual"
+	},
+
+	"power": {
+		"title": "Power up your devices",
+		"first_title": "Tus Juegos, Nuestro Poder",
+		"first_content": "Los juegos se inician en nuestros equipos de juego remotos de alta gama, el juego se transmite a ti. Disfruta de cientos de títulos de plataformas populares.",
+		"launch": "* Inicia los juegos que ya posees",
+		"two_title": "Sin descargas, sin actualizaciones",
+		"two_content": "Sin descargas, almacenamiento y actualizaciones de archivos de juegos. Tu trabajo es jugar, nosotros nos encargamos del resto.",
+		"three_title": "Sin límites de tiempo de sesión",
+		"three_content": "Acceso instantáneo a juegos y sesiones de juego ilimitadas. ¡Juega tanto como quieras!"
+	},
+
+	"gaming": {
+		"title": "Un montón de cosas interesantes",
+		"first_title": "Soporte 24/7",
+		"first_content": "Chat en línea. <br> Respuesta en 1-2 minutos",
+		"two_title": "Cambio de despositivo",
+		"two_content": "Comienza a jugar en un dispositivo, continúa en otro",
+		"three_title": "Transmisión de juegos",
+		"three_content": "¡Transmite tu juego a YouTube! Disponible en 2023"
+	},
+
+	"unlimited": {
+		"title": "Juegos AAA ilimitados",
+		"first_note": "¡Ejecuta juegos de PC en dispositivos de gama baja, obsoletos o ultraportátiles!",
+		"two_note": "Juega en Mac, Linux, iOS, Android, ChromeOS o televisores inteligentes sin consola",
+
+		"tab1_sign": "Regístrate en Boosteroid",
+		"tab1_subs": "Suscríbete",
+		"tab1_pick": "¡Elige un juego, inicia sesión en la cuenta del juego y juega!",
+
+		"tab2_text": "Disfruta de nuestras aplicaciones para Windows PC, Mac y Linux (Ubuntu, Mint, Debian, Fedora). ¡Ejecuta cientos de juegos de PC en cualquier dispositivo que tengas a mano!",
+
+		"tab3_text": "Disfruta de los juegos de PC en la televisión sin una consola. ¡Toma un gamepad y juega en una pantalla grande!",
+		"tab3_look": "Busque Boosteroid App en sus tiendas de aplicaciones de <span>Samsung</span> y <span>LG</span>",
+
+		"tab4_text": "¿Juegos de PC en un smartphone? ¡Por qué no! Juega donde sea que estés, incluso si no tienes una computadora cerca."
+	},
+
+	"anydevice": {
+		"title": "Ahora cualquier dispositivo es una estación de juego superior"
+	},
+
+	"plan": {
+		"title": "¡Elige tu plan!",
+		"subtitle": "Suscríbete y disfruta",
+
+		"recommed": "RECOMENDADO",
+		"per_year": "anual",
+		"cost_month": "costo mensual",
+		"popular": "POPULAR",
+		"per_month": "mensual",
+
+		"payment": "Visa, Mastercard, American Express, Google Pay, Apple Pay, Paysafecard y muchas más opciones de pago disponibles.",
+		"log": "Regístrate o inicia sesión para saber más",
+
+		"core_title": "Características principales",
+		"core_one": "Acceso a todo el catálogo de juegos",
+		"core_two": "Tiempo ilimitado de sesión de juego",
+		"core_three": "1080p 60 fps y más",
+		"core_four": "Acceso a juegos en todos los dispositivos compatibles (PC, Mac, laptop, tablet, teléfono o TV)",
+		"core_five": "Compatible con muchos gamepads populares (Xbox series X, S, Xbox One, PS4, etc.)",
+		"core_six": "Todo es seguro, no compartimos tus datos con nadie",
+		"core_seven": "Sin contrato de bloqueo, sin anuncios"
+	},
+
+	"begin": {
+		"title": "¡Que empiece el viaje!",
+		"li_one": "Potente equipo de juegos bajo demanda",
+		"li_two": "Sin descargas",
+		"li_three": "Juega en el navegador y en cualquier dispositivo"
+	},
+
+	"partner": {
+		"title": "Nuestros compañeros"
+	},
+
+	"footer": {
+		"support": "Soporte",
+		"help": "Centro de ayuda",
+		"blog": "Blog",
+
+		"legal": "Legal",
+		"terms": "Términos y condiciones",
+		"policy": "Política de privacidad",
+		"cookie": "Política de cookies",
+
+		"partner": "PARA SOCIOS",
+		"partner_content": "Creadores de contenido",
+
+		"reserved": "Todos los derechos reservados"
+	},
+
+	"download": {
+		"title": "Descargar Boosteroid",
+		"device": "Para tu dispositivo"
 	}
 }

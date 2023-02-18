@@ -1,8 +1,125 @@
 {
+	"global": {
+		"play_now": "PLAY NOW",
+		"subscrible": "SUBSCRIBLE",
+		"download_for": "Download for",
+		"browser_app": "Browser & App",
+		"tv_mob_brows": "TV & Mobile App, Browser",
+		"chromebook": "Chromebook Web App"
+	},
+
 	"link" : {
 		"ourapp": "Our App",
 		"faq": "faq",
 		"helpcenter": "Help Center",
-		"blog": "Blog"
+		"blog": "Blog",
+		"login": "Sign In",
+		"select": "Select Your Language"
+	},
+
+	"platform": {
+		"title": "CLOUD GAMING PLATFORM",
+		"device": "Run PC games <br> on any device",
+		"play": "No downloads! <br> Play in browser",
+		"price": "Settings high — Prices low",
+		"price_from": "From",
+		"price_subsc": "per month with annual subscription"
+	},
+
+	"power": {
+		"title": "Power up your devices",
+		"first_title": "Your Games, Our Power",
+		"first_content": "Games launch on our high-end remote gaming rigs, gameplay is streamed to you. Enjoy hundreds of titles from popular platforms.",
+		"launch": "* Launch the games you already own",
+		"two_title": "No Downloads, No Updates",
+		"two_content": "No downloads, storage and updates of game files. Your job is to game, we take care of the rest.",
+		"three_title": "No Session Time Limits",
+		"three_content": "Instant access to games and unlimited gaming sessions. Play as long as you want!"
+	},
+
+	"gaming": {
+		"title": "Plenty of cool stuff",
+		"first_title": "24/7 Support",
+		"first_content": "Online chat. <br> Response in 1-2 minutes ",
+		"two_title": "Switching Devices",
+		"two_content": "Start playing on one device, <br> continue on another",
+		"three_title": "Gameplay Streaming",
+		"three_content": "Stream your gameplay to <br> YouTube! Coming in 2023"
+	},
+
+	"unlimited": {
+		"title": "Unlimited AAA gaming",
+		"first_note": "Run PC games on low-end, outdated or ultra portable devices!",
+		"two_note": "Play on Mac, Linux, iOS, Android, ChromeOS or smart TVs without console",
+
+		"tab1_sign": "Sign up for Boosteroid",
+		"tab1_subs": "Subscribe",
+		"tab1_pick": "Pick a game, log into game account and play!",
+
+		"tab2_text": "Enjoy our apps for Windows PC, Mac, and Linux (Ubuntu, Mint, Debian, Fedora). Run hundreds of PC games on any device close at hand!",
+
+		"tab3_text": "Enjoy PC games on TV without a console. Grab a gamepad and play on a big screen!",
+		"tab3_look": "Look for Boosteroid App in your <span>Samsung</span> and <span>LG</span> application stores",
+
+		"tab4_text": "PC games on a smartphone? Why not! Play wherever you are no matter if you don’t have a computer around."
+	},
+
+	"anydevice": {
+		"title": "Now any device is a top gaming station"
+	},
+
+	"plan": {
+		"title": "Choose your plan!",
+		"subtitle": "Subscribe and enjoy",
+
+		"recommed": "RECOMMENDED",
+		"per_year": "per year",
+		"cost_month": "cost per month",
+		"popular": "POPULAR",
+		"per_month": "per month",
+
+		"payment": "Visa, Mastercard, American Express, Google Pay, Apple Pay, Paysafecard and many more payment options available.",
+		"log": "Sign up or log in to learn more",
+
+		"core_title": "Core features",
+		"core_one": "Access to the whole game catalog",
+		"core_two": "Unlimited gaming session time",
+		"core_three": "1080p 60 fps and more",
+		"core_four": "Access to games on all compatible devices (PC, Mac, laptop, tablet, phone or TV)",
+		"core_five": "Compatible with many popular gamepads (Xbox series X, S, Xbox One, PS4, etc.)",
+		"core_six": "Everything is secure, we don’t share your data with anyone",
+		"core_seven": "No lock-in contract, no ads"
+	},
+
+	"begin": {
+		"title": "Let the Journey <br> begin!",
+		"li_one": "Powerful gaming rig on-demand",
+		"li_two": "No downloads",
+		"li_three": "Play in browser and on any devices"
+	},
+
+	"partner": {
+		"title": "Our Partners"
+	},
+
+	"footer": {
+		"support": "Support",
+		"help": "Help center",
+		"blog": "Blog",
+
+		"legal": "Legal",
+		"terms": "Terms and Conditions",
+		"policy": "Privacy Policy",
+		"cookie": "Cookie Policy",
+
+		"partner": "FOR PARTNERS",
+		"partner_content": "Content creators",
+
+		"reserved": "All right reserved"
+	},
+
+	"download": {
+		"title": "Download Boosteroid",
+		"device": "For Your Device"
 	}
 }
