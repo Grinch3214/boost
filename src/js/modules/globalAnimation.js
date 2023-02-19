@@ -95,7 +95,7 @@ function locomotiveScrollAnimation() {
 
 		if (banner.style.maxHeight === '100%') {
 			banner.style.maxHeight = '3%';
-			footer.style.paddingBottom = `${(banner.scrollHeight / 100 * 3 + 25)}px`;
+			footer.style.paddingBottom = `${(banner.scrollHeight / 100 * 3 + 50)}px`;
 		} else {
 			banner.style.maxHeight = '100%';
 			footer.style.paddingBottom = `${banner.scrollHeight + 25}px`;
