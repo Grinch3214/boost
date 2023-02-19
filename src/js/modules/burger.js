@@ -51,6 +51,9 @@ export default function burgerMenu() {
 	overlayLang.addEventListener('click', removeClassForLanguages);
 	closePopUpLang.addEventListener('click', removeClassForLanguages);
 	headerLangButtons.forEach(btn => {
-		btn.addEventListener('click', removeClassForLanguages);
+		btn.addEventListener('click', (event) => {
+			event.preventDefault();
+			removeClassForLanguages();
+		});
 	})
 }
