@@ -11,6 +11,7 @@ import cookiePopUpBox from './modules/cookiePopUpBox.js';
 import pertnerPageAccordion from './modules/pertnerPageAccordion.js';
 import animationOnTitles from './modules/animationOnScrollForTitles.js';
 import changeLanguagei18n from './modules/newChangeLanguage.js'
+import formSend from './modules/formSend.js'
 
 const isAnimate = document.querySelector('.isAnimate');
 
@@ -51,3 +52,4 @@ animationOnTitles();
 
 // Cookie
 cookiePopUpBox();
+formSend();
