@@ -1,26 +1,15 @@
 import Swiper, { Navigation, Pagination } from 'swiper';
 
 export function tabsOnSwiper() {
-	// const tabs = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
-	let tabs = [];
-
-	const arrEn = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
-	const arrEs = ['Navegador', 'Aplicación de escritorio', 'Aplicación de TV', 'Aplicación movil'];
-	const arrUa = ['Браузер', 'Десктопний додаток', 'TV додаток', 'Мобільний додаток'];
-	const arrRo = ['Browser', 'Desktop App', ' TV App', 'Mobile App'];
-
-	let hash = window.location.hash;
-	hash = hash.substring(1);
-
-	if (hash == 'en') {
-		tabs = arrEn
-	} else if (hash == 'es') {
-		tabs = arrEs
-	} else if (hash == 'ua') {
-		tabs = arrUa
-	} else if (hash == 'ro') {
-		tabs = arrRo
-	}
+	const translations = {
+		en: ['Browser', 'Desktop App', ' TV App', 'Mobile App'],
+		// es: ['Navegador', 'Aplicación de escritorio', 'Aplicación de TV', 'Aplicación movil'],
+		// ua: ['Браузер', 'Десктопний додаток', 'TV додаток', 'Мобільний додаток'],
+		// ro: ['Browser', 'Desktop App', ' TV App', 'Mobile App']
+	};
+	
+	const language = localStorage.getItem('language') || 'en';
+	const tabs = translations[language] || translations.en;
 
 	const swiper = new Swiper('.unlimited__swiper', {
 		modules: [Navigation, Pagination],
@@ -50,16 +39,6 @@ export function tabsOnSwiper() {
 				},
 			}
 		},
-		// pagination: {
-		// 	el: '.swiper__pagination',
-		// 	clickable: true,
-		// 	renderBullet: function (index, className) {
-		// 		return '<span class="' + className + '">' + (tabs[index]) + "</span>";
-		// 	},
-		// },
-		// allowTouchMove: false,
-	
-		// Navigation arrows
 		navigation: {
 			nextEl: '.swiper-button-next',
 			prevEl: '.swiper-button-prev',

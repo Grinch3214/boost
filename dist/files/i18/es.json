@@ -5,7 +5,9 @@
 		"download_for": "Descarga para",
 		"browser_app": "Navegador & Aplicación",
 		"tv_mob_brows": "Aplicación móvil y de TV, navegador",
-		"chromebook": "Aplicación web de Chromebook"
+		"chromebook": "Aplicación web de Chromebook",
+		"button_lang": "Español",
+		"svg_use": "<use href='/img/sprites/sprite.svg#spain'></use>"
 	},
 
 	"link" : {

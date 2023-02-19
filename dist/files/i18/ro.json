@@ -1,8 +1,127 @@
 {
+	"global": {
+		"play_now": "JOACĂ-TE ACUM",
+		"subscrible": "SUBSCRIBLE",
+		"download_for": "Descărcați pentru",
+		"browser_app": "Browser & App",
+		"tv_mob_brows": "TV & Aplicație Mobilă, Browser",
+		"chromebook": "Aplicație Web Chromebook",
+		"button_lang": "Română",
+		"svg_use": "<use href='/img/sprites/sprite.svg#romania'></use>"
+	},
+
 	"link" : {
-		"ourapp": "Our App",
+		"ourapp": "Applicațiile noastre",
 		"faq": "faq",
-		"helpcenter": "Help Center",
-		"blog": "Blog"
+		"helpcenter": "Centru de ajutor",
+		"blog": "Blog",
+		"login": "Intră în cont",
+		"select": "Selectează-ți limba"
+	},
+
+	"platform": {
+		"title": "PLATFORMĂ DE CLOUD GAMING",
+		"device": "Rulează jocuri de PC pe orice device",
+		"play": "Fără download! <br> Joacă în browser",
+		"price": "Setări high - Prețuri mici",
+		"price_from": "De la",
+		"price_subsc": "pe lună la subscripția anuală"
+	},
+
+	"power": {
+		"title": "Power up your devices",
+		"first_title": "Jocurile Tale, Puterea Noastră",
+		"first_content": "Jocurile se lansează pe rig-urile noastre de ultimă generație, iar gameplay-ul îți este redat într-un streaming pe dispozitivul tău. Bucură-te de sute de jocuri de pe cele mai populare platforme.",
+		"launch": "* Lansează jocurile pe care deja de deții",
+		"two_title": "Fără Download, Fără Actualizăr",
+		"two_content": "Fără download, stocare sau actualizări de fișiere de joc. Treaba ta este să te joci, noi ne ocupăm de restul.",
+		"three_title": "Fără limită de timp pentru sesiunile de joc",
+		"three_content": "Acces instant la jocuri și sesiuni de gaming nelimitate. Joacă-te cât de mult dorești!"
+	},
+
+	"gaming": {
+		"title": "O mulțime de chestii cool",
+		"first_title": "Suport 24/7",
+		"first_content": "Chat online. <br> Răspuns în 1-2 minute",
+		"two_title": "Schimbă Dispozitiv-ul",
+		"two_content": "Începe jocul pe un dispozitiv, <br> continuă pe altul",
+		"three_title": "Gameplay Streaming",
+		"three_content": "Transmite live în stream pe YouTube! Vine în 2023"
+	},
+
+	"unlimited": {
+		"title": "Jocuri AAA nelimitat",
+		"first_note": "Rulează jocuri de PC pe computere low-end, învechite sau device-uri ultraportabile.",
+		"two_note": "Joacă-te pe Mac, Linux, iOS, ChromeOS sau SmartTV fără o consolă",
+
+		"tab1_sign": "Înregistrează-te pe Boosteroid",
+		"tab1_subs": "Abonează-te",
+		"tab1_pick": "Alege un joc, autentifică-te utilizând în joc și joacă-te!",
+
+		"tab2_text": "Bucurați-vă de aplicațiile noastre pentru Windows PC, Mac și Linux (Ubuntu, Mint, Debian, Fedora). Rulați sute de jocuri pentru PC pe orice dispozitiv aveți la îndemână!",
+
+		"tab3_text": "Bucurați-vă de jocuri pentru computer pe televizor fără consolă. Luați un gamepad și jucați pe un ecran mare!",
+		"tab3_look": "Căutați aplicația Boosteroid în magazinele dvs. de aplicații <span>Samsung</span> și <span>LG</span>",
+
+		"tab4_text": "Jocuri PC pe un smartphone? De ce nu! Joacă oriunde te-ai afla, indiferent dacă nu ai un computer în preajmă."
+	},
+
+	"anydevice": {
+		"title": "Now any device is a top gaming station"
+	},
+
+	"plan": {
+		"title": "Alege-ți planul!",
+		"subtitle": "Abonați-vă și bucurați-vă",
+
+		"recommed": "RECOMANDATE",
+		"per_year": "pe an",
+		"cost_month": "cost lunar",
+		"popular": "POPULAR",
+		"per_month": "lunar",
+
+		"payment": "Visa, Mastercard, American Express, Google Pay, Apple Pay, Paysafecard și multe alte opțiuni de plată disponibile.",
+		"log": "Înscrieți-vă sau autentificați-vă pentru a afla mai multe.",
+
+		"core_title": "Caracteristici principale",
+		"core_one": "Acces la întregul catalog de jocuri",
+		"core_two": "Timp nelimitat de sesiune de joc",
+		"core_three": "1080p 60 fps și mai mult",
+		"core_four": "Acces la jocuri de pe toate dispozitivele compatibile (PC, Mac, laptop, tabletă, smartphone sau televizor)",
+		"core_five": "Compatibil cu multe gamepad-uri populare (Xbox seria X, S, Xbox One, PS4 etc.)",
+		"core_six": "Totul este securizat, nu împărtășim datele tale cu nimeni",
+		"core_seven": "Fără contract de blocare, fără reclame"
+	},
+
+	"begin": {
+		"title": "Să înceapă Călătoria!",
+		"li_one": "Echipament puternic de jocuri la cerere",
+		"li_two": "Fără descărcări",
+		"li_three": "Joacă în browser și pe orice dispozitiv"
+	},
+
+	"partner": {
+		"title": "Partenerii noștri"
+	},
+
+	"footer": {
+		"support": "Suport",
+		"help": "Centru de ajutor",
+		"blog": "Blog",
+
+		"legal": "Legal",
+		"terms": "Termeni și condiții",
+		"policy": "Politică de confindețialitate",
+		"cookie": "Politică cookie",
+
+		"partner": "PENTRU PARTENERI",
+		"partner_content": "Creatori de conținut",
+
+		"reserved": "Toate drepturile rezervate"
+	},
+
+	"download": {
+		"title": "Descarcă Boosteroid",
+		"device": "Pentru dispozitivul tău"
 	}
 }

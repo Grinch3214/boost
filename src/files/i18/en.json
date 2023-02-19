@@ -5,7 +5,9 @@
 		"download_for": "Download for",
 		"browser_app": "Browser & App",
 		"tv_mob_brows": "TV & Mobile App, Browser",
-		"chromebook": "Chromebook Web App"
+		"chromebook": "Chromebook Web App",
+		"button_lang": "English",
+		"svg_use": "<use href='/img/sprites/sprite.svg#united_kingdom'></use>"
 	},
 
 	"link" : {

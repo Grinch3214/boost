@@ -10,7 +10,7 @@ export default function changeLanguagei18n() {
     try {
       for (const language of languages) {
 				const response = await fetch(
-          window.location.pathname !== '/' ? `../files/i18/${language}.json` : `files/i18/${language}.json`
+          `/files/i18/${language}.json`
         );
         const json = await response.json();
         resources[language] = { translation: json };

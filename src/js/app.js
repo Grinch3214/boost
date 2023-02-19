@@ -15,6 +15,8 @@ import changeLanguagei18n from './modules/newChangeLanguage.js'
 const isAnimate = document.querySelector('.isAnimate');
 
 flsFunctions.isWebp();
+// lang functions
+changeLanguagei18n();
 // burger
 burgerMenu();
 footerYear();
@@ -49,4 +51,3 @@ animationOnTitles();
 
 // Cookie
 cookiePopUpBox();
-changeLanguagei18n();

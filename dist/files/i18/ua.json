@@ -5,7 +5,9 @@
 		"download_for": "Завантажити для",
 		"browser_app": "Браузер і додаток",
 		"tv_mob_brows": "TV і мобільний додаток, браузер",
-		"chromebook": "Веб-програма Chromebook"
+		"chromebook": "Веб-програма Chromebook",
+		"button_lang": "Українська",
+		"svg_use": "<use href='/img/sprites/sprite.svg#ukraine'></use>"
 	},
 
 	"link" : {
