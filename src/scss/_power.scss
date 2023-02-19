@@ -67,6 +67,7 @@
 		&-img {
 			display: inline-block;
 			width: 100%;
+			height: auto;
 			margin-left: 0;
 			@media (min-width: $breakpoint1310) {
 				margin-left: calc(-50vw + 570px);
