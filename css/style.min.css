@@ -1548,9 +1548,12 @@ body.locked {
   font-size: 30px;
   font-weight: 700;
   margin-right: 6px;
+  display: inline-block;
+  line-height: 28px;
 }
 @media (min-width: 1819.98px) {
   .platform__price-price--price {
+    line-height: 45px;
     font-size: 50px;
     margin-right: 0;
   }
@@ -1559,12 +1562,13 @@ body.locked {
   font-size: 14px;
   margin-right: 5px;
   vertical-align: top;
-  margin-top: -4px;
+  margin-top: -5px;
   display: inline-block;
 }
 @media (min-width: 1819.98px) {
   .platform__price-price sup {
     font-size: 20px;
+    margin-top: -9px;
   }
 }
 .platform__price-subscription {
