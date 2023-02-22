@@ -3555,15 +3555,19 @@ button.swiper-pagination-bullet {
 .plan-card__price-price sup {
   font-size: 12px;
   font-weight: 400;
+  position: relative;
+  top: -10px;
 }
 @media (min-width: 767.98px) {
   .plan-card__price-price sup {
     font-size: 16px;
+    top: -14px;
   }
 }
 @media (min-width: 1819.98px) {
   .plan-card__price-price sup {
     font-size: 24px;
+    top: -17px;
   }
 }
 .plan-card__price-month {
@@ -3616,6 +3620,8 @@ button.swiper-pagination-bullet {
 .plan-card__footer span sup {
   font-size: 8px;
   margin-right: 2px;
+  position: relative;
+  top: -5px;
 }
 @media (min-width: 767.98px) {
   .plan-card__footer span sup {

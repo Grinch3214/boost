@@ -89,8 +89,8 @@
 		}
 	}
 
-	&__subscrible-btn {
-	}
+	// &__subscrible-btn {
+	// }
 
 	&__subscrible-txt {
 		font-family: Montserrat;
@@ -270,11 +270,15 @@
 		sup {
 			font-size: 12px;
 			font-weight: 400;
+			position: relative;
+			top: -10px;
 			@media (min-width: $breakpoint768) {
 				font-size: 16px;
+				top: -14px;
 			}
 			@media (min-width: $breakpoint1920) {
 				font-size: 24px;
+				top: -17px;
 			}
 		}
 	}
@@ -316,6 +320,8 @@
 			sup {
 				font-size: 8px;
 				margin-right: 2px;
+				position: relative;
+				top: -5px;
 				@media (min-width: $breakpoint768) {
 					font-size: 10px;
 				}
