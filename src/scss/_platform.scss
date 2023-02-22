@@ -140,7 +140,10 @@
 			font-size: 30px;
 			font-weight: 700;
 			margin-right: 6px;
+			display: inline-block;
+			line-height: 28px;
 			@media (min-width: $breakpoint1920) {
+				line-height: 45px;
 				font-size: 50px;
 				margin-right: 0;
 			}
@@ -149,10 +152,11 @@
 			font-size: 14px;
 			margin-right: 5px;
 			vertical-align: top;
-			margin-top: -4px;
+			margin-top: -5px;
 			display: inline-block;
 			@media (min-width: $breakpoint1920) {
 				font-size: 20px;
+				margin-top: -9px;
 			}
 		}
 		// span + span {
@@ -175,11 +179,11 @@
 		}
 	}
 
-	&__button {
-	}
+	// &__button {
+	// }
 
-	&__button-btn {
-	}
+	// &__button-btn {
+	// }
 
 	&__image {
 		max-width: 645px;
