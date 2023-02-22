@@ -1,6 +1,7 @@
 export default function formSend() {
 	const form = document.querySelector('.interested__form');
 	const popup = document.querySelector('.interested__popup');
+	const popupSend = document.querySelector('.interested__request');
 
 	if(form) {
 		async function handleSubmit(event) {
@@ -14,21 +15,23 @@ export default function formSend() {
 				}
 			}).then(response => {
 				if(response.ok) {
-					popup.innerHTML = "Thanks for your subb!";
+					popupSend.style.display = 'block';
 					form.reset();
-					setTimeout(() => {popup.innerHTML = ''}, 2000);
+					setTimeout(() => {popupSend.style.display = 'none'}, 2000);
 				} else {
 					response.json().then(data => {
 						if(Object.hasOwn(data, 'errors')) {
 							popup.innerHTML = data['errors'].map(error => error['message']).join(', ')
+							setTimeout(() => {popup.innerHTML = ''}, 2000);
 						} else {
 							popup.innerHTML = "Oops! There was a problem submitting your form"
+							setTimeout(() => {popup.innerHTML = ''}, 2000);
 						}
 					})
 				}
 			}).catch(error => {
 				popup.innerHTML = "Oops! There was a problem submitting your form"
-				setTimeout(() => {popup.innerHTML = ''}, 2000)
+				setTimeout(() => {popup.innerHTML = ''}, 2000);
 			});
 		}
 		form.addEventListener('submit', handleSubmit)
