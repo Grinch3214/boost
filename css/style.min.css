@@ -1558,6 +1558,9 @@ body.locked {
 .platform__price-price sup {
   font-size: 14px;
   margin-right: 5px;
+  vertical-align: top;
+  margin-top: -4px;
+  display: inline-block;
 }
 @media (min-width: 1819.98px) {
   .platform__price-price sup {
