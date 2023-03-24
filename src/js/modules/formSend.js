@@ -8,15 +8,15 @@ export default function formSend() {
 			event.preventDefault();
 			let data = new FormData(event.target);
 
-			const inputName = document.querySelector('.interested__form-name');
-			const inputNameValue = inputName.value;
-			const nameRegex = /^[a-zA-Z]+$/u;
+			// const inputName = document.querySelector('.interested__form-name');
+			// const inputNameValue = inputName.value;
+			// const nameRegex = /^[a-zA-Z]+$/u;
 
-			if(!nameRegex.test(inputNameValue)) {
-				popup.innerHTML = "Name must not contain numbers"
-				setTimeout(() => {popup.innerHTML = ''}, 5000);
-				return
-			}
+			// if(!nameRegex.test(inputNameValue)) {
+			// 	popup.innerHTML = "Name must not contain numbers"
+			// 	setTimeout(() => {popup.innerHTML = ''}, 5000);
+			// 	return
+			// }
 
 			fetch(event.target.action, {
 				method: form.method,
