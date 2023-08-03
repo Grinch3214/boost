@@ -178,6 +178,10 @@
 		}
 	}
 
+	&__container {
+		flex: 1;
+	}
+
 	&__paragraph {
 		margin: 0 auto;
 		font-size: 18px;
@@ -225,6 +229,21 @@
 	&__tv-box {
 	}
 
+	&__tv-box-list {
+		display: flex;
+		flex-flow: column;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 20px;
+		@media (min-width: $breakpoint768) {
+			flex-flow: row wrap;
+			justify-content: flex-start;
+			gap: 25px;
+		}
+	}
+
+	&__tv-box-item {}
+
 	&__tv-title {
 	}
 
@@ -251,7 +270,7 @@
 			}
 	
 			.btn-with-icon__icon {
-				margin-right: 17px;
+				margin-right: 14px;
 	
 				svg {
 					width: 25px;

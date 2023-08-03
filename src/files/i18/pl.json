@@ -1,0 +1,130 @@
+{
+	"global": {
+		"play_now": "PLAY NOW",
+		"subscrible": "Subscribe",
+		"download_for": "Pobierz dla",
+		"browser_app": "Przeglądarka & aplikacja",
+		"tv_mob_brows": "TV & aplikacja mobilna, przeglądarka",
+		"chromebook": "Aplikacja na Chromebook",
+		"webos": "Aplikacja na TV",
+		"button_lang": "Polski",
+		"svg_use": "<use href='/img/sprites/sprite.svg#poland'></use>"
+	},
+
+	"link" : {
+		"ourapp": "Nasze aplikacje",
+		"faq": "Najczęściej zadawane pytania",
+		"helpcenter": "Pomoc",
+		"blog": "Blog",
+		"login": "Zaloguj się",
+		"select": "Wybierz język"
+	},
+
+	"platform": {
+		"title": "PLATFORMA DO GIER W CHMURZE",
+		"device": "Uruchamiaj gry PC <br> na dowolnym urządzeniu",
+		"play": "Bez pobierania! <br> Graj w przeglądarce",
+		"price": "Wysokie ustawienia - Niskie ceny",
+		"price_from": "Od",
+		"price_subsc": "miesięcznie z roczną subskrypcją"
+	},
+
+	"power": {
+		"title": "Podnieś moc swoich urządzeń",
+		"first_title": "Twoje gry, nasza moc",
+		"first_content": "Gry uruchamiane są na naszych zdalnych, zaawansowanych stacjach roboczych, gra jest przesyłana strumieniowo do Ciebie. Ciesz się setkami tytułów z popularnych platform.",
+		"launch": "* Uruchom gry, które już posiadasz",
+		"two_title": "Bez pobierania, bez aktualizacji",
+		"two_content": "Bez pobierania, aktualizowania i przechowywania plików gry. Twoim zadaniem jest granie, my zjamiemy się resztą.",
+		"three_title": "Brak limitów czasu sesji",
+		"three_content": "Natychmiastowy dostęp do gier i nieograniczone sesje grania. Graj tak długo, jak chcesz!"
+	},
+
+	"gaming": {
+		"title": "Mnóstwo fajnych rzeczy",
+		"first_title": "Support 24/7",
+		"first_content": "Czat online. <br> Odpowiadamy w 1-2 minuty",
+		"two_title": "Przełączanie pomiędzy urządzeniami",
+		"two_content": "Zacznij grać na jednym urządzeniu <br> kontynuuj na kolejnym",
+		"three_title": "Streamowanie rozgrywki",
+		"three_content": "Streammuj swoją rozgrywkę <br> na YouTube!"
+	},
+
+	"unlimited": {
+		"title": "Nieograniczona ilość gier AAA",
+		"first_note": "Uruchamiaj gry PC na słąbszych, przestarzałych lub ultraprzenośnych urządzeniach",
+		"two_note": "Graj na Mac, Linux, iOS, Android, ChromeOS lub na Smart TV bez konsoli",
+
+		"tab1_sign": "Zaloguj się do Boosteroid",
+		"tab1_subs": "Zasubskrybuj",
+		"tab1_pick": "Wybierz grę, zaloguj się na konto gry i graj!",
+
+		"tab2_text": "Korzystaj z naszych aplikacji na systemy Windows PC, Mac i Linux (Ubuntu, Debian, Fedora). Uruchamiaj setki gier komputerowych na dowolnym urządzeniu, które masz w zasięgu ręki!",
+
+		"tab3_text": "Ciesz się grami komputerowymi na TV bez posiadania konsoli. Łap pada i graj na dużym ekranie!",
+		"tab3_look": "Szukaj aplikacji Boosteroid w sklepach z aplikacjami <span>Samsung</span> oraz <span>LG</span>",
+
+		"tab4_text": "Gry komputerowe na smartfonie? Dlaczego nie! Graj gdziekolwiek jesteś, bez względu na to, czy masz w pobliżu komputer czy nie."
+	},
+
+	"anydevice": {
+		"title": "Teraz każde urządzenie to topowy komputer gamingowy"
+	},
+
+	"plan": {
+		"title": "Wybierz swój plan!",
+		"subtitle": "Zasubskrybuj i baw się",
+
+		"recommed": "REKOMENDOWANE",
+		"per_year": "za rok",
+		"cost_month": "koszt miesięczny",
+		"popular": "POPULARNE",
+		"per_month": "za miesiąc",
+
+		"payment": "Visa, Mastercard, American Express, Google Pay, Apple Pay, Paysefcard i wiele innych dostępnych opcji płatności.",
+		"log": "Zarejestruj się lub zaloguj, aby dowiedzieć się więcej",
+
+		"core_title": "Podstawowe cechy",
+		"core_one": "Dostęp do całego katalogu gier",
+		"core_two": "Nieograniczony czas sesji gry",
+		"core_three": "1080p, 60fps i więcej",
+		"core_four": "Dostęp do gier na wszystkich kompatybilnych urządzeniach (PC, Mac, laptop, tablet, telefon i TV)",
+		"core_five": "Kompatybilne z wieloma popularnymi kontrolerami (Xbox Series X|S, Xbox One, Stadia, PS5, PS4, itd.)",
+		"core_six": "Wszystko jest bezpieczne, nikomu nie udostępniamy twoich danych",
+		"core_seven": "Bez umowy, bez reklam"
+	},
+
+	"begin": {
+		"title": "Rozpocznij podróż!",
+		"li_one": "Potężny sprzęt do gier na żądanie",
+		"li_two": "Bez pobierania",
+		"li_three": "Graj w przeglądarce i na innych urządzeniach"
+	},
+
+	"partner": {
+		"title": "Nasi partnerzy"
+	},
+
+	"footer": {
+		"support": "Support",
+		"help": "Pomoc",
+		"blog": "Blog",
+
+		"legal": "Przepisy",
+		"terms": "Zasady i warunki",
+		"policy": "Polityka prywatności",
+		"cookie": "Polityka plików Cookie",
+
+		"partner": "DLA PARTNERÓW",
+		"partner_content": "Twórcy treści",
+
+		"follow": "Podążaj za nami",
+
+		"reserved": "Wszelkie prawa zastrzeżone."
+	},
+
+	"download": {
+		"title": "Pobierz Boosteroid",
+		"device": "Na twoje urządzenia"
+	}
+}

@@ -2,9 +2,10 @@ import i18next from "i18next"
 
 export default function changeLanguagei18n() {
   const elements = document.querySelectorAll('[data-i18n]');
+	let currentLangSelector;
 
   async function loadLanguageResources() {
-    const languages = ['en', 'es', 'ua', 'ro'];
+    const languages = ['en', 'es', 'ua', 'ro', 'pl'];
     const resources = {};
     
     try {
@@ -42,10 +43,24 @@ export default function changeLanguagei18n() {
       langSelectors.forEach((langSelector) => {
         langSelector.addEventListener('click', () => {
           const currentLang = langSelector.getAttribute('data-lang');
+
+					if (currentLangSelector) {
+            currentLangSelector.classList.remove('active');
+          }
+
+          langSelector.classList.add('active');
+					currentLangSelector = langSelector;
+
           localStorage.setItem('language', currentLang);
           i18next.changeLanguage(currentLang);
         });
       });
+			const initialLang = localStorage.getItem('language') || 'en';
+      const initialLangSelector = document.querySelector(`[data-lang="${initialLang}"]`);
+      if (initialLangSelector) {
+        initialLangSelector.classList.add('active');
+        currentLangSelector = initialLangSelector;
+      }
     } catch (err) {
       console.error(err);
     }

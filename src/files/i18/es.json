@@ -6,6 +6,7 @@
 		"browser_app": "Navegador & Aplicación",
 		"tv_mob_brows": "Aplicación móvil y de TV, navegador",
 		"chromebook": "Aplicación web de Chromebook",
+		"webos": "Aplicación de TV",
 		"button_lang": "Español",
 		"svg_use": "<use href='/img/sprites/sprite.svg#spain'></use>"
 	},
@@ -88,7 +89,7 @@
 		"core_two": "Tiempo ilimitado de sesión de juego",
 		"core_three": "1080p 60 fps y más",
 		"core_four": "Acceso a juegos en todos los dispositivos compatibles (PC, Mac, laptop, tablet, teléfono o TV)",
-		"core_five": "Compatible con muchos gamepads populares (Xbox series X, S, Xbox One, PS4, etc.)",
+		"core_five": "Compatible con muchos gamepads populares (Xbox Series X|S, Xbox One, Stadia, PS5, PS4, etc.)",
 		"core_six": "Todo es seguro, no compartimos tus datos con nadie",
 		"core_seven": "Sin contrato de bloqueo, sin anuncios"
 	},
@@ -116,6 +117,8 @@
 
 		"partner": "PARA SOCIOS",
 		"partner_content": "Creadores de contenido",
+
+		"follow": "Síganos",
 
 		"reserved": "Todos los derechos reservados"
 	},

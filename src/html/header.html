@@ -25,12 +25,14 @@
 				<div class="header__languages">
 					<span class="close-lang "></span>
 					<p class="header__languages-select i18nelement" data-i18n="link.select">Select Your Language</p>
-					<a class="header__languages-btn" href="#" data-lang="en">
-						<svg>
-							<use href="@img/sprites/sprite.svg#united_kingdom"></use>
-						</svg>
-						<span>English</span>
-					</a>
+					<div class="header__languages-box">
+						<a class="header__languages-btn" href="#" data-lang="en">
+							<svg>
+								<use href="@img/sprites/sprite.svg#united_kingdom"></use>
+							</svg>
+							<span>English</span>
+						</a>
+					</div>
 					<!-- <a class="header__languages-btn" href="#" data-lang="fr">
 						<svg>
 							<use href="@img/sprites/sprite.svg#france"></use>
@@ -49,24 +51,38 @@
 						</svg>
 						<span>Italiano</span>
 					</a> -->
-					<a class="header__languages-btn" href="#" data-lang="es">
-						<svg>
-							<use href="@img/sprites/sprite.svg#spain"></use>
-						</svg>
-						<span>Español</span>
-					</a>
-					<a class="header__languages-btn" href="#" data-lang="ua">
-						<svg>
-							<use href="@img/sprites/sprite.svg#ukraine"></use>
-						</svg>
-						<span>Українська</span>
-					</a>
-					<a class="header__languages-btn" href="#" data-lang="ro">
-						<svg>
-							<use href="@img/sprites/sprite.svg#romania"></use>
-						</svg>
-						<span>Română</span>
-					</a>
+					<div class="header__languages-box">
+						<a class="header__languages-btn" href="#" data-lang="es">
+							<svg>
+								<use href="@img/sprites/sprite.svg#spain"></use>
+							</svg>
+							<span>Español</span>
+						</a>
+					</div>
+					<div class="header__languages-box">
+						<a class="header__languages-btn" href="#" data-lang="ua">
+							<svg>
+								<use href="@img/sprites/sprite.svg#ukraine"></use>
+							</svg>
+							<span>Українська</span>
+						</a>
+					</div>
+					<div class="header__languages-box">
+						<a class="header__languages-btn" href="#" data-lang="ro">
+							<svg>
+								<use href="@img/sprites/sprite.svg#romania"></use>
+							</svg>
+							<span>Română</span>
+						</a>
+					</div>
+					<div class="header__languages-box">
+						<a class="header__languages-btn" href="#" data-lang="pl">
+							<svg>
+								<use href="@img/sprites/sprite.svg#poland"></use>
+							</svg>
+							<span>Polski</span>
+						</a>
+					</div>
 					<!-- <a class="header__languages-btn" href="#">
 						<svg>
 							<use href="@img/sprites/sprite.svg#portugal"></use>
@@ -78,12 +94,6 @@
 							<use href="@img/sprites/sprite.svg#serbia"></use>
 						</svg>
 						<span>Srpski</span>
-					</a> -->
-					<!-- <a class="header__languages-btn" href="#">
-						<svg>
-							<use href="@img/sprites/sprite.svg#poland"></use>
-						</svg>
-						<span>Polski</span>
 					</a> -->
 					<!-- <a class="header__languages-btn" href="#">
 						<svg>
@@ -121,6 +131,7 @@
 					</svg>
 					<span class="i18nelement" data-i18n="global.button_lang">English</span>
 				</button>
+				<p class="header__buttons-text i18nelement" data-i18n="link.select">Select Your Language</p>
 				<a href="https://cloud.boosteroid.com" target="_blank" data-i18n="link.login" class="header__buttons-login second-btn i18nelement">Sign In</a>
 			</div>
 			<div class="burger">

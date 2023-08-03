@@ -6,6 +6,7 @@
 		"browser_app": "Browser & App",
 		"tv_mob_brows": "TV & Aplicație Mobilă, Browser",
 		"chromebook": "Aplicație Web Chromebook",
+		"webos": "Aplicație TV",
 		"button_lang": "Română",
 		"svg_use": "<use href='/img/sprites/sprite.svg#romania'></use>"
 	},
@@ -88,7 +89,7 @@
 		"core_two": "Timp nelimitat de sesiune de joc",
 		"core_three": "1080p 60 fps și mai mult",
 		"core_four": "Acces la jocuri de pe toate dispozitivele compatibile (PC, Mac, laptop, tabletă, smartphone sau televizor)",
-		"core_five": "Compatibil cu multe gamepad-uri populare (Xbox seria X, S, Xbox One, PS4 etc.)",
+		"core_five": "Compatibil cu multe gamepad-uri populare (Xbox Series X|S, Xbox One, Stadia, PS5, PS4 etc.)",
 		"core_six": "Totul este securizat, nu împărtășim datele tale cu nimeni",
 		"core_seven": "Fără contract de blocare, fără reclame"
 	},
@@ -116,6 +117,8 @@
 
 		"partner": "PENTRU PARTENERI",
 		"partner_content": "Creatori de conținut",
+
+		"follow": "Urmați-ne",
 
 		"reserved": "Toate drepturile rezervate"
 	},

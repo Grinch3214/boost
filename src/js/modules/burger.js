@@ -14,7 +14,8 @@ export default function burgerMenu() {
 		navigation.classList.toggle('show');
 		headerLanguages.classList.remove('active');
 		if (window.innerWidth <= 768) {
-			headerButtonLang.querySelector('span').innerHTML = `${oldTxt[0]}`;
+			// headerButtonLang.querySelector('span').innerHTML = `${oldTxt[0]}`;
+			removeHiddenClassForLanguages();
 		}
 	});
 
@@ -37,7 +38,8 @@ export default function burgerMenu() {
 		headerButtonLang.addEventListener('click', (event) => {
 			headerLanguages.classList.add('active');
 			if (window.innerWidth <= 768) {
-				headerButtonLang.querySelector('span').innerHTML = 'SELECT YOUR LANGUAGE';
+				// headerButtonLang.querySelector('span').innerHTML = 'SELECT YOUR LANGUAGE';
+				headerButtonLang.classList.add('hidden')
 			}
 		});
 	};
@@ -47,13 +49,23 @@ export default function burgerMenu() {
 	function removeClassForLanguages() {
 		headerLanguages.classList.remove('active');
 	};
+	function removeHiddenClassForLanguages() {
+		headerButtonLang.classList.remove('hidden');
+	};
 	
-	overlayLang.addEventListener('click', removeClassForLanguages);
-	closePopUpLang.addEventListener('click', removeClassForLanguages);
+	overlayLang.addEventListener('click', () => {
+		removeClassForLanguages();
+		removeHiddenClassForLanguages();
+	});
+	closePopUpLang.addEventListener('click', () => {
+		removeClassForLanguages();
+		removeHiddenClassForLanguages();
+	});
 	headerLangButtons.forEach(btn => {
 		btn.addEventListener('click', (event) => {
 			event.preventDefault();
 			removeClassForLanguages();
+			removeHiddenClassForLanguages();
 		});
 	})
 }

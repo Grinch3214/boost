@@ -195,3 +195,13 @@
 		padding-top: 0;
 	}
 }
+
+h5.footer__follow {
+	color: transparent;
+}
+
+@media (min-width: 767.98px) {
+	h5.footer__follow {
+		color: #9B99AD;
+	}
+}
